@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="mr"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Mahaveer Hospital – Critical Care Centre & Aesthetic Clinic | Tamsa, Hadgaon, Nanded</title><meta name="description" content="Mahaveer Hospital Tamsa – 24×7 Emergency, ICU, OPD, Diagnostic & Aesthetic Clinic. Dr Vipul Patni & Dr Sayyam Patni. Call 9421294108. Tamsa, Hadgaon, Nanded 431713."/>
+<meta name="keywords" content="Mahaveer Hospital Tamsa Hadgaon Nanded, ICU emergency OPD, Dr Vipul Patni, Dr Sayyam Patni, critical care Maharashtra, महावीर हॉस्पिटल तामसा"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Hospital","name":"Mahaveer Hospital","telephone":"+919421294108","address":{"@type":"PostalAddress","streetAddress":"Shivaji Nagar Main Road Tamsa","addressLocality":"Hadgaon","addressRegion":"Maharashtra","postalCode":"431713","addressCountry":"IN"},"openingHours":"Mo-Su 00:00-23:59"}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* HERO */
+.hero{min-height:100vh;background:linear-gradient(150deg,#08172B 0%,#0F2340 50%,#0B6B6A 100%);display:flex;align-items:center;padding:110px 0 70px;position:relative;overflow:hidden}
+.hero-mesh{position:absolute;inset:0;background:radial-gradient(ellipse at 15% 60%,rgba(200,145,42,.09) 0%,transparent 55%),radial-gradient(ellipse at 85% 20%,rgba(11,107,106,.12) 0%,transparent 50%);pointer-events:none}
+.hero-ring{position:absolute;right:-120px;top:50%;transform:translateY(-50%);width:700px;height:700px;border-radius:50%;border:1px solid rgba(200,145,42,.07);pointer-events:none}
+.hero-ring::before{content:'';position:absolute;inset:60px;border-radius:50%;border:1px solid rgba(200,145,42,.05)}
+.hero-ring::after{content:'';position:absolute;inset:120px;border-radius:50%;border:1px solid rgba(200,145,42,.04)}
+.hero-inner{position:relative;z-index:1}
+.hero-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(200,145,42,.12);border:1px solid rgba(200,145,42,.35);border-radius:40px;padding:7px 20px;font-family:'Cinzel',serif;font-size:.68rem;font-weight:700;color:#E8B84B;letter-spacing:3px;text-transform:uppercase;margin-bottom:1.8rem}
+.hero-h1{font-family:'Cinzel',serif;font-size:clamp(2.2rem,5.5vw,4.5rem);font-weight:900;color:#fff;line-height:1.05;letter-spacing:1px;margin-bottom:.8rem}
+.hero-h1 em{color:#E8B84B;font-style:normal;display:block}
+.hero-tagline{font-family:'Noto Sans Devanagari',sans-serif;font-size:clamp(1.05rem,2.2vw,1.4rem);color:rgba(255,255,255,.72);font-weight:600;margin-bottom:.4rem}
+.hero-bold{font-family:'Noto Sans Devanagari',sans-serif;font-size:clamp(.85rem,1.5vw,1rem);font-weight:700;color:#E8B84B;border-left:3px solid #C8912A;padding-left:14px;margin-bottom:2rem;line-height:1.7}
+.hero-p{font-size:1.05rem;color:rgba(255,255,255,.58);max-width:500px;line-height:1.85;margin-bottom:2.5rem;font-family:'Crimson Pro',serif}
+.hero-btns{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:3.5rem}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:1.8rem 0 0;border-top:1px solid rgba(255,255,255,.1)}
+.hst{text-align:center;padding:0 1rem}
+.hst:not(:last-child){border-right:1px solid rgba(255,255,255,.08)}
+.hst-num{font-family:'Cinzel',serif;font-size:clamp(1.5rem,3vw,2.4rem);font-weight:900;color:#E8B84B;display:block;line-height:1}
+.hst-lbl{font-size:.68rem;color:rgba(255,255,255,.42);letter-spacing:1.5px;text-transform:uppercase;font-family:'Cinzel',serif;margin-top:4px}
+
+/* EMERGENCY BAND */
+.em-band{background:var(--red);padding:16px 0}
+.em-inner{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px}
+.em-label{font-family:'Cinzel',serif;font-size:.72rem;font-weight:700;color:#fff;letter-spacing:2px;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.em-label i{font-size:1rem;animation:bell .8s ease-in-out infinite alternate}
+@keyframes bell{from{transform:rotate(-10deg)}to{transform:rotate(10deg)}}
+.em-phones{display:flex;flex-wrap:wrap;gap:24px}
+.em-phones a{color:#fff;text-decoration:none;font-family:'Cinzel',serif;font-weight:700;font-size:.92rem;display:flex;align-items:center;gap:6px}
+.em-phones a small{font-family:'Crimson Pro',serif;font-size:.78rem;opacity:.7;font-weight:400}
+
+/* WHY US */
+.why-card{background:#fff;border-radius:14px;padding:1.8rem;border:1px solid var(--border);transition:all .3s;height:100%;position:relative;overflow:hidden}
+.why-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--teal));transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.why-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(8,23,43,.13)}
+.why-card:hover::before{transform:scaleX(1)}
+.why-ico{width:54px;height:54px;border-radius:12px;background:linear-gradient(135deg,var(--navy),var(--teal));display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:#E8B84B;margin-bottom:1.2rem}
+.why-card h5{font-family:'Cinzel',serif;font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:.5rem;letter-spacing:.3px}
+.why-card p{font-size:.92rem;color:var(--muted);line-height:1.75;margin:0}
+
+/* SVC PREVIEW */
+.svc-prev{background:#fff;border-radius:14px;border:1px solid var(--border);padding:1.5rem;display:flex;gap:14px;align-items:flex-start;transition:all .3s;height:100%}
+.svc-prev:hover{box-shadow:0 8px 32px rgba(8,23,43,.1);transform:translateY(-3px)}
+.sp-ico{width:48px;height:48px;flex-shrink:0;border-radius:10px;background:var(--gold-pale);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:var(--gold)}
+.sp-ico.teal{background:#EFF8F8;border-color:#B0DAD9;color:var(--teal)}
+.svc-prev h6{font-family:'Cinzel',serif;font-size:.88rem;font-weight:700;color:var(--navy);margin-bottom:4px;letter-spacing:.3px}
+.svc-prev p{font-size:.87rem;color:var(--muted);line-height:1.6;margin:0}
+
+/* TESTI */
+.testi-card{background:#fff;border-radius:14px;padding:2rem;border:1px solid var(--border);height:100%;position:relative}
+.testi-card::before{content:'C';font-family:'Cinzel',serif;font-size:4rem;color:var(--gold-pale);position:absolute;top:1rem;right:1.5rem;line-height:1;font-weight:900}
+.testi-stars{color:#E8B84B;margin-bottom:.8rem;font-size:.85rem}
+.testi-q{font-size:.95rem;color:var(--muted);line-height:1.85;margin-bottom:1.2rem;font-style:italic}
+.testi-name{font-family:'Cinzel',serif;font-weight:700;font-size:.82rem;color:var(--navy);letter-spacing:.5px}
+.testi-loc{font-size:.78rem;color:var(--muted);font-family:'Crimson Pro',serif}
+
+/* CTA */
+.cta-block{background:linear-gradient(135deg,var(--navy),var(--teal));padding:70px 0;text-align:center;position:relative;overflow:hidden}
+.cta-block::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.025'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")}
+.cta-block h2{font-family:'Cinzel',serif;font-size:clamp(1.5rem,3.5vw,2.6rem);font-weight:700;color:#fff;margin-bottom:.6rem;letter-spacing:1px;position:relative}
+.cta-block p{font-family:'Noto Sans Devanagari',sans-serif;color:rgba(255,255,255,.65);margin-bottom:2.2rem;position:relative}
+
+@media(max-width:768px){.hero-stats{grid-template-columns:repeat(2,1fr);gap:1px}.hst{padding:.8rem}}
+</style>
+</head><body><div class="ticker-wrap"><div class="ticker-move">
+<span><i class="bi bi-telephone-fill"></i> Emergency 24×7 : 9421294108</span>
+<span><i class="bi bi-heart-pulse-fill"></i> ICU &amp; Critical Care Available</span>
+<span><i class="bi bi-telephone-fill"></i> Dr Sayyam Patni : 9766831008</span>
+<span><i class="bi bi-geo-alt-fill"></i> Tamsa · Hadgaon · Nanded 431713</span>
+<span><i class="bi bi-truck"></i> Ambulance On Call</span>
+<span><i class="bi bi-telephone-fill"></i> Emergency 24×7 : 9421294108</span>
+<span><i class="bi bi-heart-pulse-fill"></i> ICU &amp; Critical Care Available</span>
+<span><i class="bi bi-telephone-fill"></i> Dr Sayyam Patni : 9766831008</span>
+<span><i class="bi bi-geo-alt-fill"></i> Tamsa · Hadgaon · Nanded 431713</span>
+<span><i class="bi bi-truck"></i> Ambulance On Call</span>
+</div></div>
+<nav class="site-nav" id="mainNav">
+<div class="nav-container">
+  <a href="index.html" class="nav-brand">
+    <img src="logo.jpeg" alt="Mahaveer Hospital Logo" class="nav-logo-img"/>
+    <div class="brand-words"><span class="brand-main">MAHAVEER HOSPITAL</span><span class="brand-sub">Critical Care · Aesthetic Clinic · Tamsa</span></div>
+  </a>
+  <button class="nav-hamburger" id="navToggle"><span></span><span></span><span></span></button>
+  <ul class="nav-menu" id="navMenu"><li><a href="index.html" class="nav-link  active">Home</a></li><li><a href="about.html" class="nav-link">About</a></li><li><a href="services.html" class="nav-link">Services</a></li><li><a href="contact.html" class="nav-link">Contact</a></li><li><a href="tel:9421294108" class="nav-emergency"><i class="bi bi-telephone-fill"></i> Emergency</a></li></ul>
+</div></nav>
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-mesh"></div>
+  <div class="hero-ring"></div>
+  <div class="container hero-inner">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="hero-chip"><i class="bi bi-geo-alt-fill"></i> तामसा · हदगाव · नांदेड, Maharashtra</div>
+        <h1 class="hero-h1">MAHAVEER<br/><em>HOSPITAL</em></h1>
+        <div class="hero-tagline">"करुणेने उपचार, विश्वासाने सेवा"</div>
+        <div class="hero-bold">"शहरातील उपचार, गावातील माणसांसाठी —<br/>विश्वास, सेवा आणि करुणा."</div>
+        <p class="hero-p">Mahaveer Hospital stands for pure healing, trusted medical care, strength, compassion, and complete protection — bringing advanced city-standard healthcare to the people of rural Maharashtra.</p>
+        <div class="hero-btns">
+          <a href="tel:9421294108" class="btn-gold"><i class="bi bi-telephone-fill"></i> Call Emergency Now</a>
+          <a href="services.html" class="btn-outline-white"><i class="bi bi-grid-3x3-gap"></i> View All Services</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hst"><span class="hst-num" data-count="24" data-suffix="×7">24×7</span><div class="hst-lbl">Emergency</div></div>
+          <div class="hst"><span class="hst-num" data-count="3" data-suffix="">3</span><div class="hst-lbl">Doctors</div></div>
+          <div class="hst"><span class="hst-num" data-count="10" data-suffix="">10</span><div class="hst-lbl">Beds</div></div>
+          <div class="hst"><span class="hst-num" data-count="8" data-suffix="+">8+</span><div class="hst-lbl">Depts</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ EMERGENCY BAND ══ -->
+<div class="em-band">
+  <div class="container">
+    <div class="em-inner">
+      <div class="em-label"><i class="bi bi-exclamation-triangle-fill"></i> 24×7 Emergency Helpline</div>
+      <div class="em-phones">
+        <a href="tel:9421294108"><i class="bi bi-telephone-fill"></i> 9421294108 <small>Dr Vipul Patni</small></a>
+        <a href="tel:9766831008"><i class="bi bi-telephone-fill"></i> 9766831008 <small>Dr Sayyam Patni</small></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ WHY US ══ -->
+<section class="bg-cream">
+  <div class="container">
+    <div class="row align-items-end mb-4">
+      <div class="col-md-8" data-aos>
+        <div class="sec-eyebrow">Why Choose Us</div>
+        <h2 class="sec-title">Excellence You Can <span>Trust</span></h2>
+        <div class="gold-bar"></div>
+        <p class="sec-lead">Experienced doctors, modern technology, and genuine compassion — delivering the best possible care, affordably.</p>
+      </div>
+      <div class="col-md-4 text-md-end mt-3 mt-md-0">
+        <a href="about.html" class="btn-navy">About Us <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" data-aos><div class="why-card"><div class="why-ico"><i class="bi bi-clock-fill"></i></div><h5>24×7 Emergency &amp; ICU</h5><p>Round-the-clock emergency and intensive care — always ready when you need us most.</p></div></div>
+      <div class="col-md-6 col-lg-4" data-aos data-d="1"><div class="why-card"><div class="why-ico"><i class="bi bi-person-badge-fill"></i></div><h5>Experienced Doctors</h5><p>Specialists in critical care, general medicine, diabetology, cosmetology &amp; gynecology.</p></div></div>
+      <div class="col-md-6 col-lg-4" data-aos data-d="2"><div class="why-card"><div class="why-ico"><i class="bi bi-currency-rupee"></i></div><h5>Affordable Treatment</h5><p>Quality healthcare at prices that rural and semi-urban families can genuinely afford.</p></div></div>
+      <div class="col-md-6 col-lg-4" data-aos data-d="3"><div class="why-card"><div class="why-ico"><i class="bi bi-shield-fill-check"></i></div><h5>Clean &amp; Safe Environment</h5><p>Hygiene-first — clean wards, sterile procedures, patient-friendly atmosphere.</p></div></div>
+      <div class="col-md-6 col-lg-4" data-aos data-d="4"><div class="why-card"><div class="why-ico"><i class="bi bi-file-earmark-medical-fill"></i></div><h5>Digital Records &amp; Reports</h5><p>Electronic health records and quick digital reporting for faster, better care.</p></div></div>
+      <div class="col-md-6 col-lg-4" data-aos data-d="5"><div class="why-card"><div class="why-ico"><i class="bi bi-truck"></i></div><h5>Ambulance On Call</h5><p>Immediate ambulance service and patient transfer available on a single phone call.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SERVICES PREVIEW ══ -->
+<section>
+  <div class="container">
+    <div class="row align-items-end mb-4">
+      <div class="col-md-8" data-aos>
+        <div class="sec-eyebrow">Medical Services</div>
+        <h2 class="sec-title">What We <span>Offer</span></h2>
+        <div class="gold-bar"></div>
+        <p class="sec-lead">Comprehensive departments under one roof — from emergency trauma to preventive care and aesthetics.</p>
+      </div>
+      <div class="col-md-4 text-md-end mt-3 mt-md-0">
+        <a href="services.html" class="btn-gold">All Services <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6 col-lg-4" data-aos><div class="svc-prev"><div class="sp-ico"><i class="bi bi-person-check"></i></div><div><h6>OPD Consultation</h6><p>General medicine, diabetes, hypertension, respiratory &amp; infection care.</p></div></div></div>
+      <div class="col-md-6 col-lg-4" data-aos data-d="1"><div class="svc-prev"><div class="sp-ico teal"><i class="bi bi-heart-pulse"></i></div><div><h6>ICU – Critical Care</h6><p>2-bed ICU with ventilator support &amp; 24×7 specialist monitoring.</p></div></div></div>
+      <div class="col-md-6 col-lg-4" data-aos data-d="2"><div class="svc-prev"><div class="sp-ico"><i class="bi bi-lightning-charge-fill"></i></div><div><h6>Emergency &amp; Casualty</h6><p>Trauma, chest pain, stroke, snake bite, poisoning &amp; BLS — anytime.</p></div></div></div>
+      <div class="col-md-6 col-lg-4" data-aos data-d="3"><div class="svc-prev"><div class="sp-ico teal"><i class="bi bi-hospital"></i></div><div><h6>IPD – 8 Beds</h6><p>Inpatient care with IV therapy, oxygen, nursing &amp; daily doctor rounds.</p></div></div></div>
+      <div class="col-md-6 col-lg-4" data-aos data-d="4"><div class="svc-prev"><div class="sp-ico"><i class="bi bi-clipboard2-pulse"></i></div><div><h6>Diagnostic Services</h6><p>ECG, Digital X-Ray, blood tests, rapid malaria/dengue/typhoid tests.</p></div></div></div>
+      <div class="col-md-6 col-lg-4" data-aos data-d="5"><div class="svc-prev"><div class="sp-ico teal"><i class="bi bi-stars"></i></div><div><h6>Aesthetic Clinic</h6><p>Cosmetology &amp; skin care by Dr Pragati Patni — certified specialist.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ DOCTORS ══ -->
+<section class="bg-cream">
+  <div class="container">
+    <div class="text-center mb-5" data-aos>
+      <div class="sec-eyebrow">Medical Team</div>
+      <h2 class="sec-title">Meet Our <span>Expert Doctors</span></h2>
+      <div class="gold-bar mx-auto"></div>
+    </div>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6 col-lg-4" data-aos>
+        <div class="doc-card"><div class="doc-card-head"><div class="doc-initials">VP</div></div>
+        <div class="doc-card-body"><div class="doc-name">Dr. Vipul Sunilkumar Patni</div><div class="doc-degree">BAMS · CCH</div><div class="doc-spec">General Physician &amp; Surgeon<br/>Child Health Specialist</div>
+        <a href="tel:9421294108" class="doc-cta"><i class="bi bi-telephone-fill"></i> 9421294108</a></div></div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos data-d="2">
+        <div class="doc-card"><div class="doc-card-head"><div class="doc-initials">SP</div></div>
+        <div class="doc-card-body"><div class="doc-name">Dr. Sayyam Ajitkumar Patni</div><div class="doc-degree">MBBS · CPCDM</div><div class="doc-spec">Critical Care Specialist · Intensivist<br/>General Physician · Diabetologist</div>
+        <a href="tel:9766831008" class="doc-cta"><i class="bi bi-telephone-fill"></i> 9766831008</a></div></div>
+      </div>
+      <div class="col-md-6 col-lg-4" data-aos data-d="4">
+        <div class="doc-card"><div class="doc-card-head"><div class="doc-initials">PP</div></div>
+        <div class="doc-card-body"><div class="doc-name">Dr. Pragati Sayyam Patni</div><div class="doc-degree">BHMS · CGO</div><div class="doc-spec">Cosmetologist &amp; Aesthetic Specialist<br/>Gynecologist · Immunization Specialist</div>
+        <a href="contact.html" class="doc-cta"><i class="bi bi-envelope"></i> Contact</a></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+<section>
+  <div class="container">
+    <div class="text-center mb-5" data-aos>
+      <div class="sec-eyebrow">Patient Stories</div>
+      <h2 class="sec-title">What Patients <span>Say</span></h2>
+      <div class="gold-bar mx-auto"></div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos><div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-q">"Dr Sayyam यांनी रात्री ICU मध्ये माझ्या वडिलांवर उत्कृष्ट उपचार केले. खूप आभारी आहोत. खूप चांगली सेवा."</p><div class="testi-name">RAMESH DESHMUKH</div><div class="testi-loc">Tamsa, Hadgaon</div></div></div>
+      <div class="col-md-4" data-aos data-d="2"><div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-q">"Emergency treatment was given immediately without any delay. The doctors and nurses are very caring and helpful."</p><div class="testi-name">SUNITA PATIL</div><div class="testi-loc">Nanded</div></div></div>
+      <div class="col-md-4" data-aos data-d="4"><div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-q">"Dr Pragati यांनी Aesthetic clinic मध्ये खूप चांगले काम केले. परिसरातील सर्वोत्तम सुविधा आहे."</p><div class="testi-name">PRIYA KULKARNI</div><div class="testi-loc">Hadgaon</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<div class="cta-block">
+  <div class="container" data-aos>
+    <h2>Need Immediate Medical Help?</h2>
+    <p>आपत्कालीन स्थितीत एक क्षणही वाया घालवू नका — आम्ही 24 तास तुमच्यासाठी आहोत.</p>
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+      <a href="tel:9421294108" class="btn-gold"><i class="bi bi-telephone-fill"></i> Call: 9421294108</a>
+      <a href="https://wa.me/919421294108" target="_blank" style="display:inline-flex;align-items:center;gap:9px;background:#25D366;color:#fff;padding:14px 30px;border-radius:8px;font-family:'Cinzel',serif;font-weight:700;font-size:.8rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;transition:all .3s;"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+      <a href="contact.html" class="btn-outline-white"><i class="bi bi-envelope"></i> Contact Form</a>
+    </div>
+  </div>
+</div>
+<footer class="site-footer"><div class="footer-glow"></div><div class="container">
+  <div class="footer-top">
+    <div>
+      <img src="logo.jpeg" alt="Mahaveer Hospital" class="footer-logo-img"/>
+      <p class="footer-name">MAHAVEER HOSPITAL</p>
+      <p class="footer-tag">"करुणेने उपचार, विश्वासाने सेवा"</p>
+      <p class="footer-addr">Shivaji Nagar, Main Road, Tamsa<br/>Tq- Hadgaon, Di- Nanded, Maharashtra – 431713</p>
+      <div class="footer-socials">
+        <a href="https://wa.me/919421294108" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="tel:9421294108"><i class="bi bi-telephone-fill"></i></a>
+        <a href="mailto:info@mahavirhospital.com"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+    </div>
+    <div class="footer-links-col"><h6>Navigate</h6><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+    <div class="footer-links-col"><h6>Services</h6><a href="services.html">OPD</a><a href="services.html">ICU Critical Care</a><a href="services.html">Emergency 24×7</a><a href="services.html">Diagnostics</a><a href="services.html">Aesthetic Clinic</a></div>
+    <div class="footer-links-col"><h6>Contact</h6>
+      <a href="tel:9421294108"><i class="bi bi-telephone me-1"></i>9421294108</a>
+      <a href="tel:9766831008"><i class="bi bi-telephone me-1"></i>9766831008</a>
+      <a href="mailto:info@mahavirhospital.com"><i class="bi bi-envelope me-1"></i>Email Us</a>
+      <a href="https://maps.app.goo.gl/ueTT2sujf9vZsmC67" target="_blank"><i class="bi bi-geo-alt me-1"></i>Directions</a>
+    </div>
+  </div>
+  <div class="divider-gold"></div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 <a href="http://kssoftware.infinityfree.me/" target="_blank">KS_SOFTWARE</a>. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    <p class="footer-seo">Mahaveer Hospital · Critical Care Centre &amp; Aesthetic Clinic · Tamsa, Hadgaon, Nanded, Maharashtra 431713</p>
+  </div>
+</div></footer>
+<a href="https://wa.me/919421294108?text=नमस्कार%2C%20मला%20Mahaveer%20Hospital%20बद्दल%20माहिती%20हवी%20आहे." target="_blank" class="wa-fab" title="Chat on WhatsApp"><i class="bi bi-whatsapp"></i><span class="wa-pulse"></span></a>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body></html>
