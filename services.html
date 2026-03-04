@@ -1,13 +1,104 @@
 <!DOCTYPE html><html lang="mr"><head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Services – Mahaveer Hospital | OPD, ICU, Emergency, Diagnostics, Aesthetic Clinic | Tamsa Hadgaon</title><meta name="description" content="All medical services at Mahaveer Hospital Tamsa — OPD, IPD, ICU 24x7, Emergency, Diagnostics, Pharmacy, Nursing, Preventive, Aesthetic Clinic. Hadgaon, Nanded."/>
+<title>Services – Mahaveer Hospital | OPD, ICU, Emergency, Diagnostics, Aesthetic Clinic | Tamsa Hadgaon</title>
+<meta name="description" content="All medical services at Mahaveer Hospital Tamsa — OPD, IPD, ICU 24x7, Emergency, Diagnostics, Pharmacy, Nursing, Preventive, Aesthetic Clinic. Hadgaon, Nanded."/>
 <meta name="keywords" content="Mahaveer Hospital Tamsa Hadgaon Nanded, ICU OPD emergency, Dr Vipul Patni, Dr Sayyam Patni, महावीर हॉस्पिटल"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
 <link rel="stylesheet" href="style.css"/>
-</head><body><div class="ticker-wrap"><div class="ticker-move">
+<style>
+/* ══ BILINGUAL SERVICE CARDS ══ */
+.svc-card{background:#fff;border-radius:16px;border:1px solid #e5e5e5;overflow:hidden;height:100%;transition:all .3s;box-shadow:0 2px 12px rgba(8,23,43,.06)}
+.svc-card:hover{transform:translateY(-5px);box-shadow:0 16px 48px rgba(8,23,43,.13)}
+.svc-card-head{background:linear-gradient(135deg,#08172B,#0B6B6A);padding:1.3rem 1.5rem;display:flex;align-items:center;gap:14px}
+.svc-icon-wrap{width:46px;height:46px;border-radius:10px;background:rgba(232,184,75,.15);border:1px solid rgba(232,184,75,.3);display:flex;align-items:center;justify-content:center;font-size:1.35rem;color:#E8B84B;flex-shrink:0}
+.svc-card-title-en{font-family:'Cinzel',serif;font-size:.86rem;font-weight:400;color:#fff;letter-spacing:.4px;line-height:1.3}
+.svc-card-title-mr{font-family:'Noto Sans Devanagari',sans-serif;font-size:.82rem;font-weight:700;color:rgba(232,184,75,.9);margin-top:3px;line-height:1.3}
+.svc-card-body{padding:1.2rem 1.5rem}
+
+/* Bilingual list */
+.svc-list{list-style:none;padding:0;margin:0}
+.svc-list li{padding:8px 0;border-bottom:1px solid #f2f2f2;display:flex;gap:10px;align-items:flex-start}
+.svc-list li:last-child{border-bottom:none;padding-bottom:0}
+.svc-bullet{color:#E8B84B;font-size:.55rem;margin-top:6px;flex-shrink:0;line-height:1}
+.item-text{display:flex;flex-direction:column;gap:2px}
+.item-en{font-size:.88rem;color:#1a2a3a;font-weight:400;line-height:1.35;font-family:'Crimson Pro',serif}
+.item-mr{font-family:'Noto Sans Devanagari',sans-serif;font-size:.84rem;color:#222;font-weight:700;line-height:1.5}
+
+/* ══ AESTHETIC SERVICES GRID ══ */
+.aesth-section{background:linear-gradient(160deg,#f8f6f0,#fff)}
+.aesth-cat-card{background:#fff;border-radius:18px;border:1px solid #e8e0d0;overflow:hidden;height:100%;box-shadow:0 3px 18px rgba(8,23,43,.07);transition:all .3s}
+.aesth-cat-card:hover{transform:translateY(-4px);box-shadow:0 14px 42px rgba(8,23,43,.12)}
+.aesth-cat-head{padding:1.2rem 1.5rem;display:flex;align-items:center;gap:12px}
+.aesth-cat-head.skin{background:linear-gradient(135deg,#2d7d6f,#0B6B6A)}
+.aesth-cat-head.cosm{background:linear-gradient(135deg,#7d3a6f,#a0508f)}
+.aesth-cat-head.hair{background:linear-gradient(135deg,#3a5f7d,#2a4a6a)}
+.aesth-cat-head.body{background:linear-gradient(135deg,#7d5a2d,#a07840)}
+.aesth-icon-wrap{width:44px;height:44px;border-radius:10px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:1.4rem;color:#fff;flex-shrink:0}
+.aesth-cat-title-en{font-family:'Cinzel',serif;font-size:.82rem;font-weight:400;color:#fff;letter-spacing:.4px;line-height:1.3}
+.aesth-cat-title-mr{font-family:'Noto Sans Devanagari',sans-serif;font-size:.80rem;font-weight:700;color:rgba(255,255,255,.9);margin-top:2px;line-height:1.3}
+.aesth-cat-body{padding:1rem 1.4rem}
+.aesth-list{list-style:none;padding:0;margin:0}
+.aesth-list li{padding:7px 0;border-bottom:1px solid #f4f0ea;display:flex;gap:10px;align-items:flex-start}
+.aesth-list li:last-child{border-bottom:none;padding-bottom:0}
+.aesth-bullet{font-size:.5rem;margin-top:7px;flex-shrink:0;line-height:1}
+.aesth-bullet-skin{color:#0B6B6A}
+.aesth-bullet-cosm{color:#a0508f}
+.aesth-bullet-hair{color:#2a4a6a}
+.aesth-bullet-body{color:#a07840}
+.aesth-item-en{font-size:.87rem;color:#2a2a2a;font-weight:400;line-height:1.35;font-family:'Crimson Pro',serif}
+.aesth-item-mr{font-family:'Noto Sans Devanagari',sans-serif;font-size:.84rem;color:#111;font-weight:700;line-height:1.5}
+
+/* ══════════════════════════════════════════════
+   GLOBAL: MARATHI = BOLD  |  ENGLISH = NORMAL
+   ══════════════════════════════════════════════ */
+
+/* Every element that carries Noto Sans Devanagari */
+*[class*="mr"],
+.item-mr,
+.aesth-item-mr,
+.svc-card-title-mr,
+.aesth-cat-title-mr,
+.footer-tag,
+.page-hero-sub,
+[style*="Noto Sans Devanagari"] {
+  font-family: 'Noto Sans Devanagari', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* English elements — explicitly normal */
+.item-en,
+.aesth-item-en,
+.svc-card-title-en,
+.aesth-cat-title-en,
+.sec-lead,
+.doc-spec,
+.doc-degree {
+  font-weight: 400 !important;
+}
+
+/* Doctor names — Marathi line bold, English line normal */
+.doc-name { font-weight: 400 !important; }          /* English name */
+.doc-name.mr { font-weight: 700 !important; }       /* if a Marathi name variant is ever added */
+
+/* Inline Devanagari paragraphs */
+p[style*="Noto Sans Devanagari"],
+div[style*="Noto Sans Devanagari"],
+span[style*="Noto Sans Devanagari"] {
+  font-weight: 700 !important;
+}
+
+/* Inline English/Crimson Pro paragraphs */
+p[style*="Crimson Pro"],
+div[style*="Crimson Pro"] {
+  font-weight: 400 !important;
+}
+</style>
+</head><body>
+
+<div class="ticker-wrap"><div class="ticker-move">
 <span><i class="bi bi-telephone-fill"></i> Emergency 24×7 : 9421294108</span>
 <span><i class="bi bi-heart-pulse-fill"></i> ICU &amp; Critical Care Available</span>
 <span><i class="bi bi-telephone-fill"></i> Dr Sayyam Patni : 9766831008</span>
@@ -19,14 +110,22 @@
 <span><i class="bi bi-geo-alt-fill"></i> Tamsa · Hadgaon · Nanded 431713</span>
 <span><i class="bi bi-truck"></i> Ambulance On Call</span>
 </div></div>
+
 <nav class="site-nav" id="mainNav"><div class="nav-container">
   <a href="index.html" class="nav-brand">
     <img src="logo.jpeg" alt="Mahaveer Hospital Logo" class="nav-logo-img"/>
     <div class="brand-words"><span class="brand-main">MAHAVEER HOSPITAL</span><span class="brand-sub">Critical Care · Aesthetic Clinic · Tamsa</span></div>
   </a>
   <button class="nav-hamburger" id="navToggle"><span></span><span></span><span></span></button>
-  <ul class="nav-menu" id="navMenu"><li><a href="index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li><li><a href="services.html" class="nav-link  active">Services</a></li><li><a href="contact.html" class="nav-link">Contact</a></li><li><a href="tel:9421294108" class="nav-emergency"><i class="bi bi-telephone-fill"></i> Emergency</a></li></ul>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="services.html" class="nav-link active">Services</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+    <li><a href="tel:9421294108" class="nav-emergency"><i class="bi bi-telephone-fill"></i> Emergency</a></li>
+  </ul>
 </div></nav>
+
 <div class="page-hero"><div class="container page-hero-inner">
   <div class="breadcrumb"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i> Services</div>
   <h1 class="page-hero-title">Our Medical <span>Services</span></h1>
@@ -35,159 +134,411 @@
 
 <section><div class="container">
   <div class="text-center mb-5" data-aos>
-    <div class="sec-eyebrow">Departments</div>
+    <div class="sec-eyebrow">Departments · सर्व विभाग</div>
     <h2 class="sec-title">Comprehensive Care <span>Under One Roof</span></h2>
     <div class="gold-bar mx-auto"></div>
     <p class="sec-lead mx-auto">From primary outpatient consultations to intensive critical care — Mahaveer Hospital handles all medical needs at Tamsa, Hadgaon and surrounding areas.</p>
   </div>
+
   <div class="row g-4">
 
+    <!-- OPD -->
     <div class="col-md-6 col-lg-4" data-aos>
-      <div class="svc-card"><div class="svc-card-head"><div class="svc-icon-wrap"><i class="bi bi-person-check"></i></div>
-        <div><p class="svc-card-title">OPD Consultation</p><span class="svc-badge">बाह्यरुग्ण सेवा</span></div></div>
-      <div class="svc-card-body"><ul class="svc-list">
-        <li>General Medicine Consultation</li><li>Fever, Cold, Cough &amp; Infections</li>
-        <li>Diabetes &amp; Hypertension Care</li><li>Gastric, Liver &amp; Kidney Disorders</li>
-        <li>Respiratory Problems (Asthma, COPD)</li><li>Minor Procedures &amp; Wound Care</li>
-        <li>Preventive Health Check-ups</li></ul>
-      <div class="svc-marathi-tag">सर्वसाधारण तपासणी · मधुमेह व रक्तदाब · लहान शस्त्रक्रिया · आरोग्य पॅकेज</div>
-      </div></div>
+      <div class="svc-card">
+        <div class="svc-card-head">
+          <div class="svc-icon-wrap"><i class="bi bi-person-check"></i></div>
+          <div>
+            <div class="svc-card-title-en">OPD Consultation</div>
+            <div class="svc-card-title-mr">बाह्यरुग्ण सेवा (OPD)</div>
+          </div>
+        </div>
+        <div class="svc-card-body">
+          <ul class="svc-list">
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">General Medicine Consultation</span><span class="item-mr">सर्वसाधारण वैद्यकीय तपासणी</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Fever, Cold, Cough &amp; Infections</span><span class="item-mr">ताप, सर्दी, खोकला व संसर्ग उपचार</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Diabetes &amp; Hypertension Care</span><span class="item-mr">मधुमेह व रक्तदाब उपचार</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Gastric, Liver &amp; Kidney Disorders</span><span class="item-mr">पोट, यकृत व मूत्रपिंड विकार</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Respiratory Problems (Asthma, COPD)</span><span class="item-mr">श्वसन समस्या (दमा, COPD)</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Minor Procedures &amp; Wound Care</span><span class="item-mr">लहान शस्त्रक्रिया व जखम उपचार</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Preventive Health Check-ups</span><span class="item-mr">आरोग्य तपासणी पॅकेज</span></span></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
+    <!-- IPD -->
     <div class="col-md-6 col-lg-4" data-aos data-d="1">
-      <div class="svc-card"><div class="svc-card-head"><div class="svc-icon-wrap"><i class="bi bi-hospital"></i></div>
-        <div><p class="svc-card-title">IPD – 8 Beds</p><span class="svc-badge">आंतररुग्ण सेवा</span></div></div>
-      <div class="svc-card-body"><ul class="svc-list">
-        <li>24×7 Inpatient Care</li><li>Medical Admissions</li>
-        <li>IV Fluids &amp; Injectable Therapy</li><li>Oxygen Therapy</li>
-        <li>Regular Nursing Care</li><li>Daily Doctor Rounds</li>
-        <li>Diet &amp; Nutrition Support</li></ul>
-      <div class="svc-marathi-tag">24 तास दाखल सेवा · सलाईन व इंजेक्शन · ऑक्सिजन · आहार मार्गदर्शन</div>
-      </div></div>
+      <div class="svc-card">
+        <div class="svc-card-head">
+          <div class="svc-icon-wrap"><i class="bi bi-hospital"></i></div>
+          <div>
+            <div class="svc-card-title-en">IPD – 8 Beds</div>
+            <div class="svc-card-title-mr">आंतररुग्ण विभाग (IPD – ८ बेड)</div>
+          </div>
+        </div>
+        <div class="svc-card-body">
+          <ul class="svc-list">
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">24×7 Inpatient Care</span><span class="item-mr">24 तास रुग्णालयात दाखल सेवा</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Medical Admissions</span><span class="item-mr">औषधोपचारासाठी दाखल सुविधा</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">IV Fluids &amp; Injectable Therapy</span><span class="item-mr">सलाईन व इंजेक्शन उपचार</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Oxygen Therapy</span><span class="item-mr">ऑक्सिजन सुविधा</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Regular Nursing Care</span><span class="item-mr">प्रशिक्षित परिचारिका सेवा</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Daily Doctor Rounds</span><span class="item-mr">डॉक्टरांची नियमित भेट</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Diet &amp; Nutrition Support</span><span class="item-mr">आहार व पोषण मार्गदर्शन</span></span></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
+    <!-- ICU -->
     <div class="col-md-6 col-lg-4" data-aos data-d="2">
-      <div class="svc-card"><div class="svc-card-head"><div class="svc-icon-wrap"><i class="bi bi-heart-pulse-fill"></i></div>
-        <div><p class="svc-card-title">ICU – 2 Beds</p><span class="svc-badge">अतिदक्षता विभाग</span></div></div>
-      <div class="svc-card-body"><ul class="svc-list">
-        <li>24×7 Critical Care</li><li>Cardiac &amp; Respiratory Monitoring</li>
-        <li>Oxygen &amp; Ventilator Support</li><li>Emergency Resuscitation</li>
-        <li>Management of Sepsis &amp; Shock</li><li>Trained ICU Nursing Staff</li></ul>
-      <div class="svc-marathi-tag">24 तास गंभीर रुग्ण · व्हेंटिलेटर · हृदय निरीक्षण · प्रशिक्षित ICU परिचारिका</div>
-      </div></div>
+      <div class="svc-card">
+        <div class="svc-card-head">
+          <div class="svc-icon-wrap"><i class="bi bi-heart-pulse-fill"></i></div>
+          <div>
+            <div class="svc-card-title-en">ICU – 2 Beds</div>
+            <div class="svc-card-title-mr">अतिदक्षता विभाग (ICU – २ बेड)</div>
+          </div>
+        </div>
+        <div class="svc-card-body">
+          <ul class="svc-list">
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">24×7 Critical Care</span><span class="item-mr">24 तास गंभीर रुग्ण सेवा</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Cardiac &amp; Respiratory Monitoring</span><span class="item-mr">हृदय व श्वसन निरीक्षण</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Oxygen &amp; Ventilator Support</span><span class="item-mr">ऑक्सिजन व व्हेंटिलेटर सुविधा</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Emergency Resuscitation</span><span class="item-mr">आपत्कालीन उपचार</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Management of Sepsis &amp; Shock</span><span class="item-mr">सेप्सिस व शॉक व्यवस्थापन</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Trained ICU Nursing Staff</span><span class="item-mr">प्रशिक्षित ICU परिचारिका</span></span></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
+    <!-- Emergency -->
     <div class="col-md-6 col-lg-4" data-aos data-d="3">
-      <div class="svc-card"><div class="svc-card-head"><div class="svc-icon-wrap"><i class="bi bi-lightning-charge-fill"></i></div>
-        <div><p class="svc-card-title">Emergency &amp; Casualty</p><span class="svc-badge">आपत्कालीन सेवा 24×7</span></div></div>
-      <div class="svc-card-body"><ul class="svc-list">
-        <li>24×7 Emergency Care</li><li>Accident &amp; Trauma Management</li>
-        <li>Chest Pain &amp; Breathlessness</li><li>Stroke First Aid &amp; Stabilization</li>
-        <li>Poisoning &amp; Snake Bite Care</li><li>Basic Life Support (BLS)</li></ul>
-      <div class="svc-marathi-tag">अपघात व ट्रॉमा · छातीत दुखणे · पक्षाघात · सर्पदंश · प्राथमिक जीवनरक्षक उपचार</div>
-      </div></div>
+      <div class="svc-card">
+        <div class="svc-card-head">
+          <div class="svc-icon-wrap"><i class="bi bi-lightning-charge-fill"></i></div>
+          <div>
+            <div class="svc-card-title-en">Emergency &amp; Casualty</div>
+            <div class="svc-card-title-mr">आपत्कालीन सेवा 24×7</div>
+          </div>
+        </div>
+        <div class="svc-card-body">
+          <ul class="svc-list">
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">24×7 Emergency Care</span><span class="item-mr">24 तास आपत्कालीन सेवा</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Accident &amp; Trauma Management</span><span class="item-mr">अपघात व ट्रॉमा उपचार</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Chest Pain &amp; Breathlessness</span><span class="item-mr">छातीत दुखणे व श्वासोच्छ्वासाचा त्रास</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Stroke First Aid &amp; Stabilization</span><span class="item-mr">पक्षाघात प्राथमिक उपचार</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Poisoning &amp; Snake Bite Care</span><span class="item-mr">विषबाधा व सर्पदंश उपचार</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Basic Life Support (BLS)</span><span class="item-mr">प्राथमिक जीवनरक्षक उपचार</span></span></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
+    <!-- Diagnostics -->
     <div class="col-md-6 col-lg-4" data-aos data-d="4">
-      <div class="svc-card"><div class="svc-card-head"><div class="svc-icon-wrap"><i class="bi bi-clipboard2-pulse-fill"></i></div>
-        <div><p class="svc-card-title">Diagnostic Services</p><span class="svc-badge">निदान तपासण्या</span></div></div>
-      <div class="svc-card-body"><ul class="svc-list">
-        <li>ECG (Electrocardiography)</li><li>Digital X-Ray</li>
-        <li>Blood Tests (CBC, Sugar, Lipid, LFT, RFT)</li><li>Urine Examination</li>
-        <li>Rapid Tests (Malaria, Dengue, Typhoid)</li><li>Bedside Investigations</li></ul>
-      <div class="svc-marathi-tag">ईसीजी · डिजिटल एक्स-रे · रक्त तपासणी · मलेरिया, डेंग्यू, टायफॉईड</div>
-      </div></div>
+      <div class="svc-card">
+        <div class="svc-card-head">
+          <div class="svc-icon-wrap"><i class="bi bi-clipboard2-pulse-fill"></i></div>
+          <div>
+            <div class="svc-card-title-en">Diagnostic Services</div>
+            <div class="svc-card-title-mr">निदान सेवा</div>
+          </div>
+        </div>
+        <div class="svc-card-body">
+          <ul class="svc-list">
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">ECG (Electrocardiography)</span><span class="item-mr">ईसीजी तपासणी</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Digital X-Ray</span><span class="item-mr">डिजिटल एक्स-रे</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Blood Tests (CBC, Sugar, Lipid, LFT, RFT)</span><span class="item-mr">रक्त तपासणी (CBC, साखर, लिपिड, LFT, RFT)</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Urine Examination</span><span class="item-mr">लघवी तपासणी</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Rapid Tests (Malaria, Dengue, Typhoid)</span><span class="item-mr">मलेरिया, डेंग्यू, टायफॉईड चाचण्या</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Bedside Investigations</span><span class="item-mr">बेडसाईड तपासण्या</span></span></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
+    <!-- Pharmacy -->
     <div class="col-md-6 col-lg-4" data-aos data-d="5">
-      <div class="svc-card"><div class="svc-card-head"><div class="svc-icon-wrap"><i class="bi bi-capsule-pill"></i></div>
-        <div><p class="svc-card-title">Pharmacy &amp; Injection Room</p><span class="svc-badge">औषध दुकान व इंजेक्शन</span></div></div>
-      <div class="svc-card-body"><ul class="svc-list">
-        <li>In-house Medical Store</li><li>24×7 Emergency Medicines</li>
-        <li>Injectable Drug Administration</li><li>Nebulization Facility</li></ul>
-      <div class="svc-marathi-tag">रुग्णालयात औषध दुकान · इंजेक्शन सेवा · नेब्युलायझेशन</div>
-      </div></div>
+      <div class="svc-card">
+        <div class="svc-card-head">
+          <div class="svc-icon-wrap"><i class="bi bi-capsule-pill"></i></div>
+          <div>
+            <div class="svc-card-title-en">Pharmacy &amp; Injection Room</div>
+            <div class="svc-card-title-mr">औषध विभाग व इंजेक्शन कक्ष</div>
+          </div>
+        </div>
+        <div class="svc-card-body">
+          <ul class="svc-list">
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">In-house Medical Store</span><span class="item-mr">रुग्णालयात औषध दुकान</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">24×7 Emergency Medicines</span><span class="item-mr">आपत्कालीन औषधांची उपलब्धता</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Injectable Drug Administration</span><span class="item-mr">इंजेक्शन सेवा</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Nebulization Facility</span><span class="item-mr">नेब्युलायझेशन सुविधा</span></span></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
+    <!-- Nursing -->
     <div class="col-md-6 col-lg-4" data-aos>
-      <div class="svc-card"><div class="svc-card-head"><div class="svc-icon-wrap"><i class="bi bi-bandaid-fill"></i></div>
-        <div><p class="svc-card-title">Nursing &amp; Patient Care</p><span class="svc-badge">परिचारिका सेवा</span></div></div>
-      <div class="svc-card-body"><ul class="svc-list">
-        <li>24×7 Trained Nursing Staff</li><li>Vital Monitoring</li>
-        <li>Wound Dressing &amp; Catheter Care</li><li>Patient Hygiene &amp; Comfort</li></ul>
-      <div class="svc-marathi-tag">24 तास परिचारिका · जीवनचिन्ह निरीक्षण · जखम पट्टी · रुग्ण काळजी</div>
-      </div></div>
+      <div class="svc-card">
+        <div class="svc-card-head">
+          <div class="svc-icon-wrap"><i class="bi bi-bandaid-fill"></i></div>
+          <div>
+            <div class="svc-card-title-en">Nursing &amp; Patient Care</div>
+            <div class="svc-card-title-mr">परिचारिका व रुग्ण सेवा</div>
+          </div>
+        </div>
+        <div class="svc-card-body">
+          <ul class="svc-list">
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">24×7 Trained Nursing Staff</span><span class="item-mr">24 तास परिचारिका सेवा</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Vital Monitoring</span><span class="item-mr">जीवनचिन्ह निरीक्षण</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Wound Dressing &amp; Catheter Care</span><span class="item-mr">जखम पट्टी व कॅथेटर देखभाल</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Patient Hygiene &amp; Comfort Care</span><span class="item-mr">रुग्ण स्वच्छता व काळजी</span></span></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
+    <!-- Preventive -->
     <div class="col-md-6 col-lg-4" data-aos data-d="1">
-      <div class="svc-card"><div class="svc-card-head"><div class="svc-icon-wrap"><i class="bi bi-shield-fill-check"></i></div>
-        <div><p class="svc-card-title">Preventive &amp; Wellness</p><span class="svc-badge">प्रतिबंधात्मक सेवा</span></div></div>
-      <div class="svc-card-body"><ul class="svc-list">
-        <li>Health Check-up Packages</li><li>Diabetes Screening Camps</li>
-        <li>Blood Pressure Monitoring</li><li>Vaccination Guidance</li>
-        <li>Lifestyle Disease Counseling</li></ul>
-      <div class="svc-marathi-tag">आरोग्य तपासणी · मधुमेह शिबिरे · लसीकरण · जीवनशैली सल्ला</div>
-      </div></div>
+      <div class="svc-card">
+        <div class="svc-card-head">
+          <div class="svc-icon-wrap"><i class="bi bi-shield-fill-check"></i></div>
+          <div>
+            <div class="svc-card-title-en">Preventive &amp; Wellness</div>
+            <div class="svc-card-title-mr">प्रतिबंधात्मक व आरोग्य सेवा</div>
+          </div>
+        </div>
+        <div class="svc-card-body">
+          <ul class="svc-list">
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Health Check-up Packages</span><span class="item-mr">आरोग्य तपासणी पॅकेज</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Diabetes Screening Camps</span><span class="item-mr">मधुमेह तपासणी शिबिरे</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Blood Pressure Monitoring</span><span class="item-mr">रक्तदाब तपासणी</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Vaccination Guidance</span><span class="item-mr">लसीकरण मार्गदर्शन</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Lifestyle Disease Counseling</span><span class="item-mr">जीवनशैली विकार सल्ला</span></span></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
+    <!-- Support Services -->
     <div class="col-md-6 col-lg-4" data-aos data-d="2">
-      <div class="svc-card"><div class="svc-card-head"><div class="svc-icon-wrap"><i class="bi bi-truck-front-fill"></i></div>
-        <div><p class="svc-card-title">Support Services</p><span class="svc-badge">सहाय्यक सेवा</span></div></div>
-      <div class="svc-card-body"><ul class="svc-list">
-        <li>Ambulance Service (On Call)</li><li>Patient Transfer Facility</li>
-        <li>Telephonic Medical Guidance</li><li>Referral to Specialists</li></ul>
-      <div class="svc-marathi-tag">रुग्णवाहिका · रुग्ण स्थलांतर · फोनद्वारे सल्ला · तज्ज्ञांकडे रेफरल</div>
-      </div></div>
+      <div class="svc-card">
+        <div class="svc-card-head">
+          <div class="svc-icon-wrap"><i class="bi bi-truck-front-fill"></i></div>
+          <div>
+            <div class="svc-card-title-en">Support Services</div>
+            <div class="svc-card-title-mr">सहाय्यक सेवा</div>
+          </div>
+        </div>
+        <div class="svc-card-body">
+          <ul class="svc-list">
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Ambulance Service (On Call)</span><span class="item-mr">रुग्णवाहिका सेवा (फोनवर)</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Patient Transfer Facility</span><span class="item-mr">रुग्ण स्थलांतर सुविधा</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Telephonic Medical Guidance</span><span class="item-mr">फोनद्वारे वैद्यकीय सल्ला</span></span></li>
+            <li><span class="svc-bullet">✦</span><span class="item-text"><span class="item-en">Referral to Specialists</span><span class="item-mr">तज्ज्ञांकडे रेफरल सेवा</span></span></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
   </div>
 </div></section>
 
-<!-- AESTHETIC SPECIAL -->
-<section class="bg-cream"><div class="container"><div class="row g-5 align-items-center">
-  <div class="col-lg-6" data-aos>
-    <div class="sec-eyebrow">Special Department</div>
-    <h2 class="sec-title">Aesthetic <span>Clinic</span></h2>
-    <div class="gold-bar"></div>
-    <p style="font-size:1.05rem;color:var(--muted);line-height:1.85;margin-bottom:1.5rem;font-family:'Crimson Pro',serif;">Our Aesthetic Clinic, led by Dr. Pragati Sayyam Patni (BHMS, CGO), offers professional cosmetology, skin care, and women's health services right here in Tamsa — services previously only available in cities.</p>
-    <div class="row g-3">
-      <div class="col-6"><div style="background:#fff;border-radius:12px;padding:1.2rem;border:1px solid var(--border);text-align:center;"><i class="bi bi-stars" style="font-size:1.6rem;color:var(--gold);display:block;margin-bottom:.5rem;"></i><p style="font-family:'Cinzel',serif;font-size:.78rem;font-weight:700;color:var(--navy);margin:0;letter-spacing:.3px;">Cosmetology</p></div></div>
-      <div class="col-6"><div style="background:#fff;border-radius:12px;padding:1.2rem;border:1px solid var(--border);text-align:center;"><i class="bi bi-heart-fill" style="font-size:1.6rem;color:var(--gold);display:block;margin-bottom:.5rem;"></i><p style="font-family:'Cinzel',serif;font-size:.78rem;font-weight:700;color:var(--navy);margin:0;letter-spacing:.3px;">Gynecology</p></div></div>
-      <div class="col-6"><div style="background:#fff;border-radius:12px;padding:1.2rem;border:1px solid var(--border);text-align:center;"><i class="bi bi-syringe" style="font-size:1.6rem;color:var(--teal);display:block;margin-bottom:.5rem;"></i><p style="font-family:'Cinzel',serif;font-size:.78rem;font-weight:700;color:var(--navy);margin:0;letter-spacing:.3px;">Immunization</p></div></div>
-      <div class="col-6"><div style="background:#fff;border-radius:12px;padding:1.2rem;border:1px solid var(--border);text-align:center;"><i class="bi bi-person-heart" style="font-size:1.6rem;color:var(--teal);display:block;margin-bottom:.5rem;"></i><p style="font-family:'Cinzel',serif;font-size:.78rem;font-weight:700;color:var(--navy);margin:0;letter-spacing:.3px;">Women's Wellness</p></div></div>
-    </div>
-  </div>
-  <div class="col-lg-5 offset-lg-1" data-aos data-d="2">
-    <div style="background:linear-gradient(160deg,var(--navy),var(--teal));border-radius:20px;padding:2.5rem;text-align:center;color:#fff;">
-      <div class="doc-initials mx-auto" style="margin-bottom:1.2rem;">PP</div>
-      <p style="font-family:'Cinzel',serif;font-size:1.15rem;font-weight:700;color:#fff;margin-bottom:3px;letter-spacing:.5px;">Dr. Pragati Sayyam Patni</p>
-      <p style="font-family:'Cinzel',serif;font-size:.68rem;font-weight:700;letter-spacing:2px;color:var(--gold-lt);text-transform:uppercase;margin-bottom:.8rem;">BHMS · CGO</p>
-      <p style="font-size:.88rem;color:rgba(255,255,255,.65);margin-bottom:1.8rem;font-family:'Crimson Pro',serif;">Cosmetologist &amp; Aesthetic Specialist<br/>Gynecologist · Immunization Specialist</p>
-      <a href="contact.html" class="btn-gold"><i class="bi bi-calendar-check"></i> Book Appointment</a>
-    </div>
-  </div>
-</div></div></section>
+<!-- AESTHETIC SPECIAL – Doctor Profile + Sub-services -->
+<section class="bg-cream"><div class="container">
 
+  <!-- Doctor intro row -->
+  <div class="row g-5 align-items-center mb-5">
+    <div class="col-lg-6" data-aos>
+      <div class="sec-eyebrow">Special Department · विशेष विभाग</div>
+      <h2 class="sec-title">Aesthetic <span>Clinic</span></h2>
+      <div class="gold-bar"></div>
+      <p style="font-size:1.05rem;color:var(--muted);line-height:1.85;margin-bottom:.4rem;font-family:'Crimson Pro',serif;font-weight:400">Our Aesthetic Clinic, led by Dr. Pragati Sayyam Patni (BHMS, CGO), offers professional cosmetology, skin care, and women's health services right here in Tamsa — services previously only available in cities.</p>
+      <p style="font-family:'Noto Sans Devanagari',sans-serif;font-size:.9rem;color:#555;margin-bottom:1.5rem;font-weight:700;line-height:1.9">आमचे Aesthetic Clinic — Dr. Pragati Sayyam Patni यांच्या मार्गदर्शनाखाली — cosmetology, skin care व महिला आरोग्य सेवा तामसामध्येच उपलब्ध करून देते.</p>
+      <div class="row g-3">
+        <div class="col-6">
+          <div style="background:#fff;border-radius:12px;padding:1.2rem;border:1px solid var(--border);text-align:center;">
+            <i class="bi bi-stars" style="font-size:1.6rem;color:var(--gold);display:block;margin-bottom:.5rem;"></i>
+            <p style="font-family:'Cinzel',serif;font-size:.78rem;font-weight:400;color:var(--navy);margin:0 0 3px;letter-spacing:.3px;">Cosmetology</p>
+            <p style="font-family:'Noto Sans Devanagari',sans-serif;font-size:.78rem;color:#444;margin:0;font-weight:700">कॉस्मेटोलॉजी</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div style="background:#fff;border-radius:12px;padding:1.2rem;border:1px solid var(--border);text-align:center;">
+            <i class="bi bi-heart-fill" style="font-size:1.6rem;color:var(--gold);display:block;margin-bottom:.5rem;"></i>
+            <p style="font-family:'Cinzel',serif;font-size:.78rem;font-weight:400;color:var(--navy);margin:0 0 3px;letter-spacing:.3px;">Gynecology</p>
+            <p style="font-family:'Noto Sans Devanagari',sans-serif;font-size:.78rem;color:#444;margin:0;font-weight:700">स्त्रीरोग</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div style="background:#fff;border-radius:12px;padding:1.2rem;border:1px solid var(--border);text-align:center;">
+            <i class="bi bi-syringe" style="font-size:1.6rem;color:var(--teal);display:block;margin-bottom:.5rem;"></i>
+            <p style="font-family:'Cinzel',serif;font-size:.78rem;font-weight:400;color:var(--navy);margin:0 0 3px;letter-spacing:.3px;">Immunization</p>
+            <p style="font-family:'Noto Sans Devanagari',sans-serif;font-size:.78rem;color:#444;margin:0;font-weight:700">लसीकरण</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div style="background:#fff;border-radius:12px;padding:1.2rem;border:1px solid var(--border);text-align:center;">
+            <i class="bi bi-person-heart" style="font-size:1.6rem;color:var(--teal);display:block;margin-bottom:.5rem;"></i>
+            <p style="font-family:'Cinzel',serif;font-size:.78rem;font-weight:400;color:var(--navy);margin:0 0 3px;letter-spacing:.3px;">Women's Wellness</p>
+            <p style="font-family:'Noto Sans Devanagari',sans-serif;font-size:.78rem;color:#444;margin:0;font-weight:700">महिला आरोग्य</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-5 offset-lg-1" data-aos data-d="2">
+      <div style="background:linear-gradient(160deg,var(--navy),var(--teal));border-radius:20px;padding:2.5rem;text-align:center;color:#fff;">
+        <div class="doc-initials mx-auto" style="margin-bottom:1.2rem;">PP</div>
+        <!-- Doctor name: English = normal weight via Cinzel 400, Marathi line = bold Noto -->
+        <p style="font-family:'Cinzel',serif;font-size:1.15rem;font-weight:400;color:#fff;margin-bottom:3px;letter-spacing:.5px;">Dr. Pragati Sayyam Patni</p>
+        <p style="font-family:'Cinzel',serif;font-size:.68rem;font-weight:700;letter-spacing:2px;color:var(--gold-lt);text-transform:uppercase;margin-bottom:.8rem;">BHMS · CGO</p>
+        <!-- English specialisation line -->
+        <p style="font-size:.88rem;color:rgba(255,255,255,.65);margin-bottom:.4rem;font-family:'Crimson Pro',serif;font-weight:400">Cosmetologist &amp; Aesthetic Specialist<br/>Gynecologist · Immunization Specialist</p>
+        <!-- Marathi specialisation line -->
+        <p style="font-family:'Noto Sans Devanagari',sans-serif;font-size:.84rem;color:rgba(255,255,255,.82);margin-bottom:1.8rem;font-weight:700;line-height:1.8">कॉस्मेटोलॉजिस्ट व सौंदर्य तज्ज्ञ<br/>स्त्रीरोग तज्ज्ञ · लसीकरण तज्ज्ञ</p>
+        <a href="contact.html" class="btn-gold"><i class="bi bi-calendar-check"></i> Book Appointment</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ AESTHETIC SUB-SERVICES GRID ══ -->
+  <div class="text-center mb-4" data-aos>
+    <div class="sec-eyebrow">Aesthetic Treatments · सौंदर्य उपचार सेवा</div>
+    <h3 class="sec-title" style="font-size:clamp(1.3rem,3vw,1.9rem);">All Aesthetic <span>Services</span></h3>
+    <div class="gold-bar mx-auto"></div>
+  </div>
+
+  <div class="row g-4">
+
+    <!-- 🌿 Skin Care -->
+    <div class="col-md-6 col-lg-3" data-aos>
+      <div class="aesth-cat-card">
+        <div class="aesth-cat-head skin">
+          <div class="aesth-icon-wrap"><i class="bi bi-flower1"></i></div>
+          <div>
+            <div class="aesth-cat-title-en">Skin Care Services</div>
+            <div class="aesth-cat-title-mr">त्वचा उपचार सेवा</div>
+          </div>
+        </div>
+        <div class="aesth-cat-body">
+          <ul class="aesth-list">
+            <li><span class="svc-bullet aesth-bullet-skin">✦</span><span class="item-text"><span class="aesth-item-en">Acne Treatment</span><span class="aesth-item-mr">मुरुम उपचार</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-skin">✦</span><span class="item-text"><span class="aesth-item-en">Scar Removal</span><span class="aesth-item-mr">व्रण/डाग कमी करणे</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-skin">✦</span><span class="item-text"><span class="aesth-item-en">Pigmentation Treatment</span><span class="aesth-item-mr">त्वचेवरील काळे डाग उपचार</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-skin">✦</span><span class="item-text"><span class="aesth-item-en">Skin Brightening</span><span class="aesth-item-mr">त्वचा उजळविणे</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-skin">✦</span><span class="item-text"><span class="aesth-item-en">Anti-Aging Treatment</span><span class="aesth-item-mr">वार्धक्यविरोधी उपचार</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-skin">✦</span><span class="item-text"><span class="aesth-item-en">Chemical Peeling</span><span class="aesth-item-mr">केमिकल पील उपचार</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-skin">✦</span><span class="item-text"><span class="aesth-item-en">Medi-Facial</span><span class="aesth-item-mr">वैद्यकीय फेशियल</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-skin">✦</span><span class="item-text"><span class="aesth-item-en">Hydrafacial</span><span class="aesth-item-mr">हायड्राफेशियल उपचार</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-skin">✦</span><span class="item-text"><span class="aesth-item-en">Skin Polishing</span><span class="aesth-item-mr">त्वचा पॉलिशिंग</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 💉 Cosmetic & Advanced -->
+    <div class="col-md-6 col-lg-3" data-aos data-d="1">
+      <div class="aesth-cat-card">
+        <div class="aesth-cat-head cosm">
+          <div class="aesth-icon-wrap"><i class="bi bi-stars"></i></div>
+          <div>
+            <div class="aesth-cat-title-en">Cosmetic &amp; Advanced</div>
+            <div class="aesth-cat-title-mr">कॉस्मेटिक व प्रगत उपचार</div>
+          </div>
+        </div>
+        <div class="aesth-cat-body">
+          <ul class="aesth-list">
+            <li><span class="svc-bullet aesth-bullet-cosm">✦</span><span class="item-text"><span class="aesth-item-en">Botox Treatment</span><span class="aesth-item-mr">बोटॉक्स उपचार</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-cosm">✦</span><span class="item-text"><span class="aesth-item-en">Dermal Fillers</span><span class="aesth-item-mr">डर्मल फिलर्स</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-cosm">✦</span><span class="item-text"><span class="aesth-item-en">PRP Therapy</span><span class="aesth-item-mr">पीआरपी थेरपी</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-cosm">✦</span><span class="item-text"><span class="aesth-item-en">Vampire Facial</span><span class="aesth-item-mr">व्हॅम्पायर फेशियल</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-cosm">✦</span><span class="item-text"><span class="aesth-item-en">Mesotherapy</span><span class="aesth-item-mr">मेसोथेरपी</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-cosm">✦</span><span class="item-text"><span class="aesth-item-en">Thread Lift</span><span class="aesth-item-mr">थ्रेड लिफ्ट</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-cosm">✦</span><span class="item-text"><span class="aesth-item-en">Non-Surgical Face Lift</span><span class="aesth-item-mr">शस्त्रक्रिया न करता चेहरा लिफ्ट</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 💇 Hair & Trichology -->
+    <div class="col-md-6 col-lg-3" data-aos data-d="2">
+      <div class="aesth-cat-card">
+        <div class="aesth-cat-head hair">
+          <div class="aesth-icon-wrap"><i class="bi bi-person-bounding-box"></i></div>
+          <div>
+            <div class="aesth-cat-title-en">Hair &amp; Trichology</div>
+            <div class="aesth-cat-title-mr">केस व ट्रायकोलॉजी सेवा</div>
+          </div>
+        </div>
+        <div class="aesth-cat-body">
+          <ul class="aesth-list">
+            <li><span class="svc-bullet aesth-bullet-hair">✦</span><span class="item-text"><span class="aesth-item-en">Hair Fall Treatment</span><span class="aesth-item-mr">केस गळती उपचार</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-hair">✦</span><span class="item-text"><span class="aesth-item-en">PRP for Hair</span><span class="aesth-item-mr">केसांसाठी पीआरपी</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-hair">✦</span><span class="item-text"><span class="aesth-item-en">Hair Growth Therapy</span><span class="aesth-item-mr">केस वाढ उपचार</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-hair">✦</span><span class="item-text"><span class="aesth-item-en">Dandruff Treatment</span><span class="aesth-item-mr">कोंडा उपचार</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-hair">✦</span><span class="item-text"><span class="aesth-item-en">Hair Mesotherapy</span><span class="aesth-item-mr">केस मेसोथेरपी</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 👩‍⚕️ Body & Wellness -->
+    <div class="col-md-6 col-lg-3" data-aos data-d="3">
+      <div class="aesth-cat-card">
+        <div class="aesth-cat-head body">
+          <div class="aesth-icon-wrap"><i class="bi bi-person-heart"></i></div>
+          <div>
+            <div class="aesth-cat-title-en">Body &amp; Wellness</div>
+            <div class="aesth-cat-title-mr">शरीर व सौंदर्य उपचार</div>
+          </div>
+        </div>
+        <div class="aesth-cat-body">
+          <ul class="aesth-list">
+            <li><span class="svc-bullet aesth-bullet-body">✦</span><span class="item-text"><span class="aesth-item-en">Body Contouring</span><span class="aesth-item-mr">शरीर आकार सुधारणा</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-body">✦</span><span class="item-text"><span class="aesth-item-en">Fat Reduction Treatment</span><span class="aesth-item-mr">चरबी कमी करणे</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-body">✦</span><span class="item-text"><span class="aesth-item-en">Stretch Mark Treatment</span><span class="aesth-item-mr">स्ट्रेच मार्क उपचार</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-body">✦</span><span class="item-text"><span class="aesth-item-en">Laser Hair Reduction</span><span class="aesth-item-mr">लेझर केस काढणे</span></span></li>
+            <li><span class="svc-bullet aesth-bullet-body">✦</span><span class="item-text"><span class="aesth-item-en">Tattoo Removal</span><span class="aesth-item-mr">टॅटू काढणे</span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /row aesthetic sub-services -->
+
+</div></section>
+
+<!-- CTA -->
 <div style="background:linear-gradient(135deg,var(--navy),var(--teal));padding:60px 0;text-align:center">
   <div class="container" data-aos>
     <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.4rem,3vw,2.2rem);font-weight:700;color:#fff;margin-bottom:.6rem;letter-spacing:1px;">Need a Consultation or Emergency Help?</h2>
-    <p style="font-family:'Noto Sans Devanagari',sans-serif;color:rgba(255,255,255,.6);margin-bottom:2rem;">आमच्या तज्ज्ञ डॉक्टरांशी संपर्क साधा — 24 तास उपलब्ध.</p>
+    <p style="font-family:'Noto Sans Devanagari',sans-serif;color:rgba(255,255,255,.82);margin-bottom:2rem;font-weight:700;font-size:.92rem">आमच्या तज्ज्ञ डॉक्टरांशी संपर्क साधा — 24 तास उपलब्ध.</p>
     <div class="d-flex justify-content-center flex-wrap gap-3">
       <a href="tel:9421294108" class="btn-gold"><i class="bi bi-telephone-fill"></i> Call: 9421294108</a>
       <a href="contact.html" class="btn-teal"><i class="bi bi-envelope"></i> Contact Us</a>
     </div>
   </div>
 </div>
+
 <footer class="site-footer"><div class="footer-glow"></div><div class="container">
   <div class="footer-top">
     <div><img src="logo.jpeg" alt="Mahaveer Hospital" class="footer-logo-img"/>
-      <p class="footer-name">MAHAVEER HOSPITAL</p><p class="footer-tag">"करुणेने उपचार, विश्वासाने सेवा"</p>
+      <p class="footer-name">MAHAVEER HOSPITAL</p>
+      <p class="footer-tag">"करुणेने उपचार, विश्वासाने सेवा"</p>
       <p class="footer-addr">Shivaji Nagar, Main Road, Tamsa<br/>Tq- Hadgaon, Di- Nanded, Maharashtra – 431713</p>
       <div class="footer-socials"><a href="https://wa.me/919421294108" target="_blank"><i class="bi bi-whatsapp"></i></a><a href="tel:9421294108"><i class="bi bi-telephone-fill"></i></a><a href="mailto:info@mahavirhospital.com"><i class="bi bi-envelope-fill"></i></a></div>
     </div>
     <div class="footer-links-col"><h6>Navigate</h6><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
     <div class="footer-links-col"><h6>Services</h6><a href="services.html">OPD</a><a href="services.html">ICU Critical Care</a><a href="services.html">Emergency 24×7</a><a href="services.html">Diagnostics</a><a href="services.html">Aesthetic Clinic</a></div>
-    <div class="footer-links-col"><h6>Contact</h6><a href="tel:9421294108"><i class="bi bi-telephone me-1"></i>9421294108</a><a href="tel:9766831008"><i class="bi bi-telephone me-1"></i>9766831008</a><a href="mailto:info@mahavirhospital.com"><i class="bi bi-envelope me-1"></i>Email Us</a><a href="https://maps.app.goo.gl/ueTT2sujf9vZsmC67" target="_blank"><i class="bi bi-geo-alt me-1"></i>Directions</a></div>
+    <div class="footer-links-col"><h6>Contact</h6>
+      <a href="tel:9421294108"><i class="bi bi-telephone me-1"></i>9421294108</a>
+      <a href="tel:9766831008"><i class="bi bi-telephone me-1"></i>9766831008</a>
+      <a href="mailto:info@mahavirhospital.com"><i class="bi bi-envelope me-1"></i>Email Us</a>
+      <a href="https://maps.app.goo.gl/ueTT2sujf9vZsmC67" target="_blank"><i class="bi bi-geo-alt me-1"></i>Directions</a>
+    </div>
   </div>
   <div class="divider-gold"></div>
   <div class="footer-bottom">
@@ -195,6 +546,8 @@
     <p class="footer-seo">Mahaveer Hospital · Critical Care Centre &amp; Aesthetic Clinic · Tamsa, Hadgaon, Nanded, Maharashtra 431713</p>
   </div>
 </div></footer>
+
 <a href="https://wa.me/919421294108?text=नमस्कार%2C%20मला%20Mahaveer%20Hospital%20बद्दल%20माहिती%20हवी%20आहे." target="_blank" class="wa-fab"><i class="bi bi-whatsapp"></i><span class="wa-pulse"></span></a>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="app.js"></script></body></html>
+<script src="app.js"></script>
+</body></html>

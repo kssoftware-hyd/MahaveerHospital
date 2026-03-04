@@ -1,0 +1,77 @@
+/* ══════════════════════════════════════════════════════════════
+   MAHAVEER HOSPITAL — UNIVERSAL LANGUAGE WEIGHT PATCH
+   Link this AFTER style.css on every page:
+   <link rel="stylesheet" href="lang-patch.css"/>
+   ══════════════════════════════════════════════════════════════
+
+   RULE:  Marathi (Devanagari) text  →  font-weight: 700  (Bold)
+          English text               →  font-weight: 400  (Normal)
+          Doctor names (English)     →  font-weight: 400  (Normal)
+   ══════════════════════════════════════════════════════════════ */
+
+/* ── 1. ALL MARATHI CLASS-BASED ELEMENTS → BOLD ── */
+.mr,
+p.mr,
+div.mr,
+span.mr,
+.item-mr,
+.aesth-item-mr,
+.dept-title-mr,
+.svc-card-title-mr,
+.aesth-cat-title-mr,
+.why-h5-mr,
+.svc-prev-mr,
+.doc-spec-mr,
+.hero-tagline,
+.hero-bold,
+.vt,
+.vq,
+.footer-tag,
+.page-hero-sub {
+  font-family: 'Noto Sans Devanagari', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+/* ── 2. ALL INLINE NOTO SANS DEVANAGARI ELEMENTS → BOLD ── */
+[style*="Noto Sans Devanagari"] {
+  font-weight: 700 !important;
+}
+
+/* ── 3. ENGLISH CLASS-BASED ELEMENTS → NORMAL ── */
+.en,
+p.en,
+div.en,
+span.en,
+.item-en,
+.aesth-item-en,
+.dept-title-en,
+.svc-card-title-en,
+.aesth-cat-title-en,
+.why-card h5,
+.why-card p.en,
+.svc-prev h6,
+.svc-prev p.en,
+.doc-spec-en,
+.hero-p,
+.sec-lead,
+.value-card h6,
+.value-card p,
+.dm-name,
+.dm-sp,
+.doc-spec,
+.ci-row p {
+  font-weight: 400 !important;
+}
+
+/* ── 4. INLINE ENGLISH (CRIMSON PRO) ELEMENTS → NORMAL ── */
+[style*="Crimson Pro"] {
+  font-weight: 400 !important;
+}
+
+/* ── 5. DOCTOR NAMES → English = normal, degrees = normal ── */
+.doc-name   { font-weight: 400 !important; }
+.doc-degree { font-weight: 400 !important; }
+
+/* Aesthetic clinic doctor card (inline styles) */
+/* The English name line in the dark card uses Cinzel → normal */
+/* The Marathi spec line uses Noto → already covered by rule 2  */

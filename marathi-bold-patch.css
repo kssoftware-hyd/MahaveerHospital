@@ -1,0 +1,47 @@
+/* ══════════════════════════════════════════════════
+   MAHAVEER HOSPITAL — MARATHI BOLD / ENGLISH NORMAL
+   Add this block inside each page's <style> tag
+   OR link this as a separate stylesheet AFTER style.css
+   ══════════════════════════════════════════════════ */
+
+/* ── MARATHI TEXT → BOLD ── */
+.mr,
+p.mr,
+div.mr,
+span.mr,
+.item-mr,
+.dept-title-mr,
+.why-h5-mr,
+.svc-prev-mr,
+.doc-spec-mr,
+.hero-tagline,
+.hero-bold,
+.vt,
+.vq,
+.footer-tag {
+  font-weight: 700 !important;
+}
+
+/* ── ENGLISH TEXT → NORMAL (400) ── */
+.en,
+p.en,
+div.en,
+span.en,
+.item-en,
+.dept-title-en,
+.why-card h5,
+.why-card p.en,
+.svc-prev h6,
+.svc-prev p.en,
+.doc-spec-en,
+.hero-p,
+.sec-lead {
+  font-weight: 400 !important;
+}
+
+/* ── INLINE NOTO SANS DEVANAGARI ELEMENTS ──
+   For any <p> or <span> using inline style with
+   Noto Sans Devanagari that don't have a .mr class */
+[style*="Noto Sans Devanagari"] {
+  font-weight: 700 !important;
+}

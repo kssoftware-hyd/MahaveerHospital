@@ -1,142 +1,396 @@
 <!DOCTYPE html><html lang="mr"><head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>About Us – Mahaveer Hospital | Critical Care & Aesthetic Clinic | Tamsa Hadgaon Nanded</title><meta name="description" content="About Mahaveer Hospital Tamsa — our vision, doctors, and commitment to affordable quality healthcare in Hadgaon, Nanded, Maharashtra."/>
+<title>About Us / आमच्याबद्दल – Mahaveer Hospital | Critical Care &amp; Aesthetic Clinic | Tamsa Hadgaon Nanded</title>
+<meta name="description" content="About Mahaveer Hospital Tamsa — our vision, doctors, and commitment to affordable quality healthcare in Hadgaon, Nanded, Maharashtra."/>
 <meta name="keywords" content="Mahaveer Hospital Tamsa Hadgaon Nanded, ICU OPD emergency, Dr Vipul Patni, Dr Sayyam Patni, महावीर हॉस्पिटल"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="style.css"/><style>.astat-box{background:#fff;border-radius:14px;padding:1.6rem;border:1px solid var(--border);text-align:center;height:100%}.asn{font-family:'Cinzel',serif;font-size:2.4rem;font-weight:900;color:var(--gold);display:block;line-height:1}.asl{font-size:.72rem;color:var(--muted);margin-top:5px;font-family:'Cinzel',serif;letter-spacing:1px;text-transform:uppercase}.vision-block{background:linear-gradient(160deg,var(--navy),var(--navy-2));border-radius:18px;padding:2.5rem;color:#fff}.vision-block h4{font-family:'Cinzel',serif;color:var(--gold-lt);margin-bottom:1.3rem;font-size:1.2rem;letter-spacing:.5px}.vt{font-family:'Noto Sans Devanagari',sans-serif;font-size:.88rem;color:rgba(255,255,255,.8);line-height:2.1}.vq{font-family:'Noto Sans Devanagari',sans-serif;font-size:1rem;font-weight:700;color:var(--gold-lt);border-left:3px solid var(--gold);padding-left:14px;margin-top:1.3rem;line-height:1.7}.pill{display:inline-flex;align-items:center;gap:7px;background:var(--gold-pale);border:1px solid var(--gold-border);border-radius:30px;padding:6px 14px;font-size:.78rem;color:var(--navy);font-family:'Cinzel',serif;font-weight:600;margin:4px;letter-spacing:.3px}.pill i{color:var(--gold)}.value-card{background:#fff;border-radius:14px;padding:1.4rem;border:1px solid var(--border);display:flex;gap:14px;align-items:flex-start;transition:all .3s}.value-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px)}.v-ico{width:42px;height:42px;border-radius:10px;background:var(--gold-pale);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}.value-card h6{font-family:'Cinzel',serif;font-size:.82rem;font-weight:700;color:var(--navy);letter-spacing:.3px;margin-bottom:3px}.value-card p{font-size:.86rem;color:var(--muted);line-height:1.6;margin:0}</style>
-</head><body><div class="ticker-wrap"><div class="ticker-move">
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* ══════════════════════════════════════════════════
+   LANGUAGE SYSTEM — About Us Page
+   English  → Crimson Pro / Cinzel, font-weight: 400
+   Marathi  → Noto Sans Devanagari, font-weight: 700
+   Pattern  → English line first, Marathi line below
+   ══════════════════════════════════════════════════ */
+
+/* --- Stat boxes --- */
+.astat-box{background:#fff;border-radius:14px;padding:1.6rem;border:1px solid var(--border);text-align:center;height:100%}
+.asn{font-family:'Cinzel',serif;font-size:2.4rem;font-weight:900;color:var(--gold);display:block;line-height:1}
+.asl-en{font-size:.7rem;color:var(--muted);margin-top:4px;font-family:'Cinzel',serif;letter-spacing:1px;text-transform:uppercase;font-weight:400;display:block}
+.asl-mr{font-size:.72rem;color:var(--teal);margin-top:2px;font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;display:block}
+
+/* --- Vision block --- */
+.vision-block{background:linear-gradient(160deg,var(--navy),var(--navy-2));border-radius:18px;padding:2.5rem;color:#fff;height:100%}
+.vision-hdg{margin-bottom:1.4rem}
+.vision-hdg .en{font-family:'Cinzel',serif;color:var(--gold-lt);font-size:1.1rem;font-weight:700;letter-spacing:.5px;display:flex;align-items:center;gap:10px}
+.vision-hdg .mr{font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.84rem;color:rgba(232,184,75,.65);display:block;margin-top:3px;padding-left:28px}
+
+/* bilingual vision text — English para then Marathi para */
+.vp-en{font-family:'Crimson Pro',serif;font-size:.95rem;color:rgba(255,255,255,.65);line-height:1.8;font-weight:400;margin-bottom:4px}
+.vp-mr{font-family:'Noto Sans Devanagari',sans-serif;font-size:.88rem;color:rgba(255,255,255,.88);font-weight:700;line-height:1.9;margin-bottom:1rem}
+
+.vq-wrap{border-left:3px solid var(--gold);padding-left:14px;margin-top:1.2rem}
+.vq-en{font-family:'Crimson Pro',serif;font-size:.98rem;font-style:italic;color:rgba(255,255,255,.6);font-weight:400;line-height:1.65;margin-bottom:3px}
+.vq-mr{font-family:'Noto Sans Devanagari',sans-serif;font-size:.95rem;font-weight:700;color:var(--gold-lt);line-height:1.75}
+
+/* --- Pills --- */
+.pill{display:inline-flex;align-items:center;gap:7px;background:var(--gold-pale);border:1px solid var(--gold-border);border-radius:30px;padding:6px 14px;font-size:.76rem;color:var(--navy);font-family:'Cinzel',serif;font-weight:400;margin:4px;letter-spacing:.3px}
+.pill i{color:var(--gold)}
+.pill .mr-pill{font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.78em;color:var(--teal);margin-left:3px}
+
+/* --- Value cards --- */
+.value-card{background:#fff;border-radius:14px;padding:1.4rem;border:1px solid var(--border);display:flex;gap:14px;align-items:flex-start;transition:all .3s;height:100%}
+.value-card:hover{box-shadow:var(--sh-md);transform:translateY(-3px)}
+.v-ico{width:44px;height:44px;border-radius:10px;background:var(--gold-pale);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;font-size:1.25rem;flex-shrink:0}
+.vc-body{flex:1}
+.vc-body .en-h{font-family:'Cinzel',serif;font-size:.82rem;font-weight:400;color:var(--navy);letter-spacing:.3px;margin-bottom:2px}
+.vc-body .mr-h{font-family:'Noto Sans Devanagari',sans-serif;font-size:.8rem;font-weight:700;color:var(--teal);margin-bottom:5px}
+.vc-body .en-p{font-family:'Crimson Pro',serif;font-size:.87rem;color:var(--muted);line-height:1.6;font-weight:400;margin-bottom:2px}
+.vc-body .mr-p{font-family:'Noto Sans Devanagari',sans-serif;font-size:.82rem;font-weight:700;color:#555;line-height:1.7;margin-bottom:0}
+
+/* --- Doctor name bilingual --- */
+.doc-name-en{font-family:'Cinzel',serif;font-weight:400;font-size:.95rem;color:var(--navy);letter-spacing:.3px;margin-bottom:1px}
+.doc-name-mr{font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.88rem;color:var(--teal);margin-bottom:.4rem}
+.doc-spec-en{font-family:'Crimson Pro',serif;font-size:.88rem;color:var(--muted);font-weight:400;line-height:1.55;margin-bottom:2px}
+.doc-spec-mr{font-family:'Noto Sans Devanagari',sans-serif;font-size:.84rem;font-weight:700;color:#444;line-height:1.6;margin-bottom:.3rem}
+
+/* --- Intro paragraph bilingual --- */
+.intro-en{font-family:'Crimson Pro',serif;font-size:1.05rem;color:var(--muted);line-height:1.9;font-weight:400;margin-bottom:3px}
+.intro-mr{font-family:'Noto Sans Devanagari',sans-serif;font-size:.9rem;font-weight:700;color:#555;line-height:1.9;margin-bottom:1rem}
+
+/* --- Section subtitle bilingual --- */
+.sec-sub-bi{text-align:center;margin-top:6px}
+.sec-sub-bi .en{font-family:'Crimson Pro',serif;font-weight:400;font-size:1rem;color:var(--muted)}
+.sec-sub-bi .mr{font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.9rem;color:#555;display:block;margin-top:3px}
+
+/* --- Page hero bilingual --- */
+.hero-sub-bi .en{font-family:'Crimson Pro',serif;font-weight:400;font-size:1rem}
+.hero-sub-bi .mr{font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.95rem;display:block;margin-top:4px}
+
+/* CTA band Marathi */
+.cta-mr{font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.92rem;color:rgba(255,255,255,.72);margin-bottom:2rem}
+.cta-en{font-family:'Crimson Pro',serif;font-size:1.05rem;font-weight:400;color:rgba(255,255,255,.62);margin-bottom:4px}
+
+/* footer tag */
+.footer-tag{font-family:'Noto Sans Devanagari',sans-serif;font-weight:700}
+</style>
+</head><body>
+
+<!-- TICKER -->
+<div class="ticker-wrap"><div class="ticker-move">
 <span><i class="bi bi-telephone-fill"></i> Emergency 24×7 : 9421294108</span>
-<span><i class="bi bi-heart-pulse-fill"></i> ICU &amp; Critical Care Available</span>
+<span><i class="bi bi-heart-pulse-fill"></i> ICU &amp; Critical Care — <strong style="font-family:'Noto Sans Devanagari',sans-serif">अतिदक्षता सेवा उपलब्ध</strong></span>
 <span><i class="bi bi-telephone-fill"></i> Dr Sayyam Patni : 9766831008</span>
 <span><i class="bi bi-geo-alt-fill"></i> Tamsa · Hadgaon · Nanded 431713</span>
-<span><i class="bi bi-truck"></i> Ambulance On Call</span>
+<span><i class="bi bi-truck"></i> Ambulance On Call — <strong style="font-family:'Noto Sans Devanagari',sans-serif">रुग्णवाहिका सेवा</strong></span>
 <span><i class="bi bi-telephone-fill"></i> Emergency 24×7 : 9421294108</span>
-<span><i class="bi bi-heart-pulse-fill"></i> ICU &amp; Critical Care Available</span>
+<span><i class="bi bi-heart-pulse-fill"></i> ICU &amp; Critical Care — <strong style="font-family:'Noto Sans Devanagari',sans-serif">अतिदक्षता सेवा उपलब्ध</strong></span>
 <span><i class="bi bi-telephone-fill"></i> Dr Sayyam Patni : 9766831008</span>
 <span><i class="bi bi-geo-alt-fill"></i> Tamsa · Hadgaon · Nanded 431713</span>
-<span><i class="bi bi-truck"></i> Ambulance On Call</span>
+<span><i class="bi bi-truck"></i> Ambulance On Call — <strong style="font-family:'Noto Sans Devanagari',sans-serif">रुग्णवाहिका सेवा</strong></span>
 </div></div>
+
+<!-- NAV -->
 <nav class="site-nav" id="mainNav"><div class="nav-container">
   <a href="index.html" class="nav-brand">
     <img src="logo.jpeg" alt="Mahaveer Hospital Logo" class="nav-logo-img"/>
     <div class="brand-words"><span class="brand-main">MAHAVEER HOSPITAL</span><span class="brand-sub">Critical Care · Aesthetic Clinic · Tamsa</span></div>
   </a>
   <button class="nav-hamburger" id="navToggle"><span></span><span></span><span></span></button>
-  <ul class="nav-menu" id="navMenu"><li><a href="index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link  active">About</a></li><li><a href="services.html" class="nav-link">Services</a></li><li><a href="contact.html" class="nav-link">Contact</a></li><li><a href="tel:9421294108" class="nav-emergency"><i class="bi bi-telephone-fill"></i> Emergency</a></li></ul>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link active">About</a></li>
+    <li><a href="services.html" class="nav-link">Services</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+    <li><a href="tel:9421294108" class="nav-emergency"><i class="bi bi-telephone-fill"></i> Emergency</a></li>
+  </ul>
 </div></nav>
+
+<!-- PAGE HERO -->
 <div class="page-hero"><div class="container page-hero-inner">
   <div class="breadcrumb"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i> About Us</div>
-  <h1 class="page-hero-title">About <span>Mahaveer Hospital</span></h1>
-  <p class="page-hero-sub">करुणेने उपचार, विश्वासाने सेवा — तामसा, हदगाव, नांदेड</p>
+  <h1 class="page-hero-title">
+    About <span>Mahaveer Hospital</span>
+    <span style="display:block;font-family:'Noto Sans Devanagari',sans-serif;font-size:.48em;font-weight:700;color:rgba(232,184,75,.82);margin-top:6px;letter-spacing:0">महावीर हॉस्पिटलबद्दल</span>
+  </h1>
+  <div class="hero-sub-bi page-hero-sub">
+    <span class="en">Healing with compassion, serving with trust — Tamsa, Hadgaon, Nanded</span>
+    <span class="mr">करुणेने उपचार, विश्वासाने सेवा — तामसा, हदगाव, नांदेड</span>
+  </div>
 </div></div>
 
-<!-- INTRO -->
-<section><div class="container"><div class="row g-5 align-items-center">
-  <div class="col-lg-6" data-aos>
-    <div class="sec-eyebrow">Who We Are</div>
-    <h2 class="sec-title">Healing the <span>Heart of Maharashtra</span></h2>
-    <div class="gold-bar"></div>
-    <p style="font-size:1.05rem;color:var(--muted);line-height:1.9;margin-bottom:1rem;font-family:'Crimson Pro',serif;">Mahaveer Hospital, Critical Care Centre and Aesthetic Clinic is located at Shivaji Nagar, Main Road, Tamsa, Tq- Hadgaon, Di- Nanded, Maharashtra – 431713.</p>
-    <p style="font-size:1.05rem;color:var(--muted);line-height:1.9;margin-bottom:1rem;font-family:'Crimson Pro',serif;">We deliver city-standard healthcare — emergency, critical care, diagnostics, and aesthetics — to the rural communities of Marathwada at genuinely affordable costs.</p>
-    <p style="font-size:1.05rem;color:var(--muted);line-height:1.9;margin-bottom:1.5rem;font-family:'Crimson Pro',serif;">Mahaveer Hospital stands for pure healing, trusted medical care, strength, compassion, and complete protection for every patient who walks through our doors.</p>
-    <div class="d-flex flex-wrap">
-      <span class="pill"><i class="bi bi-check-circle-fill"></i> 24×7 Emergency &amp; ICU</span>
-      <span class="pill"><i class="bi bi-check-circle-fill"></i> Expert Doctors</span>
-      <span class="pill"><i class="bi bi-check-circle-fill"></i> Affordable</span>
-      <span class="pill"><i class="bi bi-check-circle-fill"></i> Clean &amp; Safe</span>
-      <span class="pill"><i class="bi bi-check-circle-fill"></i> Digital Records</span>
-      <span class="pill"><i class="bi bi-check-circle-fill"></i> Ambulance</span>
-    </div>
-  </div>
-  <div class="col-lg-6" data-aos data-d="2">
-    <div class="row g-3 mb-4 stats-row">
-      <div class="col-6"><div class="astat-box"><span class="asn" data-count="24" data-suffix="×7">24×7</span><div class="asl">Emergency</div></div></div>
-      <div class="col-6"><div class="astat-box"><span class="asn" data-count="3" data-suffix="">3</span><div class="asl">Expert Doctors</div></div></div>
-      <div class="col-6"><div class="astat-box"><span class="asn" data-count="8" data-suffix="">8</span><div class="asl">IPD Beds</div></div></div>
-      <div class="col-6"><div class="astat-box"><span class="asn" data-count="2" data-suffix="">2</span><div class="asl">ICU Beds</div></div></div>
-    </div>
-    <div style="background:linear-gradient(135deg,var(--navy),var(--teal));border-radius:14px;padding:1.5rem;color:#fff;text-align:center;">
-      <img src="logo.jpeg" alt="Mahaveer Hospital Logo" style="width:80px;height:80px;border-radius:50%;object-fit:cover;border:2px solid var(--gold-border);margin-bottom:1rem;box-shadow:0 4px 20px rgba(8,23,43,.4);"/>
-      <p style="font-family:'Cinzel',serif;font-size:1.1rem;font-weight:700;color:var(--gold-lt);margin-bottom:3px;">MAHAVEER HOSPITAL</p>
-      <p style="font-size:.82rem;color:rgba(255,255,255,.55);margin:0;">Critical Care Centre &amp; Aesthetic Clinic<br/>Shivaji Nagar, Main Road, Tamsa<br/>Hadgaon · Nanded 431713</p>
-    </div>
-  </div>
-</div></div></section>
+<!-- ══ INTRO ══ -->
+<section><div class="container">
+<div class="row g-5 align-items-center">
 
-<!-- VISION -->
-<section class="bg-cream"><div class="container"><div class="row g-5 align-items-center">
+  <!-- Left: Text -->
+  <div class="col-lg-6" data-aos>
+    <div class="sec-eyebrow">Who We Are · आम्ही कोण आहोत</div>
+    <h2 class="sec-title">Healing the <span>Heart of Maharashtra</span></h2>
+    <p style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.9rem;color:var(--teal);margin-top:4px;margin-bottom:1rem">महाराष्ट्राच्या हृदयात आरोग्यसेवा</p>
+    <div class="gold-bar"></div>
+
+    <!-- Para 1 -->
+    <p class="intro-en">Mahaveer Hospital, Critical Care Centre and Aesthetic Clinic is located at Shivaji Nagar, Main Road, Tamsa, Tq- Hadgaon, Di- Nanded, Maharashtra – 431713.</p>
+    <p class="intro-mr">महावीर हॉस्पिटल, क्रिटिकल केअर सेंटर व Aesthetic Clinic — शिवाजी नगर, मुख्य रस्ता, तामसा, ता- हदगाव, जि- नांदेड, महाराष्ट्र – ४३१७१३.</p>
+
+    <!-- Para 2 -->
+    <p class="intro-en">We deliver city-standard healthcare — emergency, critical care, diagnostics, and aesthetics — to the rural communities of Marathwada at genuinely affordable costs.</p>
+    <p class="intro-mr">आम्ही मराठवाड्यातील ग्रामीण समुदायांना शहरी दर्जाची आरोग्यसेवा — आपत्कालीन, क्रिटिकल केअर, निदान व सौंदर्य उपचार — परवडणाऱ्या किमतीत देतो.</p>
+
+    <!-- Para 3 -->
+    <p class="intro-en">Mahaveer Hospital stands for pure healing, trusted medical care, strength, compassion, and complete protection for every patient who walks through our doors.</p>
+    <p class="intro-mr" style="margin-bottom:1.5rem">महावीर हॉस्पिटल म्हणजे शुद्ध उपचार, विश्वासार्ह वैद्यकीय सेवा, सामर्थ्य, करुणा आणि प्रत्येक रुग्णाचे संपूर्ण संरक्षण.</p>
+
+    <!-- Pills -->
+    <div class="d-flex flex-wrap">
+      <span class="pill"><i class="bi bi-check-circle-fill"></i> 24×7 Emergency &amp; ICU <span class="mr-pill">/ आपत्कालीन</span></span>
+      <span class="pill"><i class="bi bi-check-circle-fill"></i> Expert Doctors <span class="mr-pill">/ तज्ज्ञ डॉक्टर</span></span>
+      <span class="pill"><i class="bi bi-check-circle-fill"></i> Affordable <span class="mr-pill">/ परवडणारे</span></span>
+      <span class="pill"><i class="bi bi-check-circle-fill"></i> Clean &amp; Safe <span class="mr-pill">/ स्वच्छ व सुरक्षित</span></span>
+      <span class="pill"><i class="bi bi-check-circle-fill"></i> Digital Records <span class="mr-pill">/ डिजिटल नोंदी</span></span>
+      <span class="pill"><i class="bi bi-check-circle-fill"></i> Ambulance <span class="mr-pill">/ रुग्णवाहिका</span></span>
+    </div>
+  </div>
+
+  <!-- Right: Stats + Logo card -->
+  <div class="col-lg-6" data-aos data-d="2">
+    <div class="row g-3 mb-4">
+      <div class="col-6">
+        <div class="astat-box">
+          <span class="asn">24×7</span>
+          <span class="asl-en">Emergency</span>
+          <span class="asl-mr">आपत्कालीन सेवा</span>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="astat-box">
+          <span class="asn">3</span>
+          <span class="asl-en">Expert Doctors</span>
+          <span class="asl-mr">तज्ज्ञ डॉक्टर</span>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="astat-box">
+          <span class="asn">8</span>
+          <span class="asl-en">IPD Beds</span>
+          <span class="asl-mr">IPD बेड</span>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="astat-box">
+          <span class="asn">2</span>
+          <span class="asl-en">ICU Beds</span>
+          <span class="asl-mr">ICU बेड</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:linear-gradient(135deg,var(--navy),var(--teal));border-radius:16px;padding:1.8rem;color:#fff;text-align:center;">
+      <img src="logo.jpeg" alt="Mahaveer Hospital Logo" style="width:82px;height:82px;border-radius:50%;object-fit:cover;border:2px solid rgba(232,184,75,.4);margin-bottom:1rem;box-shadow:0 4px 20px rgba(8,23,43,.4);"/>
+      <p style="font-family:'Cinzel',serif;font-size:1.1rem;font-weight:700;color:#E8B84B;margin-bottom:3px;letter-spacing:.5px">MAHAVEER HOSPITAL</p>
+      <p style="font-family:'Crimson Pro',serif;font-size:.88rem;color:rgba(255,255,255,.55);font-weight:400;margin-bottom:3px">Critical Care Centre &amp; Aesthetic Clinic<br/>Shivaji Nagar, Main Road, Tamsa<br/>Hadgaon · Nanded 431713</p>
+      <p style="font-family:'Noto Sans Devanagari',sans-serif;font-size:.82rem;font-weight:700;color:rgba(255,255,255,.45);margin:0">क्रिटिकल केअर सेंटर व Aesthetic Clinic<br/>तामसा · हदगाव · नांदेड</p>
+    </div>
+  </div>
+
+</div>
+</div></section>
+
+<!-- ══ VISION ══ -->
+<section class="bg-cream"><div class="container">
+<div class="row g-5 align-items-stretch">
+
+  <!-- Vision block -->
   <div class="col-lg-6" data-aos>
     <div class="vision-block">
-      <h4><i class="bi bi-eye-fill me-2"></i>आमचा दृष्टीकोन (Our Vision)</h4>
-      <div class="vt">ग्रामीण भागातील प्रत्येक व्यक्तीला परवडणारी, दर्जेदार आणि सन्मानपूर्वक आरोग्यसेवा मिळावी, हाच आमचा दृष्टीकोन आहे.<br/><br/>शहरातील प्रगत वैद्यकीय सुविधा गावागावात पोहोचवण्याचा आमचा प्रयत्न आहे.<br/><br/>आर्थिक परिस्थिती किंवा भौगोलिक अडचणींमुळे कोणीही उपचारांपासून वंचित राहू नये, ही आमची ठाम भूमिका आहे.<br/><br/>रुग्णसेवेत करुणा, प्रामाणिकपणा आणि मानवता या मूल्यांना सर्वोच्च स्थान देणे, हे आमचे ध्येय आहे.<br/><br/>प्रशिक्षित डॉक्टर, आधुनिक तंत्रज्ञान आणि विश्वासार्ह सेवा यांचा संगम साधणे, हे आमचे उद्दिष्ट आहे.<br/><br/>ग्रामीण आरोग्य व्यवस्थेत सकारात्मक बदल घडवून आणणे हेच आमचे अंतिम ध्येय आहे.</div>
-      <div class="vq">"शहरातील उपचार, गावातील माणसांसाठी — विश्वास, सेवा आणि करुणा."</div>
-    </div>
-  </div>
-  <div class="col-lg-6" data-aos data-d="2">
-    <div class="sec-eyebrow">Our Values &amp; Logo</div>
-    <h2 class="sec-title">Symbols of <span>Healing</span></h2>
-    <div class="gold-bar"></div>
-    <div class="d-flex flex-column gap-3">
-      <div class="value-card"><div class="v-ico" style="color:var(--gold);">🪷</div><div><h6>Lotus Flower</h6><p>Symbol of purity, peace &amp; spiritual strength. Represents new life, healing &amp; positivity — the divine meaning of Mahaveer.</p></div></div>
-      <div class="value-card"><div class="v-ico" style="color:var(--teal);">⚕️</div><div><h6>Healing Staff with Serpent (Caduceus)</h6><p>Ancient universal symbol of medicine &amp; healthcare — representing our commitment to medical excellence and care.</p></div></div>
-      <div class="value-card"><div class="v-ico" style="color:var(--gold);">✨</div><div><h6>Golden Colour</h6><p>Symbol of excellence and trust — gold represents our unwavering promise to deliver the highest standard of care to every patient.</p></div></div>
-    </div>
-  </div>
-</div></div></section>
+      <div class="vision-hdg">
+        <div class="en"><i class="bi bi-eye-fill"></i> Our Vision</div>
+        <span class="mr">आमचा दृष्टीकोन</span>
+      </div>
 
-<!-- DOCTORS FULL -->
-<section><div class="container">
-  <div class="text-center mb-5" data-aos>
-    <div class="sec-eyebrow">Medical Professionals</div>
-    <h2 class="sec-title">Our Expert <span>Doctors</span></h2>
-    <div class="gold-bar mx-auto"></div>
-    <p class="sec-lead mx-auto">A dedicated team of qualified doctors committed to delivering the best care to every patient.</p>
+      <!-- Vision points: English first, Marathi below -->
+      <p class="vp-en">Every person in rural areas deserves affordable, quality, and dignified healthcare — that is our vision.</p>
+      <p class="vp-mr">ग्रामीण भागातील प्रत्येक व्यक्तीला परवडणारी, दर्जेदार आणि सन्मानपूर्वक आरोग्यसेवा मिळावी, हाच आमचा दृष्टीकोन आहे.</p>
+
+      <p class="vp-en">We strive to bring advanced medical facilities from cities to every village.</p>
+      <p class="vp-mr">शहरातील प्रगत वैद्यकीय सुविधा गावागावात पोहोचवण्याचा आमचा प्रयत्न आहे.</p>
+
+      <p class="vp-en">Our firm stand is that no one should be deprived of treatment due to financial or geographical difficulties.</p>
+      <p class="vp-mr">आर्थिक परिस्थिती किंवा भौगोलिक अडचणींमुळे कोणीही उपचारांपासून वंचित राहू नये, ही आमची ठाम भूमिका आहे.</p>
+
+      <p class="vp-en">Our goal is to place compassion, honesty, and humanity at the highest position in patient care.</p>
+      <p class="vp-mr">रुग्णसेवेत करुणा, प्रामाणिकपणा आणि मानवता या मूल्यांना सर्वोच्च स्थान देणे, हे आमचे ध्येय आहे.</p>
+
+      <p class="vp-en">Combining trained doctors, modern technology, and reliable service is our objective.</p>
+      <p class="vp-mr">प्रशिक्षित डॉक्टर, आधुनिक तंत्रज्ञान आणि विश्वासार्ह सेवा यांचा संगम साधणे, हे आमचे उद्दिष्ट आहे.</p>
+
+      <!-- Quote -->
+      <div class="vq-wrap">
+        <p class="vq-en">"City-level treatment for the people of villages — trust, service and compassion."</p>
+        <p class="vq-mr">"शहरातील उपचार, गावातील माणसांसाठी — विश्वास, सेवा आणि करुणा."</p>
+      </div>
+    </div>
   </div>
+
+  <!-- Values / Logo meanings -->
+  <div class="col-lg-6" data-aos data-d="2">
+    <div class="sec-eyebrow">Our Values &amp; Logo · आमची मूल्ये व प्रतीक</div>
+    <h2 class="sec-title">Symbols of <span>Healing</span></h2>
+    <p style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.88rem;color:var(--teal);margin-top:3px;margin-bottom:1.2rem">उपचाराची प्रतीके</p>
+    <div class="gold-bar"></div>
+
+    <div class="d-flex flex-column gap-3 mt-3">
+
+      <!-- Lotus -->
+      <div class="value-card">
+        <div class="v-ico">🪷</div>
+        <div class="vc-body">
+          <p class="en-h">Lotus Flower</p>
+          <p class="mr-h">कमळ — पवित्रतेचे प्रतीक</p>
+          <p class="en-p">Symbol of purity, peace &amp; spiritual strength. Represents new life, healing &amp; positivity — the divine meaning of Mahaveer.</p>
+          <p class="mr-p">पवित्रता, शांती व आध्यात्मिक शक्तीचे प्रतीक. नवजीवन, उपचार व सकारात्मकता दर्शवते — महावीराचा दैवी अर्थ.</p>
+        </div>
+      </div>
+
+      <!-- Caduceus -->
+      <div class="value-card">
+        <div class="v-ico">⚕️</div>
+        <div class="vc-body">
+          <p class="en-h">Healing Staff with Serpent (Caduceus)</p>
+          <p class="mr-h">उपचाराची काठी — वैद्यकीय प्रतीक</p>
+          <p class="en-p">Ancient universal symbol of medicine &amp; healthcare — representing our commitment to medical excellence and care.</p>
+          <p class="mr-p">वैद्यकशास्त्राचे प्राचीन जागतिक प्रतीक — वैद्यकीय उत्कृष्टता व काळजीप्रती आमची बांधिलकी दर्शवते.</p>
+        </div>
+      </div>
+
+      <!-- Gold -->
+      <div class="value-card">
+        <div class="v-ico">✨</div>
+        <div class="vc-body">
+          <p class="en-h">Golden Colour</p>
+          <p class="mr-h">सोनेरी रंग — श्रेष्ठतेचे प्रतीक</p>
+          <p class="en-p">Symbol of excellence and trust — gold represents our unwavering promise to deliver the highest standard of care to every patient.</p>
+          <p class="mr-p">उत्कृष्टता व विश्वासाचे प्रतीक — सोनेरी रंग प्रत्येक रुग्णाला सर्वोत्तम सेवा देण्याच्या आमच्या अटळ वचनाचे प्रतिनिधित्व करतो.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</div></section>
+
+<!-- ══ DOCTORS ══ -->
+<section><div class="container">
+
+  <div class="text-center mb-5" data-aos>
+    <div class="sec-eyebrow">Medical Professionals · वैद्यकीय तज्ज्ञ</div>
+    <h2 class="sec-title">Our Expert <span>Doctors</span></h2>
+    <p style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.92rem;color:#555;margin-top:4px">आमचे तज्ज्ञ डॉक्टर</p>
+    <div class="gold-bar mx-auto"></div>
+    <div class="sec-sub-bi mt-2">
+      <span class="en">A dedicated team of qualified doctors committed to delivering the best care to every patient.</span>
+      <span class="mr">प्रत्येक रुग्णाला सर्वोत्तम सेवा देण्यास समर्पित पात्र डॉक्टरांची टीम.</span>
+    </div>
+  </div>
+
   <div class="row g-4 justify-content-center">
+
+    <!-- Dr Vipul -->
     <div class="col-md-6 col-lg-4" data-aos>
-      <div class="doc-card"><div class="doc-card-head"><div class="doc-initials">VP</div></div>
-      <div class="doc-card-body"><div class="doc-name">Dr. Vipul Sunilkumar Patni</div><div class="doc-degree">BAMS · CCH</div>
-      <div class="doc-spec">General Physician &amp; Surgeon<br/>Child Health Specialist<br/><small style="color:var(--teal);font-size:.82rem;">OPD · Minor Surgery · Child Care</small></div>
-      <a href="tel:9421294108" class="doc-cta"><i class="bi bi-telephone-fill"></i> 9421294108</a></div></div>
+      <div class="doc-card">
+        <div class="doc-card-head"><div class="doc-initials">VP</div></div>
+        <div class="doc-card-body">
+          <div class="doc-name-en">Dr. Vipul Sunilkumar Patni</div>
+          <div class="doc-name-mr">डॉ. विपुल सुनीलकुमार पाटणी</div>
+          <div class="doc-degree">BAMS · CCH</div>
+          <div class="doc-spec-en">General Physician &amp; Surgeon<br/>Child Health Specialist</div>
+          <div class="doc-spec-mr">सर्वसाधारण वैद्य व शल्यचिकित्सक<br/>बालआरोग्य तज्ज्ञ</div>
+          <small style="color:var(--teal);font-size:.82rem;font-weight:400;font-family:'Crimson Pro',serif;display:block;margin-bottom:.8rem">OPD · Minor Surgery · Child Care</small>
+          <small style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.78rem;color:#888;display:block;margin-bottom:1rem">OPD · लहान शस्त्रक्रिया · बालसेवा</small>
+          <a href="tel:9421294108" class="doc-cta"><i class="bi bi-telephone-fill"></i> 9421294108</a>
+        </div>
+      </div>
     </div>
+
+    <!-- Dr Sayyam -->
     <div class="col-md-6 col-lg-4" data-aos data-d="2">
-      <div class="doc-card"><div class="doc-card-head"><div class="doc-initials">SP</div></div>
-      <div class="doc-card-body"><div class="doc-name">Dr. Sayyam Ajitkumar Patni</div><div class="doc-degree">MBBS · CPCDM</div>
-      <div class="doc-spec">Critical Care Specialist · Intensivist<br/>General Physician · Diabetologist<br/><small style="color:var(--teal);font-size:.82rem;">ICU · Emergency · Diabetes Care</small></div>
-      <a href="tel:9766831008" class="doc-cta"><i class="bi bi-telephone-fill"></i> 9766831008</a></div></div>
+      <div class="doc-card">
+        <div class="doc-card-head"><div class="doc-initials">SP</div></div>
+        <div class="doc-card-body">
+          <div class="doc-name-en">Dr. Sayyam Ajitkumar Patni</div>
+          <div class="doc-name-mr">डॉ. सय्यम अजितकुमार पाटणी</div>
+          <div class="doc-degree">MBBS · CPCDM</div>
+          <div class="doc-spec-en">Critical Care Specialist · Intensivist<br/>General Physician · Diabetologist</div>
+          <div class="doc-spec-mr">क्रिटिकल केअर तज्ज्ञ · इंटेन्सिव्हिस्ट<br/>सर्वसाधारण वैद्य · मधुमेहशास्त्रज्ञ</div>
+          <small style="color:var(--teal);font-size:.82rem;font-weight:400;font-family:'Crimson Pro',serif;display:block;margin-bottom:.8rem">ICU · Emergency · Diabetes Care</small>
+          <small style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.78rem;color:#888;display:block;margin-bottom:1rem">ICU · आपत्कालीन · मधुमेह उपचार</small>
+          <a href="tel:9766831008" class="doc-cta"><i class="bi bi-telephone-fill"></i> 9766831008</a>
+        </div>
+      </div>
     </div>
+
+    <!-- Dr Pragati -->
     <div class="col-md-6 col-lg-4" data-aos data-d="4">
-      <div class="doc-card"><div class="doc-card-head"><div class="doc-initials">PP</div></div>
-      <div class="doc-card-body"><div class="doc-name">Dr. Pragati Sayyam Patni</div><div class="doc-degree">BHMS · CGO</div>
-      <div class="doc-spec">Cosmetologist &amp; Aesthetic Specialist<br/>Gynecologist · Immunization Specialist<br/><small style="color:var(--teal);font-size:.82rem;">Aesthetic Clinic · Women's Health</small></div>
-      <a href="contact.html" class="doc-cta"><i class="bi bi-envelope"></i> Book Appointment</a></div></div>
+      <div class="doc-card">
+        <div class="doc-card-head"><div class="doc-initials">PP</div></div>
+        <div class="doc-card-body">
+          <div class="doc-name-en">Dr. Pragati Sayyam Patni</div>
+          <div class="doc-name-mr">डॉ. प्रगती सय्यम पाटणी</div>
+          <div class="doc-degree">BHMS · CGO</div>
+          <div class="doc-spec-en">Cosmetologist &amp; Aesthetic Specialist<br/>Gynecologist · Immunization Specialist</div>
+          <div class="doc-spec-mr">कॉस्मेटोलॉजिस्ट व सौंदर्य तज्ज्ञ<br/>स्त्रीरोग तज्ज्ञ · लसीकरण तज्ज्ञ</div>
+          <small style="color:var(--teal);font-size:.82rem;font-weight:400;font-family:'Crimson Pro',serif;display:block;margin-bottom:.8rem">Aesthetic Clinic · Women's Health</small>
+          <small style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.78rem;color:#888;display:block;margin-bottom:1rem">Aesthetic Clinic · महिला आरोग्य</small>
+          <a href="contact.html" class="doc-cta"><i class="bi bi-envelope"></i> Book Appointment / अपॉईंटमेंट</a>
+        </div>
+      </div>
     </div>
+
   </div>
 </div></section>
 
-<div style="background:linear-gradient(135deg,var(--navy),var(--teal));padding:60px 0;text-align:center">
-  <div class="container" data-aos>
-    <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.5rem,3vw,2.3rem);font-weight:700;color:#fff;margin-bottom:.6rem;letter-spacing:1px;">Have Questions About Our Hospital?</h2>
-    <p style="color:rgba(255,255,255,.6);margin-bottom:2rem;font-family:'Crimson Pro',serif;font-size:1.05rem;">Our team is ready to help — call, WhatsApp, or visit our Contact page.</p>
+<!-- ══ CTA ══ -->
+<div style="background:linear-gradient(135deg,var(--navy),var(--teal));padding:64px 0;text-align:center;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.025;background-image:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px;"></div>
+  <div class="container" data-aos style="position:relative">
+    <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.5rem,3vw,2.3rem);font-weight:700;color:#fff;margin-bottom:4px;letter-spacing:1px">Have Questions About Our Hospital?</h2>
+    <p style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.92rem;color:rgba(255,255,255,.72);margin-bottom:4px">आमच्या हॉस्पिटलबद्दल प्रश्न आहेत?</p>
+    <p style="font-family:'Crimson Pro',serif;font-size:1.05rem;font-weight:400;color:rgba(255,255,255,.55);margin-bottom:2rem">Our team is ready to help — call, WhatsApp, or visit our Contact page.</p>
+    <p style="font-family:'Noto Sans Devanagari',sans-serif;font-size:.88rem;font-weight:700;color:rgba(255,255,255,.55);margin-top:-1.4rem;margin-bottom:2rem">आमची टीम मदतीसाठी तयार आहे — कॉल, WhatsApp किंवा Contact पेज भेट द्या.</p>
     <div class="d-flex justify-content-center flex-wrap gap-3">
       <a href="tel:9421294108" class="btn-gold"><i class="bi bi-telephone-fill"></i> Call: 9421294108</a>
-      <a href="contact.html" class="btn-teal"><i class="bi bi-envelope"></i> Contact Us</a>
+      <a href="contact.html" class="btn-teal"><i class="bi bi-envelope"></i> Contact Us / संपर्क करा</a>
     </div>
   </div>
 </div>
+
+<!-- FOOTER -->
 <footer class="site-footer"><div class="footer-glow"></div><div class="container">
   <div class="footer-top">
-    <div><img src="logo.jpeg" alt="Mahaveer Hospital" class="footer-logo-img"/>
-      <p class="footer-name">MAHAVEER HOSPITAL</p><p class="footer-tag">"करुणेने उपचार, विश्वासाने सेवा"</p>
-      <p class="footer-addr">Shivaji Nagar, Main Road, Tamsa<br/>Tq- Hadgaon, Di- Nanded, Maharashtra – 431713</p>
-      <div class="footer-socials"><a href="https://wa.me/919421294108" target="_blank"><i class="bi bi-whatsapp"></i></a><a href="tel:9421294108"><i class="bi bi-telephone-fill"></i></a><a href="mailto:info@mahavirhospital.com"><i class="bi bi-envelope-fill"></i></a></div>
+    <div>
+      <img src="logo.jpeg" alt="Mahaveer Hospital" class="footer-logo-img"/>
+      <p class="footer-name">MAHAVEER HOSPITAL</p>
+      <p class="footer-tag">"करुणेने उपचार, विश्वासाने सेवा"</p>
+      <p class="footer-addr" style="font-family:'Crimson Pro',serif;font-weight:400">Shivaji Nagar, Main Road, Tamsa<br/>Tq- Hadgaon, Di- Nanded, Maharashtra – 431713</p>
+      <div class="footer-socials">
+        <a href="https://wa.me/919421294108" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="tel:9421294108"><i class="bi bi-telephone-fill"></i></a>
+        <a href="mailto:info@mahavirhospital.com"><i class="bi bi-envelope-fill"></i></a>
+      </div>
     </div>
     <div class="footer-links-col"><h6>Navigate</h6><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
     <div class="footer-links-col"><h6>Services</h6><a href="services.html">OPD</a><a href="services.html">ICU Critical Care</a><a href="services.html">Emergency 24×7</a><a href="services.html">Diagnostics</a><a href="services.html">Aesthetic Clinic</a></div>
-    <div class="footer-links-col"><h6>Contact</h6><a href="tel:9421294108"><i class="bi bi-telephone me-1"></i>9421294108</a><a href="tel:9766831008"><i class="bi bi-telephone me-1"></i>9766831008</a><a href="mailto:info@mahavirhospital.com"><i class="bi bi-envelope me-1"></i>Email Us</a><a href="https://maps.app.goo.gl/ueTT2sujf9vZsmC67" target="_blank"><i class="bi bi-geo-alt me-1"></i>Directions</a></div>
+    <div class="footer-links-col"><h6>Contact</h6>
+      <a href="tel:9421294108"><i class="bi bi-telephone me-1"></i>9421294108</a>
+      <a href="tel:9766831008"><i class="bi bi-telephone me-1"></i>9766831008</a>
+      <a href="mailto:info@mahavirhospital.com"><i class="bi bi-envelope me-1"></i>Email Us</a>
+      <a href="https://maps.app.goo.gl/ueTT2sujf9vZsmC67" target="_blank"><i class="bi bi-geo-alt me-1"></i>Directions</a>
+    </div>
   </div>
   <div class="divider-gold"></div>
   <div class="footer-bottom">
@@ -144,6 +398,8 @@
     <p class="footer-seo">Mahaveer Hospital · Critical Care Centre &amp; Aesthetic Clinic · Tamsa, Hadgaon, Nanded, Maharashtra 431713</p>
   </div>
 </div></footer>
+
 <a href="https://wa.me/919421294108?text=नमस्कार%2C%20मला%20Mahaveer%20Hospital%20बद्दल%20माहिती%20हवी%20आहे." target="_blank" class="wa-fab"><i class="bi bi-whatsapp"></i><span class="wa-pulse"></span></a>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="app.js"></script></body></html>
+<script src="app.js"></script>
+</body></html>

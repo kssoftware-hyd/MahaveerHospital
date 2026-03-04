@@ -1,208 +1,479 @@
 <!DOCTYPE html><html lang="mr"><head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Contact Us – Mahaveer Hospital | Tamsa Hadgaon Nanded | 9421294108</title><meta name="description" content="Contact Mahaveer Hospital Tamsa. Emergency 9421294108. Address: Shivaji Nagar, Main Road, Tamsa, Hadgaon, Nanded 431713. WhatsApp available 24x7."/>
+<title>Contact Us / संपर्क करा – Mahaveer Hospital | Tamsa Hadgaon Nanded | 9421294108</title>
+<meta name="description" content="Contact Mahaveer Hospital Tamsa. Emergency 9421294108. Address: Shivaji Nagar, Main Road, Tamsa, Hadgaon, Nanded 431713. WhatsApp available 24x7."/>
 <meta name="keywords" content="Mahaveer Hospital Tamsa Hadgaon Nanded, ICU OPD emergency, Dr Vipul Patni, Dr Sayyam Patni, महावीर हॉस्पिटल"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="style.css"/><style>
-.cinfo-box{background:linear-gradient(160deg,var(--navy),var(--navy-2));border-radius:20px;padding:2.5rem;color:#fff;height:100%}
-.cinfo-box h4{font-family:'Cinzel',serif;color:var(--gold-lt);margin-bottom:1.8rem;font-size:1.15rem;letter-spacing:.5px}
-.ci-row{display:flex;gap:14px;margin-bottom:1.5rem}
-.ci-ico{width:42px;height:42px;flex-shrink:0;border-radius:10px;background:rgba(200,145,42,.15);border:1px solid rgba(200,145,42,.25);display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--gold-lt)}
-.ci-row strong{display:block;color:#fff;font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:1px;text-transform:uppercase;margin-bottom:4px}
-.ci-row p{font-size:.88rem;color:rgba(255,255,255,.6);margin:0;line-height:1.65}
-.ci-row a{color:rgba(255,255,255,.8);text-decoration:none}
-.ci-row a:hover{color:var(--gold-lt)}
-.wa-cta{display:flex;align-items:center;gap:12px;background:#25D366;color:#fff;text-decoration:none;padding:14px 20px;border-radius:12px;font-family:'Cinzel',serif;font-weight:700;font-size:.78rem;letter-spacing:1px;text-transform:uppercase;transition:all .3s;margin-top:1rem}
-.wa-cta:hover{background:#1DA851;color:#fff}
-.form-box{background:var(--cream);border-radius:20px;padding:2.5rem;border:1px solid var(--border)}
-.form-box h4{font-family:'Cinzel',serif;font-size:1.15rem;color:var(--navy);letter-spacing:.5px;margin-bottom:1.5rem}
-.f-label{font-family:'Cinzel',serif;font-size:.68rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--navy);margin-bottom:6px;display:block}
-.f-ctrl{width:100%;padding:12px 16px;border:1.5px solid var(--border);border-radius:8px;font-size:.92rem;font-family:'Crimson Pro',serif;background:#fff;color:var(--text);transition:all .3s;outline:none}
-.f-ctrl:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(11,107,106,.1)}
-.f-success{display:none;padding:1rem 1.2rem;background:#ECFDF5;border:1px solid #A7F3D0;border-radius:10px;color:#065F46;font-family:'Cinzel',serif;font-size:.8rem;font-weight:700;letter-spacing:.5px;align-items:center;gap:10px;margin-top:1rem}
-.doc-mini{background:#fff;border-radius:14px;padding:1.5rem;border:1px solid var(--border);text-align:center;transition:all .3s;height:100%}
-.doc-mini:hover{box-shadow:var(--sh-md);transform:translateY(-4px)}
-.dm-av{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--navy),var(--teal));border:2.5px solid var(--gold-border);display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:1.5rem;font-weight:700;color:var(--gold-lt);margin:0 auto 1rem}
-.dm-name{font-family:'Cinzel',serif;font-size:.9rem;font-weight:700;color:var(--navy);letter-spacing:.3px;margin-bottom:3px}
-.dm-deg{font-size:.68rem;font-weight:700;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:.5rem}
-.dm-sp{font-size:.82rem;color:var(--muted);margin-bottom:1rem;line-height:1.5}
-.map-box{border-radius:16px;overflow:hidden;border:2px solid var(--border)}
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* ══════════════════════════════════════════════════
+   LANGUAGE SYSTEM
+   .en-*  → Crimson Pro, font-weight:400 (normal)
+   .mr-*  → Noto Sans Devanagari, font-weight:700 (bold)
+   Pattern everywhere: English line first, Marathi line below
+   ══════════════════════════════════════════════════ */
+
+/* --- base classes --- */
+.en-text { font-family:'Crimson Pro',serif; font-weight:400; line-height:1.7; }
+.mr-text { font-family:'Noto Sans Devanagari',sans-serif; font-weight:700; line-height:1.8; }
+
+/* --- label pair (used in form fields & info rows) --- */
+.lbl-pair { display:flex; flex-direction:column; gap:2px; margin-bottom:7px; }
+.lbl-pair .en { font-family:'Cinzel',serif; font-size:.66rem; font-weight:400; letter-spacing:1.5px; text-transform:uppercase; color:#08172B; }
+.lbl-pair .mr { font-family:'Noto Sans Devanagari',sans-serif; font-size:.7rem; font-weight:700; color:#0B6B6A; }
+
+/* --- heading pair --- */
+.h-pair { display:flex; flex-direction:column; gap:3px; }
+.h-pair .en { font-family:'Cinzel',serif; font-weight:400; letter-spacing:.4px; color:inherit; }
+.h-pair .mr { font-family:'Noto Sans Devanagari',sans-serif; font-weight:700; font-size:.84em; color:inherit; opacity:.8; }
+
+/* ══ INFO BOX ══ */
+.cinfo-box {
+  background:linear-gradient(155deg,#08172B 0%,#0F2B3D 60%,#093535 100%);
+  border-radius:24px; padding:2.4rem; color:#fff; height:100%;
+  box-shadow:0 24px 64px rgba(8,23,43,.3);
+  border:1px solid rgba(255,255,255,.06);
+}
+.cinfo-box .box-hdg { margin-bottom:1.8rem; }
+.cinfo-box .box-hdg .en { font-family:'Cinzel',serif; font-size:1.05rem; font-weight:700; color:#E8B84B; letter-spacing:.5px; display:flex; align-items:center; gap:10px; }
+.cinfo-box .box-hdg .mr { font-family:'Noto Sans Devanagari',sans-serif; font-weight:700; font-size:.8rem; color:rgba(232,184,75,.65); display:block; margin-top:3px; padding-left:30px; }
+
+.ci-row { display:flex; gap:15px; margin-bottom:1.5rem; align-items:flex-start; }
+.ci-ico { width:43px; height:43px; flex-shrink:0; border-radius:11px; background:rgba(200,145,42,.12); border:1px solid rgba(200,145,42,.22); display:flex; align-items:center; justify-content:center; font-size:1rem; color:#E8B84B; margin-top:2px; }
+.ci-content { flex:1; }
+.ci-content .row-lbl { display:flex; flex-direction:column; gap:1px; margin-bottom:6px; }
+.ci-content .row-lbl .en { font-family:'Cinzel',serif; font-size:.7rem; font-weight:400; letter-spacing:1px; text-transform:uppercase; color:rgba(255,255,255,.45); }
+.ci-content .row-lbl .mr { font-family:'Noto Sans Devanagari',sans-serif; font-weight:700; font-size:.72rem; color:rgba(232,184,75,.6); }
+.ci-content .ci-val { display:flex; flex-direction:column; gap:2px; }
+.ci-content .ci-val .en-val { font-family:'Crimson Pro',serif; font-weight:400; font-size:.9rem; color:rgba(255,255,255,.68); line-height:1.65; }
+.ci-content .ci-val .mr-val { font-family:'Noto Sans Devanagari',sans-serif; font-weight:700; font-size:.82rem; color:rgba(232,184,75,.75); line-height:1.7; }
+.ci-content a { color:rgba(255,255,255,.78); text-decoration:none; transition:color .2s; }
+.ci-content a:hover { color:#E8B84B; }
+
+/* hours table */
+.htable { width:100%; border-collapse:collapse; }
+.htable tr { border-bottom:1px solid rgba(255,255,255,.06); }
+.htable tr:last-child { border:none; }
+.htable td { padding:6px 0; vertical-align:top; }
+.htable .hd-en { font-family:'Crimson Pro',serif; font-weight:400; font-size:.88rem; color:rgba(255,255,255,.65); }
+.htable .hd-mr { font-family:'Noto Sans Devanagari',sans-serif; font-weight:700; font-size:.78rem; color:rgba(232,184,75,.65); }
+.htable .hd-time { font-family:'Cinzel',serif; font-weight:700; font-size:.72rem; color:#E8B84B; letter-spacing:.5px; text-align:right; padding-top:7px; }
+
+/* whatsapp CTA */
+.wa-cta { display:flex; align-items:center; gap:14px; background:linear-gradient(135deg,#1DA851,#25D366); color:#fff; text-decoration:none; padding:15px 20px; border-radius:14px; transition:all .3s; margin-top:1.3rem; border:1px solid rgba(255,255,255,.1); }
+.wa-cta:hover { transform:translateY(-2px); box-shadow:0 12px 36px rgba(37,211,102,.32); color:#fff; }
+.wa-cta .wi { font-size:1.7rem; flex-shrink:0; }
+.wa-cta .wt .en { font-family:'Cinzel',serif; font-weight:700; font-size:.78rem; letter-spacing:1px; text-transform:uppercase; display:block; }
+.wa-cta .wt .mr { font-family:'Noto Sans Devanagari',sans-serif; font-weight:700; font-size:.76rem; color:rgba(255,255,255,.78); display:block; margin-top:2px; }
+
+/* gmap link */
+.gmap-link { display:inline-flex; align-items:center; gap:6px; margin-top:7px; text-decoration:none; }
+.gmap-link .en { font-family:'Cinzel',serif; font-size:.7rem; font-weight:400; color:#E8B84B; letter-spacing:.5px; }
+.gmap-link .mr { font-family:'Noto Sans Devanagari',sans-serif; font-size:.72rem; font-weight:700; color:rgba(232,184,75,.65); }
+
+/* ══ FORM BOX ══ */
+.form-box { background:#fff; border-radius:24px; padding:2.5rem; border:1px solid #e8e8e8; box-shadow:0 8px 40px rgba(8,23,43,.07); }
+.form-hdg { margin-bottom:1.8rem; padding-bottom:1.2rem; border-bottom:1px solid #f0f0f0; }
+.form-hdg .en { font-family:'Cinzel',serif; font-size:1.1rem; font-weight:700; color:#08172B; letter-spacing:.5px; display:flex; align-items:center; gap:10px; }
+.form-hdg .mr { font-family:'Noto Sans Devanagari',sans-serif; font-weight:700; font-size:.88rem; color:#0B6B6A; display:block; margin-top:5px; padding-left:30px; }
+
+.f-ctrl { width:100%; padding:12px 16px; border:1.5px solid #e2e2e2; border-radius:10px; font-family:'Crimson Pro',serif; font-size:.95rem; font-weight:400; background:#fafafa; color:#1a1a1a; transition:all .25s; outline:none; }
+.f-ctrl:focus { border-color:#0B6B6A; box-shadow:0 0 0 3px rgba(11,107,106,.1); background:#fff; }
+.f-ctrl::placeholder { color:#bbb; font-weight:400; }
+
+.f-success { display:none; padding:1rem 1.4rem; background:#ECFDF5; border:1px solid #A7F3D0; border-radius:12px; margin-top:1rem; align-items:flex-start; gap:12px; }
+.f-success .fs-en { font-family:'Cinzel',serif; font-size:.78rem; font-weight:700; color:#065F46; letter-spacing:.3px; display:block; }
+.f-success .fs-mr { font-family:'Noto Sans Devanagari',sans-serif; font-size:.8rem; font-weight:700; color:#047857; display:block; margin-top:3px; }
+
+/* ══ DOCTOR CARDS ══ */
+.doc-mini { background:#fff; border-radius:20px; padding:1.8rem 1.5rem; border:1px solid #e8e8e8; text-align:center; transition:all .3s; height:100%; box-shadow:0 3px 16px rgba(8,23,43,.06); }
+.doc-mini:hover { box-shadow:0 18px 52px rgba(8,23,43,.13); transform:translateY(-5px); }
+.dm-av { width:76px; height:76px; border-radius:50%; background:linear-gradient(135deg,#08172B,#0B6B6A); border:2.5px solid rgba(232,184,75,.35); display:flex; align-items:center; justify-content:center; font-family:'Cinzel',serif; font-size:1.5rem; font-weight:700; color:#E8B84B; margin:0 auto 1.1rem; }
+.dm-name-en { font-family:'Cinzel',serif; font-size:.9rem; font-weight:400; color:#08172B; letter-spacing:.3px; margin-bottom:1px; }
+.dm-name-mr { font-family:'Noto Sans Devanagari',sans-serif; font-size:.84rem; font-weight:700; color:#0B6B6A; margin-bottom:.5rem; }
+.dm-deg { font-family:'Cinzel',serif; font-size:.64rem; font-weight:700; color:#C8912A; letter-spacing:1.5px; text-transform:uppercase; margin-bottom:.9rem; }
+.dm-spec-en { font-family:'Crimson Pro',serif; font-size:.87rem; color:#666; font-weight:400; line-height:1.55; margin-bottom:2px; }
+.dm-spec-mr { font-family:'Noto Sans Devanagari',sans-serif; font-size:.82rem; font-weight:700; color:#333; line-height:1.6; margin-bottom:1.1rem; }
+
+/* ══ STAT PILLS ══ */
+.stat-pill { display:inline-flex; flex-direction:column; align-items:center; background:#fff; border:1px solid #e5e5e5; border-radius:14px; padding:12px 20px; text-align:center; box-shadow:0 2px 12px rgba(8,23,43,.05); min-width:90px; }
+.stat-pill .sp-n { font-family:'Cinzel',serif; font-size:1.5rem; font-weight:900; color:#C8912A; line-height:1; }
+.stat-pill .sp-en { font-family:'Cinzel',serif; font-size:.6rem; font-weight:400; color:#888; letter-spacing:1px; text-transform:uppercase; margin-top:3px; }
+.stat-pill .sp-mr { font-family:'Noto Sans Devanagari',sans-serif; font-size:.66rem; font-weight:700; color:#0B6B6A; margin-top:1px; }
+
+/* map */
+.map-box { border-radius:18px; overflow:hidden; border:2px solid #e5e5e5; box-shadow:0 4px 20px rgba(8,23,43,.08); }
 </style>
-</head><body><div class="ticker-wrap"><div class="ticker-move">
+</head><body>
+
+<!-- TICKER -->
+<div class="ticker-wrap"><div class="ticker-move">
 <span><i class="bi bi-telephone-fill"></i> Emergency 24×7 : 9421294108</span>
-<span><i class="bi bi-heart-pulse-fill"></i> ICU &amp; Critical Care Available</span>
+<span><i class="bi bi-heart-pulse-fill"></i> ICU &amp; Critical Care — <strong style="font-family:'Noto Sans Devanagari',sans-serif">अतिदक्षता सेवा उपलब्ध</strong></span>
 <span><i class="bi bi-telephone-fill"></i> Dr Sayyam Patni : 9766831008</span>
 <span><i class="bi bi-geo-alt-fill"></i> Tamsa · Hadgaon · Nanded 431713</span>
-<span><i class="bi bi-truck"></i> Ambulance On Call</span>
+<span><i class="bi bi-truck"></i> Ambulance On Call — <strong style="font-family:'Noto Sans Devanagari',sans-serif">रुग्णवाहिका</strong></span>
 <span><i class="bi bi-telephone-fill"></i> Emergency 24×7 : 9421294108</span>
-<span><i class="bi bi-heart-pulse-fill"></i> ICU &amp; Critical Care Available</span>
+<span><i class="bi bi-heart-pulse-fill"></i> ICU &amp; Critical Care — <strong style="font-family:'Noto Sans Devanagari',sans-serif">अतिदक्षता सेवा उपलब्ध</strong></span>
 <span><i class="bi bi-telephone-fill"></i> Dr Sayyam Patni : 9766831008</span>
 <span><i class="bi bi-geo-alt-fill"></i> Tamsa · Hadgaon · Nanded 431713</span>
-<span><i class="bi bi-truck"></i> Ambulance On Call</span>
+<span><i class="bi bi-truck"></i> Ambulance On Call — <strong style="font-family:'Noto Sans Devanagari',sans-serif">रुग्णवाहिका</strong></span>
 </div></div>
+
+<!-- NAV -->
 <nav class="site-nav" id="mainNav"><div class="nav-container">
   <a href="index.html" class="nav-brand">
     <img src="logo.jpeg" alt="Mahaveer Hospital Logo" class="nav-logo-img"/>
     <div class="brand-words"><span class="brand-main">MAHAVEER HOSPITAL</span><span class="brand-sub">Critical Care · Aesthetic Clinic · Tamsa</span></div>
   </a>
   <button class="nav-hamburger" id="navToggle"><span></span><span></span><span></span></button>
-  <ul class="nav-menu" id="navMenu"><li><a href="index.html" class="nav-link">Home</a></li><li><a href="about.html" class="nav-link">About</a></li><li><a href="services.html" class="nav-link">Services</a></li><li><a href="contact.html" class="nav-link  active">Contact</a></li><li><a href="tel:9421294108" class="nav-emergency"><i class="bi bi-telephone-fill"></i> Emergency</a></li></ul>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="services.html" class="nav-link">Services</a></li>
+    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    <li><a href="tel:9421294108" class="nav-emergency"><i class="bi bi-telephone-fill"></i> Emergency</a></li>
+  </ul>
 </div></nav>
+
+<!-- PAGE HERO -->
 <div class="page-hero"><div class="container page-hero-inner">
   <div class="breadcrumb"><a href="index.html">Home</a><i class="bi bi-chevron-right"></i> Contact Us</div>
-  <h1 class="page-hero-title">Contact <span>Us</span></h1>
-  <p class="page-hero-sub">आम्ही 24 तास तुमच्यासाठी उपलब्ध आहोत — Tamsa, Hadgaon, Nanded</p>
+  <h1 class="page-hero-title">
+    Contact <span>Us</span>
+    <span style="display:block;font-family:'Noto Sans Devanagari',sans-serif;font-size:.52em;font-weight:700;color:rgba(232,184,75,.82);margin-top:6px;letter-spacing:0">संपर्क करा</span>
+  </h1>
+  <div class="page-hero-sub">
+    <span style="font-family:'Crimson Pro',serif;font-weight:400;font-size:1rem">We are available 24 hours for you — Tamsa, Hadgaon, Nanded</span>
+    <span style="display:block;font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.95rem;margin-top:4px">आम्ही 24 तास तुमच्यासाठी उपलब्ध आहोत — तामसा, हदगाव, नांदेड</span>
+  </div>
 </div></div>
 
-<section><div class="container"><div class="row g-4">
-  <!-- Info -->
+<!-- ══ MAIN: INFO + FORM ══ -->
+<section><div class="container">
+<div class="row g-4 align-items-start">
+
+  <!-- ── INFO BOX ── -->
   <div class="col-lg-5" data-aos>
-    <div class="cinfo-box">
-      <h4><i class="bi bi-info-circle-fill me-2"></i>Hospital Information</h4>
-      <div class="ci-row"><div class="ci-ico"><i class="bi bi-geo-alt-fill"></i></div>
-        <div><strong>Address</strong>
-        <p>Mahaveer Hospital, Shivaji Nagar,<br/>Main Road, Tamsa<br/>Tq- Hadgaon, Di- Nanded<br/>Maharashtra – 431713</p>
-        <a href="https://maps.app.goo.gl/ueTT2sujf9vZsmC67" target="_blank" style="color:var(--gold-lt);font-size:.8rem;font-family:'Cinzel',serif;"><i class="bi bi-map me-1"></i>View on Google Maps</a></div>
-      </div>
-      <div class="ci-row"><div class="ci-ico"><i class="bi bi-telephone-fill"></i></div>
-        <div><strong>Emergency &amp; OPD</strong>
-        <p><a href="tel:9421294108">9421294108</a> – Dr Vipul Patni<br/><a href="tel:9766831008">9766831008</a> – Dr Sayyam Patni</p></div>
-      </div>
-      <div class="ci-row"><div class="ci-ico"><i class="bi bi-envelope-fill"></i></div>
-        <div><strong>Email</strong>
-        <p><a href="mailto:info@mahavirhospital.com">info@mahavirhospital.com</a></p></div>
-      </div>
-      <div class="ci-row"><div class="ci-ico"><i class="bi bi-clock-fill"></i></div>
-        <div><strong>Hospital Hours</strong>
-        <p>Emergency &amp; ICU: 24×7 All Days<br/>OPD: 8:00 AM – 8:00 PM</p></div>
-      </div>
-      <div class="ci-row"><div class="ci-ico"><i class="bi bi-truck-front-fill"></i></div>
-        <div><strong>Ambulance</strong>
-        <p>On-call ambulance — Call 9421294108</p></div>
-      </div>
-      <a href="https://wa.me/919421294108?text=नमस्कार%2C%20मला%20Mahaveer%20Hospital%20बद्दल%20माहिती%20हवी%20आहे." target="_blank" class="wa-cta">
-        <i class="bi bi-whatsapp" style="font-size:1.4rem;"></i>
-        <div><div>Chat on WhatsApp</div><div style="font-size:.7rem;opacity:.75;letter-spacing:.5px;font-weight:400;text-transform:none;font-family:'Crimson Pro',serif;">Quick response guaranteed</div></div>
-      </a>
-    </div>
-  </div>
+  <div class="cinfo-box">
 
-  <!-- Form -->
-  <div class="col-lg-7" data-aos data-d="2">
-    <div class="form-box">
-      <h4><i class="bi bi-send-fill me-2" style="color:var(--gold);"></i>Send Us a Message</h4>
-      <form id="contactForm">
-        <div class="row g-3">
-          <div class="col-sm-6">
-            <label class="f-label">Your Name *</label>
-            <input type="text" class="f-ctrl" placeholder="Full Name" required/>
-          </div>
-          <div class="col-sm-6">
-            <label class="f-label">Phone Number *</label>
-            <input type="tel" class="f-ctrl" placeholder="10-digit mobile" required/>
-          </div>
-          <div class="col-12">
-            <label class="f-label">Email Address</label>
-            <input type="email" class="f-ctrl" placeholder="your@email.com"/>
-          </div>
-          <div class="col-12">
-            <label class="f-label">Department</label>
-            <select class="f-ctrl">
-              <option value="">Select Department</option>
-              <option>OPD – General Consultation</option>
-              <option>Emergency &amp; Casualty</option>
-              <option>ICU – Critical Care</option>
-              <option>IPD – Admission</option>
-              <option>Diagnostic Services</option>
-              <option>Aesthetic Clinic</option>
-              <option>Pharmacy</option>
-              <option>Ambulance Service</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="col-12">
-            <label class="f-label">Your Message *</label>
-            <textarea class="f-ctrl" rows="4" placeholder="Describe your concern or query..." required></textarea>
-          </div>
-          <div class="col-12 d-flex flex-wrap gap-3">
-            <button type="submit" class="btn-gold form-submit"><i class="bi bi-send-fill"></i> Send Message</button>
-            <a href="https://wa.me/919421294108" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;text-decoration:none;padding:14px 24px;border-radius:8px;font-family:'Cinzel',serif;font-weight:700;font-size:.78rem;letter-spacing:1px;text-transform:uppercase;"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-          </div>
+    <div class="box-hdg">
+      <div class="en"><i class="bi bi-info-circle-fill"></i> Hospital Information</div>
+      <span class="mr">रुग्णालय माहिती</span>
+    </div>
+
+    <!-- Address -->
+    <div class="ci-row">
+      <div class="ci-ico"><i class="bi bi-geo-alt-fill"></i></div>
+      <div class="ci-content">
+        <div class="row-lbl"><span class="en">Address</span><span class="mr">पत्ता</span></div>
+        <div class="ci-val">
+          <span class="en-val">Mahaveer Hospital, Shivaji Nagar,<br/>Main Road, Tamsa<br/>Tq- Hadgaon, Di- Nanded<br/>Maharashtra – 431713</span>
+          <span class="mr-val">शिवाजी नगर, मुख्य रस्ता, तामसा<br/>ता- हदगाव, जि- नांदेड – ४३१७१३</span>
         </div>
-      </form>
-      <div class="f-success" id="formSuccess">
-        <i class="bi bi-check-circle-fill" style="font-size:1.3rem;color:#059669;"></i>
-        Message sent! We will contact you shortly.
+        <a href="https://maps.app.goo.gl/ueTT2sujf9vZsmC67" target="_blank" class="gmap-link">
+          <i class="bi bi-map" style="color:#E8B84B;font-size:.85rem"></i>
+          <span class="en">View on Google Maps</span>
+          <span class="mr">/ नकाशावर पहा</span>
+        </a>
       </div>
     </div>
-    <div class="map-box mt-4">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7540.1!2d77.6553!3d18.9617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcf9e0000000001%3A0x1!2sTamsa%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1234567890"
-        width="100%" height="240" style="border:0;display:block;" allowfullscreen loading="lazy"></iframe>
-    </div>
-    <div class="text-center mt-2">
-      <a href="https://maps.app.goo.gl/ueTT2sujf9vZsmC67" target="_blank" style="color:var(--teal);font-family:'Cinzel',serif;font-size:.75rem;font-weight:700;letter-spacing:1px;text-decoration:none;text-transform:uppercase;">
-        <i class="bi bi-box-arrow-up-right me-1"></i>Open Full Map on Google
-      </a>
-    </div>
-  </div>
-</div></div></section>
 
-<!-- DOCTOR CONTACTS -->
+    <!-- Phones -->
+    <div class="ci-row">
+      <div class="ci-ico"><i class="bi bi-telephone-fill"></i></div>
+      <div class="ci-content">
+        <div class="row-lbl"><span class="en">Emergency &amp; OPD</span><span class="mr">आपत्कालीन व OPD</span></div>
+        <div class="ci-val">
+          <span class="en-val"><a href="tel:9421294108">9421294108</a> — Dr Vipul Patni</span>
+          <span class="mr-val">डॉ. विपुल पाटणी</span>
+          <span class="en-val" style="margin-top:4px"><a href="tel:9766831008">9766831008</a> — Dr Sayyam Patni</span>
+          <span class="mr-val">डॉ. सय्यम पाटणी</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Email -->
+    <div class="ci-row">
+      <div class="ci-ico"><i class="bi bi-envelope-fill"></i></div>
+      <div class="ci-content">
+        <div class="row-lbl"><span class="en">Email</span><span class="mr">ईमेल</span></div>
+        <div class="ci-val">
+          <span class="en-val"><a href="mailto:info@mahavirhospital.com">info@mahavirhospital.com</a></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hours -->
+    <div class="ci-row">
+      <div class="ci-ico"><i class="bi bi-clock-fill"></i></div>
+      <div class="ci-content">
+        <div class="row-lbl"><span class="en">Hospital Hours</span><span class="mr">रुग्णालय वेळ</span></div>
+        <table class="htable">
+          <tr>
+            <td><span class="hd-en">Emergency &amp; ICU</span><br/><span class="hd-mr">आपत्कालीन व ICU</span></td>
+            <td class="hd-time">24 × 7</td>
+          </tr>
+          <tr>
+            <td><span class="hd-en">OPD Consultation</span><br/><span class="hd-mr">बाह्यरुग्ण सेवा</span></td>
+            <td class="hd-time">8AM–8PM</td>
+          </tr>
+          <tr>
+            <td><span class="hd-en">All Days Open</span><br/><span class="hd-mr">सर्व दिवस उघडे</span></td>
+            <td class="hd-time">365 Days</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <!-- Ambulance -->
+    <div class="ci-row" style="margin-bottom:0">
+      <div class="ci-ico"><i class="bi bi-truck-front-fill"></i></div>
+      <div class="ci-content">
+        <div class="row-lbl"><span class="en">Ambulance Service</span><span class="mr">रुग्णवाहिका सेवा</span></div>
+        <div class="ci-val">
+          <span class="en-val">On-call — Call 9421294108</span>
+          <span class="mr-val">फोनवर रुग्णवाहिका — ९४२१२९४१०८</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- WhatsApp CTA -->
+    <a href="https://wa.me/919421294108?text=नमस्कार%2C%20मला%20Mahaveer%20Hospital%20बद्दल%20माहिती%20हवी%20आहे." target="_blank" class="wa-cta">
+      <i class="bi bi-whatsapp wi"></i>
+      <div class="wt">
+        <span class="en">Chat on WhatsApp — Quick Reply</span>
+        <span class="mr">WhatsApp वर संपर्क करा — लवकर उत्तर मिळेल</span>
+      </div>
+    </a>
+
+  </div>
+  </div>
+
+  <!-- ── FORM ── -->
+  <div class="col-lg-7" data-aos data-d="2">
+  <div class="form-box">
+
+    <div class="form-hdg">
+      <div class="en"><i class="bi bi-send-fill" style="color:#C8912A"></i> Send Us a Message</div>
+      <span class="mr">आम्हाला संदेश पाठवा</span>
+    </div>
+
+    <form id="contactForm">
+    <div class="row g-3">
+
+      <!-- Name -->
+      <div class="col-sm-6">
+        <div class="lbl-pair">
+          <span class="en">Your Name *</span>
+          <span class="mr">आपले नाव *</span>
+        </div>
+        <input type="text" class="f-ctrl" placeholder="Full Name / पूर्ण नाव" required/>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-sm-6">
+        <div class="lbl-pair">
+          <span class="en">Phone Number *</span>
+          <span class="mr">फोन नंबर *</span>
+        </div>
+        <input type="tel" class="f-ctrl" placeholder="10-digit / १० अंकी नंबर" required/>
+      </div>
+
+      <!-- Email -->
+      <div class="col-12">
+        <div class="lbl-pair">
+          <span class="en">Email Address</span>
+          <span class="mr">ईमेल पत्ता</span>
+        </div>
+        <input type="email" class="f-ctrl" placeholder="your@email.com"/>
+      </div>
+
+      <!-- Department -->
+      <div class="col-12">
+        <div class="lbl-pair">
+          <span class="en">Department</span>
+          <span class="mr">विभाग निवडा</span>
+        </div>
+        <select class="f-ctrl">
+          <option value="">Select Department / विभाग निवडा</option>
+          <option>OPD – General Consultation / बाह्यरुग्ण सेवा</option>
+          <option>Emergency &amp; Casualty / आपत्कालीन सेवा</option>
+          <option>ICU – Critical Care / अतिदक्षता विभाग</option>
+          <option>IPD – Admission / आंतररुग्ण सेवा</option>
+          <option>Diagnostic Services / निदान सेवा</option>
+          <option>Aesthetic Clinic / सौंदर्य क्लिनिक</option>
+          <option>Pharmacy / औषध विभाग</option>
+          <option>Ambulance Service / रुग्णवाहिका</option>
+          <option>Other / इतर</option>
+        </select>
+      </div>
+
+      <!-- Message -->
+      <div class="col-12">
+        <div class="lbl-pair">
+          <span class="en">Your Message *</span>
+          <span class="mr">आपला संदेश *</span>
+        </div>
+        <textarea class="f-ctrl" rows="4" placeholder="Describe your concern... / आपली समस्या सांगा..." required></textarea>
+      </div>
+
+      <!-- Buttons -->
+      <div class="col-12 d-flex flex-wrap gap-3 align-items-center">
+        <button type="submit" class="btn-gold form-submit">
+          <i class="bi bi-send-fill"></i>
+          Send Message
+          <span style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.85em;opacity:.85;margin-left:4px">/ पाठवा</span>
+        </button>
+        <a href="https://wa.me/919421294108" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:#25D366;color:#fff;text-decoration:none;padding:14px 22px;border-radius:10px;font-family:'Cinzel',serif;font-weight:700;font-size:.76rem;letter-spacing:1px;text-transform:uppercase;">
+          <i class="bi bi-whatsapp"></i> WhatsApp
+          <span style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.9em;text-transform:none;letter-spacing:0">चॅट करा</span>
+        </a>
+      </div>
+
+    </div>
+    </form>
+
+    <!-- Success -->
+    <div class="f-success" id="formSuccess">
+      <i class="bi bi-check-circle-fill" style="font-size:1.5rem;color:#059669;flex-shrink:0;margin-top:2px"></i>
+      <div>
+        <span class="fs-en">Message sent successfully! We will contact you shortly.</span>
+        <span class="fs-mr">संदेश यशस्वीपणे पाठवला! आम्ही लवकरच संपर्क करू.</span>
+      </div>
+    </div>
+
+  </div><!-- /form-box -->
+
+  <!-- Map -->
+  <div class="map-box mt-4">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7540.1!2d77.6553!3d18.9617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcf9e0000000001%3A0x1!2sTamsa%2C+Maharashtra!5e0!3m2!1sen!2sin!4v1234567890"
+      width="100%" height="260" style="border:0;display:block;" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <div class="text-center mt-2">
+    <a href="https://maps.app.goo.gl/ueTT2sujf9vZsmC67" target="_blank" style="display:inline-flex;align-items:center;gap:7px;color:#0B6B6A;text-decoration:none;">
+      <i class="bi bi-box-arrow-up-right" style="font-size:.85rem"></i>
+      <span style="font-family:'Cinzel',serif;font-size:.7rem;font-weight:400;letter-spacing:1px;text-transform:uppercase">Open Full Map</span>
+      <span style="font-family:'Noto Sans Devanagari',sans-serif;font-size:.76rem;font-weight:700;color:#555">/ Google Map उघडा</span>
+    </a>
+  </div>
+
+  </div><!-- /col -->
+</div><!-- /row -->
+</div></section>
+
+<!-- ══ DOCTOR CONTACTS ══ -->
 <section class="bg-cream"><div class="container">
-  <div class="text-center mb-4" data-aos>
-    <div class="sec-eyebrow">Direct Contact</div>
+
+  <div class="text-center mb-5" data-aos>
+    <div class="sec-eyebrow">Direct Contact · थेट संपर्क</div>
     <h2 class="sec-title">Reach Our <span>Doctors</span></h2>
+    <p style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.95rem;color:#555;margin-top:4px">आमच्या डॉक्टरांशी थेट संपर्क करा</p>
     <div class="gold-bar mx-auto"></div>
   </div>
+
   <div class="row g-4 justify-content-center">
+
+    <!-- Dr Vipul -->
     <div class="col-md-6 col-lg-4" data-aos>
-      <div class="doc-mini"><div class="dm-av">VP</div>
-        <div class="dm-name">Dr. Vipul S. Patni</div>
+      <div class="doc-mini">
+        <div class="dm-av">VP</div>
+        <p class="dm-name-en">Dr. Vipul Sunilkumar Patni</p>
+        <p class="dm-name-mr">डॉ. विपुल सुनीलकुमार पाटणी</p>
         <div class="dm-deg">BAMS · CCH</div>
-        <div class="dm-sp">General Physician &amp; Surgeon<br/>Child Health Specialist</div>
+        <p class="dm-spec-en">General Physician &amp; Surgeon<br/>Child Health Specialist</p>
+        <p class="dm-spec-mr">सर्वसाधारण वैद्य व शल्यचिकित्सक<br/>बालआरोग्य तज्ज्ञ</p>
         <div class="d-flex justify-content-center gap-2">
           <a href="tel:9421294108" class="btn-navy" style="font-size:.72rem;padding:9px 18px;"><i class="bi bi-telephone-fill"></i> 9421294108</a>
           <a href="https://wa.me/919421294108" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#25D366;color:#fff;padding:9px 16px;border-radius:8px;text-decoration:none;font-family:'Cinzel',serif;font-size:.72rem;font-weight:700;"><i class="bi bi-whatsapp"></i></a>
         </div>
       </div>
     </div>
+
+    <!-- Dr Sayyam -->
     <div class="col-md-6 col-lg-4" data-aos data-d="2">
-      <div class="doc-mini"><div class="dm-av">SP</div>
-        <div class="dm-name">Dr. Sayyam A. Patni</div>
+      <div class="doc-mini">
+        <div class="dm-av">SP</div>
+        <p class="dm-name-en">Dr. Sayyam Ajitkumar Patni</p>
+        <p class="dm-name-mr">डॉ. सय्यम अजितकुमार पाटणी</p>
         <div class="dm-deg">MBBS · CPCDM</div>
-        <div class="dm-sp">Critical Care Specialist · Intensivist<br/>General Physician · Diabetologist</div>
+        <p class="dm-spec-en">Critical Care Specialist · Intensivist<br/>General Physician · Diabetologist</p>
+        <p class="dm-spec-mr">क्रिटिकल केअर तज्ज्ञ · इंटेन्सिव्हिस्ट<br/>सर्वसाधारण वैद्य · मधुमेहशास्त्रज्ञ</p>
         <div class="d-flex justify-content-center gap-2">
           <a href="tel:9766831008" class="btn-navy" style="font-size:.72rem;padding:9px 18px;"><i class="bi bi-telephone-fill"></i> 9766831008</a>
           <a href="https://wa.me/919766831008" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#25D366;color:#fff;padding:9px 16px;border-radius:8px;text-decoration:none;font-family:'Cinzel',serif;font-size:.72rem;font-weight:700;"><i class="bi bi-whatsapp"></i></a>
         </div>
       </div>
     </div>
+
+    <!-- Dr Pragati -->
     <div class="col-md-6 col-lg-4" data-aos data-d="4">
-      <div class="doc-mini"><div class="dm-av">PP</div>
-        <div class="dm-name">Dr. Pragati S. Patni</div>
+      <div class="doc-mini">
+        <div class="dm-av">PP</div>
+        <p class="dm-name-en">Dr. Pragati Sayyam Patni</p>
+        <p class="dm-name-mr">डॉ. प्रगती सय्यम पाटणी</p>
         <div class="dm-deg">BHMS · CGO</div>
-        <div class="dm-sp">Cosmetologist · Gynecologist<br/>Immunization Specialist</div>
+        <p class="dm-spec-en">Cosmetologist &amp; Aesthetic Specialist<br/>Gynecologist · Immunization Specialist</p>
+        <p class="dm-spec-mr">कॉस्मेटोलॉजिस्ट व सौंदर्य तज्ज्ञ<br/>स्त्रीरोग तज्ज्ञ · लसीकरण तज्ज्ञ</p>
         <div class="d-flex justify-content-center gap-2">
-          <a href="tel:9421294108" class="btn-navy" style="font-size:.72rem;padding:9px 18px;"><i class="bi bi-telephone-fill"></i> Call</a>
+          <a href="tel:9421294108" class="btn-navy" style="font-size:.72rem;padding:9px 18px;"><i class="bi bi-telephone-fill"></i> Call / कॉल</a>
           <a href="https://wa.me/919421294108" target="_blank" style="display:inline-flex;align-items:center;gap:6px;background:#25D366;color:#fff;padding:9px 16px;border-radius:8px;text-decoration:none;font-family:'Cinzel',serif;font-size:.72rem;font-weight:700;"><i class="bi bi-whatsapp"></i></a>
         </div>
       </div>
     </div>
+
+  </div><!-- /row doctors -->
+
+  <!-- Stat Pills -->
+  <div class="d-flex flex-wrap justify-content-center gap-3 mt-5" data-aos>
+    <div class="stat-pill"><span class="sp-n">24×7</span><span class="sp-en">Emergency</span><span class="sp-mr">आपत्कालीन</span></div>
+    <div class="stat-pill"><span class="sp-n">3</span><span class="sp-en">Doctors</span><span class="sp-mr">डॉक्टर</span></div>
+    <div class="stat-pill"><span class="sp-n">10</span><span class="sp-en">Beds</span><span class="sp-mr">बेड</span></div>
+    <div class="stat-pill"><span class="sp-n">8+</span><span class="sp-en">Departments</span><span class="sp-mr">विभाग</span></div>
+    <div class="stat-pill"><span class="sp-n">431713</span><span class="sp-en">Pin Code</span><span class="sp-mr">पिन कोड</span></div>
   </div>
+
 </div></section>
+
+<!-- CTA -->
+<div style="background:linear-gradient(135deg,#08172B,#0B6B6A);padding:64px 0;text-align:center;position:relative;overflow:hidden">
+  <div style="position:absolute;inset:0;opacity:.025;background-image:repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);background-size:20px 20px;"></div>
+  <div class="container" data-aos style="position:relative">
+    <h2 style="font-family:'Cinzel',serif;font-size:clamp(1.4rem,3vw,2.2rem);font-weight:700;color:#fff;margin-bottom:4px;letter-spacing:1px">Need Immediate Medical Help?</h2>
+    <p style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.95rem;color:rgba(255,255,255,.75);margin-bottom:2rem">आपत्कालीन स्थितीत एक क्षणही वाया घालवू नका — आम्ही 24 तास तुमच्यासाठी आहोत.</p>
+    <div class="d-flex justify-content-center flex-wrap gap-3">
+      <a href="tel:9421294108" class="btn-gold"><i class="bi bi-telephone-fill"></i> Call: 9421294108</a>
+      <a href="https://wa.me/919421294108" target="_blank" style="display:inline-flex;align-items:center;gap:9px;background:#25D366;color:#fff;padding:14px 28px;border-radius:8px;font-family:'Cinzel',serif;font-weight:700;font-size:.8rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+      <a href="services.html" class="btn-outline-white"><i class="bi bi-grid-3x3-gap"></i> Our Services</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
 <footer class="site-footer"><div class="footer-glow"></div><div class="container">
   <div class="footer-top">
-    <div><img src="logo.jpeg" alt="Mahaveer Hospital" class="footer-logo-img"/>
-      <p class="footer-name">MAHAVEER HOSPITAL</p><p class="footer-tag">"करुणेने उपचार, विश्वासाने सेवा"</p>
-      <p class="footer-addr">Shivaji Nagar, Main Road, Tamsa<br/>Tq- Hadgaon, Di- Nanded, Maharashtra – 431713</p>
-      <div class="footer-socials"><a href="https://wa.me/919421294108" target="_blank"><i class="bi bi-whatsapp"></i></a><a href="tel:9421294108"><i class="bi bi-telephone-fill"></i></a><a href="mailto:info@mahavirhospital.com"><i class="bi bi-envelope-fill"></i></a></div>
+    <div>
+      <img src="logo.jpeg" alt="Mahaveer Hospital" class="footer-logo-img"/>
+      <p class="footer-name">MAHAVEER HOSPITAL</p>
+      <p class="footer-tag" style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700">"करुणेने उपचार, विश्वासाने सेवा"</p>
+      <p class="footer-addr" style="font-family:'Crimson Pro',serif;font-weight:400">Shivaji Nagar, Main Road, Tamsa<br/>Tq- Hadgaon, Di- Nanded, Maharashtra – 431713</p>
+      <div class="footer-socials">
+        <a href="https://wa.me/919421294108" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="tel:9421294108"><i class="bi bi-telephone-fill"></i></a>
+        <a href="mailto:info@mahavirhospital.com"><i class="bi bi-envelope-fill"></i></a>
+      </div>
     </div>
     <div class="footer-links-col"><h6>Navigate</h6><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
     <div class="footer-links-col"><h6>Services</h6><a href="services.html">OPD</a><a href="services.html">ICU Critical Care</a><a href="services.html">Emergency 24×7</a><a href="services.html">Diagnostics</a><a href="services.html">Aesthetic Clinic</a></div>
-    <div class="footer-links-col"><h6>Contact</h6><a href="tel:9421294108"><i class="bi bi-telephone me-1"></i>9421294108</a><a href="tel:9766831008"><i class="bi bi-telephone me-1"></i>9766831008</a><a href="mailto:info@mahavirhospital.com"><i class="bi bi-envelope me-1"></i>Email Us</a><a href="https://maps.app.goo.gl/ueTT2sujf9vZsmC67" target="_blank"><i class="bi bi-geo-alt me-1"></i>Directions</a></div>
+    <div class="footer-links-col"><h6>Contact</h6>
+      <a href="tel:9421294108"><i class="bi bi-telephone me-1"></i>9421294108</a>
+      <a href="tel:9766831008"><i class="bi bi-telephone me-1"></i>9766831008</a>
+      <a href="mailto:info@mahavirhospital.com"><i class="bi bi-envelope me-1"></i>Email Us</a>
+      <a href="https://maps.app.goo.gl/ueTT2sujf9vZsmC67" target="_blank"><i class="bi bi-geo-alt me-1"></i>Directions</a>
+    </div>
   </div>
   <div class="divider-gold"></div>
   <div class="footer-bottom">
@@ -210,6 +481,18 @@
     <p class="footer-seo">Mahaveer Hospital · Critical Care Centre &amp; Aesthetic Clinic · Tamsa, Hadgaon, Nanded, Maharashtra 431713</p>
   </div>
 </div></footer>
-<a href="https://wa.me/919421294108?text=नमस्कार%2C%20मला%20Mahaveer%20Hospital%20बद्दल%20माहिती%20हवी%20आहे." target="_blank" class="wa-fab"><i class="bi bi-whatsapp"></i><span class="wa-pulse"></span></a>
+
+<a href="https://wa.me/919421294108?text=नमस्कार%2C%20मला%20Mahaveer%20Hospital%20बद्दल%20माहिती%20हवी%20आहे." target="_blank" class="wa-fab" title="Chat on WhatsApp"><i class="bi bi-whatsapp"></i><span class="wa-pulse"></span></a>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="app.js"></script></body></html>
+<script src="app.js"></script>
+<script>
+document.getElementById('contactForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  var s=document.getElementById('formSuccess');
+  s.style.display='flex';
+  this.reset();
+  setTimeout(function(){s.style.display='none';},7000);
+});
+</script>
+</body></html>
