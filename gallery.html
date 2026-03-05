@@ -1,0 +1,838 @@
+<!DOCTYPE html><html lang="mr"><head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Gallery / गॅलरी – Mahaveer Hospital | Critical Care &amp; Aesthetic Clinic | Tamsa Hadgaon Nanded</title>
+<meta name="description" content="Photo Gallery of Mahaveer Hospital Tamsa — ICU, OPD, Emergency, Aesthetic Clinic, Doctors and hospital facilities. Hadgaon, Nanded, Maharashtra."/>
+<meta name="keywords" content="Mahaveer Hospital Tamsa Hadgaon Nanded gallery photos, ICU OPD emergency, Dr Vipul Patni, Dr Sayyam Patni, महावीर हॉस्पिटल गॅलरी"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Noto+Sans+Devanagari:wght@400;500;600;700;900&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+<style>
+/* ══════════════════════════════════════════════════
+   MASTER MARATHI RULE — matches index.html
+   Light background  → font-weight:700, color:#111
+   Dark background   → font-weight:700, color:#fff
+   ══════════════════════════════════════════════════ */
+
+/* ── NAV HAMBURGER SPAN TRANSITION (needed for X animation) ── */
+.nav-hamburger span { transition: all .3s ease; }
+
+/* ticker Marathi */
+.ticker-wrap strong {
+  font-family: 'Noto Sans Devanagari', sans-serif !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+}
+
+/* footer tag & address Marathi */
+.footer-tag {
+  font-family: 'Noto Sans Devanagari', sans-serif !important;
+  font-weight: 700 !important;
+  color: #ccc !important;
+  display: block;
+}
+.f-mr {
+  font-family: 'Noto Sans Devanagari', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: .82rem !important;
+  color: #bbb !important;
+  display: block;
+}
+
+/* ── CTA BLOCK ── */
+.cta-block {
+  background: linear-gradient(135deg, #08172B, #0B6B6A);
+  padding: 70px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.cta-block::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: .025;
+  background-image: repeating-linear-gradient(45deg,#fff 0,#fff 1px,transparent 0,transparent 50%);
+  background-size: 20px 20px;
+}
+.cta-en-h { font-family:'Cinzel',serif; font-size:clamp(1.3rem,4vw,2.6rem); font-weight:700; color:#fff; margin-bottom:4px; letter-spacing:1px; position:relative; }
+.cta-mr-h { font-family:'Noto Sans Devanagari',sans-serif !important; font-weight:700 !important; color:#f0f0f0 !important; font-size:clamp(.88rem,2.5vw,1rem); margin-bottom:4px; display:block; position:relative; }
+.cta-en-p { font-family:'Crimson Pro',serif; font-size:1rem; color:rgba(255,255,255,.55); font-weight:400; margin-bottom:3px; position:relative; }
+.cta-mr-p { font-family:'Noto Sans Devanagari',sans-serif !important; font-weight:700 !important; color:#f0f0f0 !important; font-size:.9rem; margin-bottom:2.2rem; display:block; position:relative; }
+
+/* ── FILTER TABS ── */
+.filter-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.filter-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: 40px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all .3s;
+  font: inherit;
+}
+.filter-btn:hover { border-color: var(--gold); box-shadow: 0 4px 16px rgba(200,145,42,.15); }
+.filter-btn.active {
+  background: linear-gradient(135deg, var(--navy), var(--teal));
+  border-color: transparent;
+  box-shadow: 0 6px 20px rgba(8,23,43,.22);
+}
+.filter-en {
+  font-family: 'Cinzel', serif;
+  font-size: .62rem;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--navy);
+  transition: color .3s;
+}
+.filter-mr {
+  font-family: 'Noto Sans Devanagari', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: .62rem;
+  color: var(--teal);
+  transition: color .3s;
+}
+.filter-btn.active .filter-en { color: #E8B84B; }
+.filter-btn.active .filter-mr { color: rgba(232,184,75,.8) !important; }
+
+/* ── GALLERY GRID ── */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+@media(max-width:991px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .gallery-item.wide { grid-column: span 2; aspect-ratio: 16/7; }
+}
+@media(max-width:575px) {
+  .gallery-grid { grid-template-columns: 1fr; gap: 12px; }
+  .gallery-item.wide { grid-column: span 1; aspect-ratio: 4/3; }
+  .gallery-item.tall { aspect-ratio: 4/3; }
+}
+
+/* ── GALLERY ITEM ── */
+.gallery-item {
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(8,23,43,.07);
+  transition: transform .35s ease, box-shadow .35s ease;
+  aspect-ratio: 4/3;
+  background: #f0f0f0;
+  min-height: 160px;
+  isolation: isolate;
+}
+.gallery-item.tall { aspect-ratio: 3/4; }
+.gallery-item.wide { grid-column: span 2; aspect-ratio: 16/7; }
+.gallery-item:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(8,23,43,.18); }
+.gallery-item img {
+  width:100%; height:100%; object-fit:cover; display:block;
+  transition:transform .5s ease;
+  position:absolute; inset:0; z-index:1;
+}
+.gallery-item:hover img { transform: scale(1.06); }
+.gallery-item.hidden { display: none; }
+
+/* ── PLACEHOLDER ── */
+.gallery-item .img-ph {
+  width:100%; height:100%;
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center;
+  gap:10px;
+  position:absolute; inset:0;
+  z-index:1;
+  pointer-events:none;
+}
+.img-ph i {
+  font-size:3rem;
+  color:rgba(255,255,255,.25);
+  transition: transform .4s ease, color .4s ease;
+}
+.img-ph span {
+  font-family:'Cinzel',serif; font-size:.6rem; letter-spacing:2px;
+  color:rgba(255,255,255,.2); text-transform:uppercase;
+  transition: color .4s ease;
+}
+.gallery-item:hover .img-ph i { transform:scale(1.12); color:rgba(255,255,255,.42); }
+.gallery-item:hover .img-ph span { color:rgba(255,255,255,.33); }
+
+/* ── OVERLAY — animated on hover ── */
+.gal-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(8,23,43,.9) 0%, rgba(8,23,43,.5) 40%, rgba(8,23,43,.05) 65%, transparent 100%);
+  opacity: 0;
+  transition: opacity .35s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  z-index: 3;
+  /* no pointer-events block — clicks fall through to gallery-item */
+}
+.gallery-item:hover .gal-overlay { opacity: 1; }
+
+/* Caption slides up on hover */
+.gal-caption-en {
+  font-family: 'Cinzel', serif;
+  font-size: .72rem; font-weight: 400;
+  color: #fff; letter-spacing: .4px;
+  margin-bottom: 2px; line-height: 1.3;
+  transform: translateY(8px); opacity: 0;
+  transition: transform .35s ease .05s, opacity .35s ease .05s;
+}
+.gal-caption-mr {
+  font-family: 'Noto Sans Devanagari', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: .68rem; line-height: 1.4;
+  margin-bottom: .4rem;
+  color: rgba(232,184,75,.85) !important;
+  transform: translateY(8px); opacity: 0;
+  transition: transform .35s ease .1s, opacity .35s ease .1s;
+}
+.gal-cat-badge {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: rgba(200,145,42,.25);
+  border: 1px solid rgba(200,145,42,.4);
+  border-radius: 20px; padding: 3px 10px;
+  font-family: 'Cinzel', serif; font-size: .56rem;
+  color: #E8B84B; letter-spacing: .8px; text-transform: uppercase;
+  width: fit-content; margin-bottom: 4px;
+  transform: translateY(6px); opacity: 0;
+  transition: transform .35s ease, opacity .35s ease;
+}
+
+/* Desktop hover — animate in */
+.gallery-item:hover .gal-caption-en,
+.gallery-item:hover .gal-caption-mr,
+.gallery-item:hover .gal-cat-badge {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── MOBILE: always show overlay & captions, no hover needed ── */
+@media (max-width: 991px) {
+  .gal-overlay {
+    opacity: 1 !important;
+    background: linear-gradient(to top, rgba(8,23,43,.88) 0%, rgba(8,23,43,.45) 45%, transparent 100%);
+  }
+  .gal-caption-en,
+  .gal-caption-mr,
+  .gal-cat-badge {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: none !important;
+  }
+  .gal-zoom { display: none; }
+}
+
+/* Zoom icon — desktop only */
+.gal-zoom {
+  position: absolute; top: 10px; right: 10px;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: rgba(8,23,43,.65);
+  border: 1px solid rgba(255,255,255,.2);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: .85rem;
+  opacity: 0; transform: scale(.65) rotate(-15deg);
+  transition: opacity .3s ease, transform .3s ease;
+  z-index: 4;
+}
+.gallery-item:hover .gal-zoom { opacity: 1; transform: scale(1) rotate(0deg); }
+
+/* Ribbon badge */
+.gal-ribbon {
+  position: absolute; top: 10px; left: 10px;
+  background: rgba(8,23,43,.78);
+  border: 1px solid rgba(200,145,42,.3);
+  border-radius: 20px; padding: 3px 10px;
+  font-family: 'Cinzel', serif; font-size: .55rem;
+  color: #E8B84B; letter-spacing: .8px; text-transform: uppercase;
+  backdrop-filter: blur(4px); z-index: 4;
+}
+
+/* ── PLACEHOLDER BACKGROUNDS ── */
+.img-icu       { background: linear-gradient(135deg,#0a2a3a 0%,#0d4a5a 40%,#0B6B6A 100%); }
+.img-opd       { background: linear-gradient(135deg,#1a2a1a 0%,#2a4a2a 40%,#3a6a3a 100%); }
+.img-emergency { background: linear-gradient(135deg,#3a0a0a 0%,#6a1a0a 40%,#8a2a10 100%); }
+.img-aesthetic { background: linear-gradient(135deg,#2a1a3a 0%,#4a2a6a 40%,#6B3A8A 100%); }
+.img-ward      { background: linear-gradient(135deg,#1a1a3a 0%,#2a2a5a 40%,#3a4A7A 100%); }
+.img-lab       { background: linear-gradient(135deg,#0a2a0a 0%,#1a4a3a 40%,#2a6a5a 100%); }
+.img-doctors   { background: linear-gradient(135deg,#08172B 0%,#0F2340 50%,#1a3a60 100%); }
+.img-pharmacy  { background: linear-gradient(135deg,#2a2a0a 0%,#4a4a1a 40%,#6a6a2a 100%); }
+.img-ambulance { background: linear-gradient(135deg,#3a0a0a 0%,#5a1a1a 40%,#7a2a2a 100%); }
+.img-facility  { background: linear-gradient(135deg,#0a1a2a 0%,#1a2a4a 40%,#0B6B6A 100%); }
+
+@media(max-width:575px){
+  .img-ph i    { font-size:2.2rem; }
+  .img-ph span { font-size:.52rem; }
+}
+
+/* ── STATS STRIP ── */
+.stats-strip { background: linear-gradient(90deg, var(--navy), var(--teal)); padding: 36px 0; }
+.ss-num { font-family:'Cinzel',serif; font-size:clamp(1.5rem,5vw,2rem); font-weight:900; color:#E8B84B; display:block; line-height:1; }
+.ss-en  { font-size:.62rem; color:rgba(255,255,255,.45); letter-spacing:1.5px; text-transform:uppercase; font-family:'Cinzel',serif; font-weight:400; display:block; margin-top:3px; }
+.ss-mr  { font-family:'Noto Sans Devanagari',sans-serif !important; font-weight:700 !important; font-size:.66rem; display:block; margin-top:1px; color:rgba(232,184,75,.65) !important; }
+.ss-item { text-align:center; padding:0 .8rem; }
+.ss-item:not(:last-child) { border-right:1px solid rgba(255,255,255,.1); }
+@media(max-width:575px){
+  .ss-item { padding:.6rem .4rem; border-right:none !important; border-bottom:1px solid rgba(255,255,255,.08); }
+  .ss-item:last-child { border-bottom:none; }
+  .stats-strip .row { gap:0; }
+}
+
+/* ── LIGHTBOX ── */
+.lightbox {
+  position:fixed; inset:0; z-index:9999;
+  background:rgba(5,13,25,.97);
+  display:none; align-items:center; justify-content:center;
+  padding:16px; backdrop-filter:blur(8px);
+}
+.lightbox.open { display:flex; }
+.lb-inner {
+  position:relative; max-width:860px; width:100%;
+  animation:lbIn .3s ease;
+}
+@keyframes lbIn { from{opacity:0;transform:scale(.93)} to{opacity:1;transform:scale(1)} }
+.lb-img-wrap {
+  border-radius:14px; overflow:hidden;
+  border:1px solid rgba(200,145,42,.25);
+  box-shadow:0 24px 80px rgba(0,0,0,.65);
+}
+.lb-img-wrap img { width:100%; display:block; max-height:70vh; object-fit:contain; background:#0a0e15; }
+.lb-ph-inner {
+  width:100%; height:300px;
+  display:flex; flex-direction:column;
+  align-items:center; justify-content:center; gap:16px;
+}
+.lb-ph-inner i    { font-size:5rem; color:rgba(255,255,255,.18); }
+.lb-ph-inner span { font-family:'Cinzel',serif; font-size:.7rem; letter-spacing:2px; color:rgba(255,255,255,.2); text-transform:uppercase; }
+.lb-info {
+  padding:.9rem 1.1rem;
+  background:rgba(8,23,43,.92);
+  border-top:1px solid rgba(200,145,42,.15);
+  border-radius:0 0 14px 14px;
+}
+.lb-cap-en { font-family:'Cinzel',serif; font-size:.84rem; font-weight:400; color:#fff; margin-bottom:2px; letter-spacing:.3px; }
+.lb-cap-mr { font-family:'Noto Sans Devanagari',sans-serif !important; font-weight:700 !important; font-size:.8rem; color:rgba(232,184,75,.8) !important; margin:0; }
+.lb-counter { font-family:'Cinzel',serif; font-size:.58rem; letter-spacing:1.5px; color:rgba(255,255,255,.3); margin-top:5px; display:block; }
+.lb-close {
+  position:absolute; top:-14px; right:-14px;
+  width:40px; height:40px; border-radius:50%;
+  background:var(--red); border:2px solid rgba(255,255,255,.2);
+  color:#fff; font-size:1rem;
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer; transition:all .2s; z-index:10;
+}
+.lb-close:hover { transform:scale(1.1); }
+.lb-nav {
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:42px; height:42px; border-radius:50%;
+  background:rgba(8,23,43,.82); border:1px solid rgba(200,145,42,.3);
+  color:#E8B84B; font-size:1.1rem;
+  display:flex; align-items:center; justify-content:center;
+  cursor:pointer; transition:all .2s; z-index:10;
+}
+.lb-nav:hover { background:rgba(200,145,42,.22); }
+.lb-prev { left:-20px; }
+.lb-next { right:-20px; }
+@media(max-width:575px){
+  .lb-prev { left:6px; top:auto; bottom:70px; transform:none; }
+  .lb-next { right:6px; top:auto; bottom:70px; transform:none; }
+  .lb-close { top:6px; right:6px; }
+  .lb-img-wrap img { max-height:55vh; }
+  .lb-ph-inner { height:220px; }
+  .lb-ph-inner i { font-size:3.5rem; }
+}
+
+/* ── NAV MOBILE FIXES ── */
+.site-nav { position: sticky; top: 0; z-index: 1050; }
+@media(max-width:991px){
+  .nav-menu {
+    position: absolute !important; top: 100% !important;
+    left: 0 !important; right: 0 !important;
+    background: #0F2340 !important;
+    flex-direction: column !important; align-items: stretch !important;
+    padding: 10px 16px 16px !important;
+    border-top: 1px solid rgba(200,145,42,.35) !important;
+    gap: 4px !important; z-index: 1049 !important;
+    box-shadow: 0 12px 32px rgba(0,0,0,.4) !important;
+    display: none !important; max-height: 80vh; overflow-y: auto;
+  }
+  .nav-menu.open { display: flex !important; }
+  .nav-link { padding: 11px 14px !important; font-size: .8rem !important; border-bottom: 1px solid rgba(255,255,255,.06); }
+  .nav-link:last-of-type { border-bottom: none; }
+  .nav-emergency { justify-content: center !important; margin-top: 6px !important; }
+  .nav-hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-hamburger.active span:nth-child(2) { opacity: 0; }
+  .nav-hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+}
+@media(max-width:575px){
+  .page-hero { padding: 50px 0 40px; }
+  .page-hero-title { font-size: clamp(1.6rem,8vw,2.2rem); }
+  .page-hero-sub   { font-size: .9rem; }
+  section { padding: 50px 0; }
+  .cta-block { padding: 48px 0; }
+  .stats-strip { padding: 28px 0; }
+  .filter-wrap { gap:6px; margin-bottom:1.8rem; }
+  .filter-btn  { padding:7px 12px; }
+  .filter-en   { font-size:.58rem; letter-spacing:.8px; }
+  .filter-mr   { font-size:.58rem; }
+  .cta-block .d-flex { flex-direction:column; align-items:center; }
+  .cta-block .btn-gold,
+  .cta-block .btn-outline-white,
+  .cta-block a[style] { width:100%; max-width:300px; justify-content:center; }
+}
+@media(max-width:767px){ .footer-top { grid-template-columns: 1fr 1fr; } }
+@media(max-width:479px){
+  .footer-top { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction:column; gap:.4rem; text-align:center; }
+}
+#noResults { display:none; text-align:center; padding:3rem 0; }
+</style>
+</head><body>
+
+<!-- TICKER -->
+<div class="ticker-wrap"><div class="ticker-move">
+<span><i class="bi bi-telephone-fill"></i> Emergency 24×7 : 9421294108</span>
+<span><i class="bi bi-heart-pulse-fill"></i> ICU &amp; Critical Care Available / <strong>अतिदक्षता उपलब्ध</strong></span>
+<span><i class="bi bi-telephone-fill"></i> Dr Sayyam Patni : 9766831008</span>
+<span><i class="bi bi-geo-alt-fill"></i> Tamsa · Hadgaon · Nanded 431713</span>
+<span><i class="bi bi-truck"></i> Ambulance On Call / <strong>रुग्णवाहिका सेवा</strong></span>
+<span><i class="bi bi-telephone-fill"></i> Emergency 24×7 : 9421294108</span>
+<span><i class="bi bi-heart-pulse-fill"></i> ICU &amp; Critical Care Available / <strong>अतिदक्षता उपलब्ध</strong></span>
+<span><i class="bi bi-telephone-fill"></i> Dr Sayyam Patni : 9766831008</span>
+<span><i class="bi bi-geo-alt-fill"></i> Tamsa · Hadgaon · Nanded 431713</span>
+<span><i class="bi bi-truck"></i> Ambulance On Call / <strong>रुग्णवाहिका सेवा</strong></span>
+</div></div>
+
+<!-- NAV -->
+<nav class="site-nav" id="mainNav"><div class="nav-container">
+  <a href="index.html" class="nav-brand">
+    <img src="logo.jpeg" alt="Mahaveer Hospital Logo" class="nav-logo-img"/>
+    <div class="brand-words"><span class="brand-main">MAHAVEER HOSPITAL</span><span class="brand-sub">Critical Care · Aesthetic Clinic · Tamsa</span></div>
+  </a>
+  <button class="nav-hamburger" id="navToggle"><span></span><span></span><span></span></button>
+  <ul class="nav-menu" id="navMenu">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="services.html" class="nav-link">Services</a></li>
+    <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+    <li><a href="tel:9421294108" class="nav-emergency"><i class="bi bi-telephone-fill"></i> Emergency</a></li>
+  </ul>
+</div></nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero"><div class="container page-hero-inner">
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <i class="bi bi-chevron-right"></i>
+    <span>Gallery</span>
+  </div>
+  <h1 class="page-hero-title">
+    Our <span>Gallery</span>
+    <span style="display:block;font-family:'Noto Sans Devanagari',sans-serif;font-size:.44em;font-weight:700;color:rgba(232,184,75,.82);margin-top:6px;letter-spacing:0">आमची गॅलरी</span>
+  </h1>
+  <p class="page-hero-sub" style="margin-bottom:4px">A glimpse into our facilities, team, and the care we provide — 24×7, at the heart of Marathwada.</p>
+  <p style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.9rem;color:rgba(255,255,255,.5);margin-top:4px">आमच्या सुविधा, टीम आणि सेवेची एक झलक — मराठवाड्याच्या हृदयात.</p>
+</div></div>
+
+<!-- ══ GALLERY SECTION ══ -->
+<section class="bg-cream">
+<div class="container">
+
+  <div class="text-center mb-4" data-aos>
+    <div class="eyebrow-bi" style="align-items:center">
+      <span class="eyebrow-en">Photo Gallery</span>
+      <span class="eyebrow-mr" style="color:#111 !important">छायाचित्र संग्रह</span>
+    </div>
+    <h2 class="sec-title">Inside <span>Mahaveer Hospital</span></h2>
+    <div class="gold-bar mx-auto"></div>
+    <p style="font-family:'Crimson Pro',serif;font-weight:400;font-size:.95rem;color:var(--muted);margin-top:.6rem;margin-bottom:3px">Browse through our departments, facilities, and moments of healing.</p>
+    <p style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.86rem;color:#111">आमच्या विभाग, सुविधा आणि उपचाराच्या क्षणांची सफर करा.</p>
+  </div>
+
+  <!-- Filter Tabs -->
+  <div class="filter-wrap" id="filterWrap" data-aos>
+    <!-- <button class="filter-btn active" data-filter="all"><span class="filter-en">All</span><span class="filter-mr">सर्व</span></button> -->
+    <button class="filter-btn active" data-filter="icu"><span class="filter-en">ICU &amp; Critical</span><span class="filter-mr">ICU व अतिदक्षता</span></button>
+    <button class="filter-btn" data-filter="opd"><span class="filter-en">OPD &amp; Wards</span><span class="filter-mr">OPD व वॉर्ड</span></button>
+    <button class="filter-btn" data-filter="emergency"><span class="filter-en">Emergency</span><span class="filter-mr">आपत्कालीन</span></button>
+    <button class="filter-btn" data-filter="aesthetic"><span class="filter-en">Aesthetic</span><span class="filter-mr">सौंदर्य</span></button>
+    <button class="filter-btn" data-filter="team"><span class="filter-en">Our Team</span><span class="filter-mr">आमची टीम</span></button>
+    <button class="filter-btn" data-filter="facility"><span class="filter-en">Facility</span><span class="filter-mr">सुविधा</span></button>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery-grid" id="galleryGrid">
+
+    <div class="gallery-item wide img-icu" data-cat="icu" data-en="ICU — 2-Bed Intensive Care Unit" data-mr="ICU — २ बेड अतिदक्षता विभाग">
+      <div class="img-ph"><i class="bi bi-heart-pulse-fill"></i><span>ICU – Critical Care</span></div>
+      <div class="gal-ribbon">ICU</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-heart-pulse-fill"></i> ICU</div><p class="gal-caption-en">ICU — 2-Bed Intensive Care Unit</p><p class="gal-caption-mr">ICU — २ बेड अतिदक्षता विभाग</p></div>
+    </div>
+
+    <div class="gallery-item img-opd" data-cat="opd" data-en="OPD Consultation Room" data-mr="OPD तपासणी कक्ष">
+      <div class="img-ph"><i class="bi bi-person-check-fill"></i><span>OPD Consultation</span></div>
+      <div class="gal-ribbon">OPD</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-person-check-fill"></i> OPD</div><p class="gal-caption-en">OPD Consultation Room</p><p class="gal-caption-mr">OPD तपासणी कक्ष</p></div>
+    </div>
+
+    <div class="gallery-item img-emergency" data-cat="emergency" data-en="24×7 Emergency & Casualty Unit" data-mr="२४ तास आपत्कालीन सेवा विभाग">
+      <div class="img-ph"><i class="bi bi-lightning-charge-fill"></i><span>Emergency Unit</span></div>
+      <div class="gal-ribbon">Emergency</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-lightning-charge-fill"></i> Emergency</div><p class="gal-caption-en">24×7 Emergency &amp; Casualty Unit</p><p class="gal-caption-mr">२४ तास आपत्कालीन सेवा विभाग</p></div>
+    </div>
+
+    <div class="gallery-item img-aesthetic" data-cat="aesthetic" data-en="Aesthetic Clinic — Skin & Cosmetology" data-mr="सौंदर्य क्लिनिक — त्वचा व कॉस्मेटोलॉजी">
+      <div class="img-ph"><i class="bi bi-stars"></i><span>Aesthetic Clinic</span></div>
+      <div class="gal-ribbon">Aesthetic</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-stars"></i> Aesthetic</div><p class="gal-caption-en">Aesthetic Clinic — Skin &amp; Cosmetology</p><p class="gal-caption-mr">सौंदर्य क्लिनिक — त्वचा व कॉस्मेटोलॉजी</p></div>
+    </div>
+
+    <div class="gallery-item img-ward" data-cat="opd" data-en="IPD Ward — 8-Bed Inpatient Department" data-mr="IPD वॉर्ड — ८ बेड आंतररुग्ण विभाग">
+      <div class="img-ph"><i class="bi bi-hospital-fill"></i><span>IPD Ward</span></div>
+      <div class="gal-ribbon">IPD</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-hospital-fill"></i> IPD</div><p class="gal-caption-en">IPD Ward — 8-Bed Inpatient Department</p><p class="gal-caption-mr">IPD वॉर्ड — ८ बेड आंतररुग्ण विभाग</p></div>
+    </div>
+
+    <div class="gallery-item wide img-doctors" data-cat="team" data-en="Our Expert Medical Team" data-mr="आमची तज्ज्ञ वैद्यकीय टीम">
+      <div class="img-ph"><i class="bi bi-people-fill"></i><span>Medical Team</span></div>
+      <div class="gal-ribbon">Our Team</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-people-fill"></i> Team</div><p class="gal-caption-en">Our Expert Medical Team</p><p class="gal-caption-mr">आमची तज्ज्ञ वैद्यकीय टीम</p></div>
+    </div>
+
+    <div class="gallery-item img-lab" data-cat="facility" data-en="Diagnostic Laboratory — ECG, X-Ray & Tests" data-mr="निदान प्रयोगशाळा — ECG, X-Ray व तपासण्या">
+      <div class="img-ph"><i class="bi bi-clipboard2-pulse-fill"></i><span>Diagnostics</span></div>
+      <div class="gal-ribbon">Diagnostics</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-clipboard2-pulse-fill"></i> Lab</div><p class="gal-caption-en">Diagnostic Lab — ECG, X-Ray &amp; Tests</p><p class="gal-caption-mr">निदान प्रयोगशाळा — ECG, X-Ray व तपासण्या</p></div>
+    </div>
+
+    <div class="gallery-item img-pharmacy" data-cat="facility" data-en="In-House Pharmacy — 24×7 Medicines Available" data-mr="रुग्णालयातील औषध विभाग — २४ तास उपलब्ध">
+      <div class="img-ph"><i class="bi bi-capsule-pill"></i><span>Pharmacy</span></div>
+      <div class="gal-ribbon">Pharmacy</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-capsule-pill"></i> Pharmacy</div><p class="gal-caption-en">In-House Pharmacy — 24×7 Medicines</p><p class="gal-caption-mr">रुग्णालयातील औषध विभाग — २४ तास उपलब्ध</p></div>
+    </div>
+
+    <div class="gallery-item img-icu tall" data-cat="icu" data-en="Ventilator & Cardiac Monitoring — ICU" data-mr="व्हेंटिलेटर व हृदय निरीक्षण — ICU">
+      <div class="img-ph"><i class="bi bi-activity"></i><span>ICU Monitor</span></div>
+      <div class="gal-ribbon">ICU</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-heart-pulse-fill"></i> ICU</div><p class="gal-caption-en">Ventilator &amp; Cardiac Monitoring — ICU</p><p class="gal-caption-mr">व्हेंटिलेटर व हृदय निरीक्षण — ICU</p></div>
+    </div>
+
+    <div class="gallery-item img-doctors" data-cat="team" data-en="Dr. Vipul Sunilkumar Patni — BAMS, CCH" data-mr="डॉ. विपुल सुनीलकुमार पाटणी — BAMS, CCH">
+      <div class="img-ph"><i class="bi bi-person-badge-fill"></i><span>Dr. Vipul Patni</span></div>
+      <div class="gal-ribbon">Doctor</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-person-badge-fill"></i> Doctor</div><p class="gal-caption-en">Dr. Vipul Sunilkumar Patni — BAMS, CCH</p><p class="gal-caption-mr">डॉ. विपुल सुनीलकुमार पाटणी — BAMS, CCH</p></div>
+    </div>
+
+    <div class="gallery-item img-ambulance" data-cat="facility" data-en="Ambulance Service — On-Call Patient Transfer" data-mr="रुग्णवाहिका सेवा — फोनवर उपलब्ध">
+      <div class="img-ph"><i class="bi bi-truck-front-fill"></i><span>Ambulance</span></div>
+      <div class="gal-ribbon">Ambulance</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-truck"></i> Ambulance</div><p class="gal-caption-en">Ambulance Service — On-Call Transfer</p><p class="gal-caption-mr">रुग्णवाहिका सेवा — फोनवर उपलब्ध</p></div>
+    </div>
+
+    <div class="gallery-item wide img-aesthetic" data-cat="aesthetic" data-en="Advanced Aesthetic Treatments — Botox, PRP & More" data-mr="प्रगत सौंदर्य उपचार — बोटॉक्स, PRP व इतर">
+      <div class="img-ph"><i class="bi bi-flower1"></i><span>Aesthetic Treatments</span></div>
+      <div class="gal-ribbon">Aesthetic</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-stars"></i> Aesthetic</div><p class="gal-caption-en">Advanced Aesthetic — Botox, PRP &amp; More</p><p class="gal-caption-mr">प्रगत सौंदर्य उपचार — बोटॉक्स, PRP व इतर</p></div>
+    </div>
+
+    <div class="gallery-item img-opd" data-cat="opd" data-en="Waiting Area — Clean & Patient-Friendly" data-mr="प्रतीक्षा कक्ष — स्वच्छ व रुग्णस्नेही">
+      <div class="img-ph"><i class="bi bi-house-heart-fill"></i><span>Waiting Area</span></div>
+      <div class="gal-ribbon">OPD</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-house-heart-fill"></i> OPD</div><p class="gal-caption-en">Waiting Area — Clean &amp; Patient-Friendly</p><p class="gal-caption-mr">प्रतीक्षा कक्ष — स्वच्छ व रुग्णस्नेही</p></div>
+    </div>
+
+    <div class="gallery-item img-emergency" data-cat="emergency" data-en="Trauma & Emergency Management Bay" data-mr="ट्रॉमा व आपत्कालीन व्यवस्थापन कक्ष">
+      <div class="img-ph"><i class="bi bi-bandaid-fill"></i><span>Trauma Care</span></div>
+      <div class="gal-ribbon">Emergency</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-lightning-charge-fill"></i> Emergency</div><p class="gal-caption-en">Trauma &amp; Emergency Management Bay</p><p class="gal-caption-mr">ट्रॉमा व आपत्कालीन व्यवस्थापन कक्ष</p></div>
+    </div>
+
+    <div class="gallery-item img-facility" data-cat="facility" data-en="Mahaveer Hospital — Exterior View, Tamsa" data-mr="महावीर हॉस्पिटल — बाह्य दृश्य, तामसा">
+      <div class="img-ph"><i class="bi bi-building-fill-cross"></i><span>Hospital Building</span></div>
+      <div class="gal-ribbon">Facility</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-building-fill"></i> Facility</div><p class="gal-caption-en">Mahaveer Hospital — Exterior View, Tamsa</p><p class="gal-caption-mr">महावीर हॉस्पिटल — बाह्य दृश्य, तामसा</p></div>
+    </div>
+
+    <div class="gallery-item img-doctors" data-cat="team" data-en="Dr. Sayyam Ajitkumar Patni — MBBS, CPCDM" data-mr="डॉ. सय्यम अजितकुमार पाटणी — MBBS, CPCDM">
+      <div class="img-ph"><i class="bi bi-person-badge-fill"></i><span>Dr. Sayyam Patni</span></div>
+      <div class="gal-ribbon">Doctor</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-person-badge-fill"></i> Doctor</div><p class="gal-caption-en">Dr. Sayyam Ajitkumar Patni — MBBS, CPCDM</p><p class="gal-caption-mr">डॉ. सय्यम अजितकुमार पाटणी — MBBS, CPCDM</p></div>
+    </div>
+
+    <div class="gallery-item img-aesthetic" data-cat="team" data-en="Dr. Pragati Sayyam Patni — BHMS, CGO" data-mr="डॉ. प्रगती सय्यम पाटणी — BHMS, CGO">
+      <div class="img-ph"><i class="bi bi-person-badge-fill"></i><span>Dr. Pragati Patni</span></div>
+      <div class="gal-ribbon">Doctor</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-person-badge-fill"></i> Doctor</div><p class="gal-caption-en">Dr. Pragati Sayyam Patni — BHMS, CGO</p><p class="gal-caption-mr">डॉ. प्रगती सय्यम पाटणी — BHMS, CGO</p></div>
+    </div>
+
+    <div class="gallery-item img-ward" data-cat="opd" data-en="Dedicated Nursing Care — 24×7 Patient Support" data-mr="समर्पित परिचारिका सेवा — २४ तास रुग्ण सहाय्य">
+      <div class="img-ph"><i class="bi bi-bandaid-fill"></i><span>Nursing Care</span></div>
+      <div class="gal-ribbon">Nursing</div><div class="gal-zoom"><i class="bi bi-zoom-in"></i></div>
+      <div class="gal-overlay"><div class="gal-cat-badge"><i class="bi bi-bandaid-fill"></i> Nursing</div><p class="gal-caption-en">Dedicated Nursing Care — 24×7 Support</p><p class="gal-caption-mr">समर्पित परिचारिका सेवा — २४ तास रुग्ण सहाय्य</p></div>
+    </div>
+
+  </div><!-- /gallery-grid -->
+
+  <div id="noResults">
+    <i class="bi bi-images" style="font-size:3rem;color:rgba(8,23,43,.15);display:block;margin-bottom:.8rem"></i>
+    <p style="font-family:'Cinzel',serif;font-size:.8rem;color:var(--muted);letter-spacing:1px">No images in this category yet.</p>
+    <p style="font-family:'Noto Sans Devanagari',sans-serif;font-weight:700;font-size:.8rem;color:var(--muted)">या विभागात अद्याप कोणतेही छायाचित्र नाही.</p>
+  </div>
+
+</div>
+</section>
+
+<!-- ══ STATS STRIP ══ -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="row g-0 justify-content-center">
+      <div class="col-6 col-md-3"><div class="ss-item"><span class="ss-num">18+</span><span class="ss-en">Gallery Photos</span><span class="ss-mr">छायाचित्रे</span></div></div>
+      <div class="col-6 col-md-3"><div class="ss-item"><span class="ss-num">8+</span><span class="ss-en">Departments</span><span class="ss-mr">विभाग</span></div></div>
+      <div class="col-6 col-md-3"><div class="ss-item"><span class="ss-num">3</span><span class="ss-en">Expert Doctors</span><span class="ss-mr">तज्ज्ञ डॉक्टर</span></div></div>
+      <div class="col-6 col-md-3"><div class="ss-item"><span class="ss-num">24×7</span><span class="ss-en">Always Open</span><span class="ss-mr">सदैव उपलब्ध</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CTA ══ -->
+<div class="cta-block"><div class="container" data-aos>
+  <h2 class="cta-en-h">Need Immediate Medical Help?</h2>
+  <span class="cta-mr-h">त्वरित वैद्यकीय मदत हवी आहे?</span>
+  <p class="cta-en-p">Our team is ready to help — call, WhatsApp, or visit our Contact page.</p>
+  <span class="cta-mr-p">आमची टीम मदतीसाठी तयार आहे — आम्ही 24 तास तुमच्यासाठी आहोत.</span>
+  <div class="d-flex justify-content-center flex-wrap gap-3">
+    <a href="tel:9421294108" class="btn-gold"><i class="bi bi-telephone-fill"></i> Call: 9421294108</a>
+    <a href="https://wa.me/919421294108" target="_blank" style="display:inline-flex;align-items:center;gap:9px;background:#25D366;color:#fff;padding:14px 30px;border-radius:8px;font-family:'Cinzel',serif;font-weight:700;font-size:.8rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+    <a href="contact.html" class="btn-outline-white"><i class="bi bi-envelope"></i> Contact Us / संपर्क करा</a>
+  </div>
+</div></div>
+
+<!-- ══ FOOTER — exact original ══ -->
+<footer class="site-footer"><div class="footer-glow"></div><div class="container">
+  <div class="footer-top">
+    <div>
+      <img src="logo.jpeg" alt="Mahaveer Hospital" class="footer-logo-img"/>
+      <p class="footer-name">MAHAVEER HOSPITAL</p>
+      <p class="footer-tag">"करुणेने उपचार, विश्वासाने सेवा"</p>
+      <p class="footer-addr" style="font-family:'Crimson Pro',serif;font-weight:400">
+        Shivaji Nagar, Main Road, Tamsa<br/>
+        <span class="f-mr">शिवाजी नगर, मुख्य रस्ता, तामसा</span><br/>
+        Tq- Hadgaon, Di- Nanded, Maharashtra – 431713<br/>
+        <span class="f-mr">ता- हदगाव, जि- नांदेड, महाराष्ट्र – ४३१७१३</span>
+      </p>
+      <div class="footer-socials">
+        <a href="https://wa.me/919421294108" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="tel:9421294108"><i class="bi bi-telephone-fill"></i></a>
+        <a href="/cdn-cgi/l/email-protection#82ebece4edc2efe3eae3f4ebf0eaedf1f2ebf6e3eeace1edef"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+    </div>
+    <div class="footer-links-col"><h6>Navigate</h6><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="contact.html">Contact</a></div>
+    <div class="footer-links-col"><h6>Services</h6><a href="services.html">OPD</a><a href="services.html">ICU Critical Care</a><a href="services.html">Emergency 24×7</a><a href="services.html">Diagnostics</a><a href="services.html">Aesthetic Clinic</a></div>
+    <div class="footer-links-col"><h6>Contact</h6>
+      <a href="tel:9421294108"><i class="bi bi-telephone me-1"></i>9421294108</a>
+      <a href="tel:9766831008"><i class="bi bi-telephone me-1"></i>9766831008</a>
+      <a href="/cdn-cgi/l/email-protection#5c35323a331c313d343d2a352e34332f2c35283d30723f3331"><i class="bi bi-envelope me-1"></i>Email Us</a>
+      <a href="https://maps.app.goo.gl/ueTT2sujf9vZsmC67" target="_blank"><i class="bi bi-geo-alt me-1"></i>Directions</a>
+    </div>
+  </div>
+  <div class="divider-gold"></div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 <a href="http://kssoftware.infinityfree.me/" target="_blank">KS_SOFTWARE</a>. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    <p class="footer-seo">Mahaveer Hospital · Critical Care Centre &amp; Aesthetic Clinic · Tamsa, Hadgaon, Nanded, Maharashtra 431713</p>
+  </div>
+</div></footer>
+
+<!-- ══ LIGHTBOX ══ -->
+<div class="lightbox" id="lightbox">
+  <div class="lb-inner" id="lbInner">
+    <button class="lb-close" id="lbClose"><i class="bi bi-x-lg"></i></button>
+    <button class="lb-nav lb-prev" id="lbPrev"><i class="bi bi-chevron-left"></i></button>
+    <button class="lb-nav lb-next" id="lbNext"><i class="bi bi-chevron-right"></i></button>
+    <div class="lb-img-wrap" id="lbImgWrap"></div>
+    <div class="lb-info">
+      <p class="lb-cap-en" id="lbCapEn"></p>
+      <p class="lb-cap-mr" id="lbCapMr"></p>
+      <span class="lb-counter" id="lbCounter"></span>
+    </div>
+  </div>
+</div>
+
+<!-- WhatsApp FAB -->
+<a href="https://wa.me/919421294108?text=नमस्कार%2C%20मला%20Mahaveer%20Hospital%20बद्दल%20माहिती%20हवी%20आहे." target="_blank" class="wa-fab" title="Chat on WhatsApp"><i class="bi bi-whatsapp"></i><span class="wa-pulse"></span></a>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+/* ══════════════════════════════════════════════
+   GALLERY PAGE — all JS in one place, correct order
+   ══════════════════════════════════════════════ */
+(function(){
+
+  /* ── LIGHTBOX — defined first so everything below can use it ── */
+  var visibleItems = [], currentIdx = 0;
+  var lb     = document.getElementById('lightbox');
+  var lbWrap = document.getElementById('lbImgWrap');
+
+  function buildVisible(){
+    visibleItems = Array.from(document.querySelectorAll('.gallery-item')).filter(function(i){
+      return !i.classList.contains('hidden');
+    });
+  }
+
+  function renderLB(idx){
+    if(idx < 0 || idx >= visibleItems.length) return;
+    var el     = visibleItems[idx];
+    var icon   = el.querySelector('.img-ph i');
+    var phSpan = el.querySelector('.img-ph span');
+    var bgClass = Array.from(el.classList).find(function(c){ return c.startsWith('img-'); }) || '';
+    var srcImg  = el.querySelector('img');
+    if(srcImg && srcImg.src && srcImg.complete){
+      lbWrap.innerHTML = '<img src="'+srcImg.src+'" alt="'+(el.dataset.en||'')+'">';
+    } else {
+      lbWrap.innerHTML =
+        '<div class="lb-ph-inner '+bgClass+'">'
+        +'<i class="'+(icon ? icon.className : 'bi bi-image')+'" style="font-size:5rem;color:rgba(255,255,255,.18)"></i>'
+        +'<span style="font-family:\'Cinzel\',serif;font-size:.7rem;letter-spacing:2px;color:rgba(255,255,255,.2);text-transform:uppercase">'+(phSpan ? phSpan.textContent : '')+'</span>'
+        +'</div>';
+    }
+    document.getElementById('lbCapEn').textContent   = el.dataset.en || '';
+    document.getElementById('lbCapMr').textContent   = el.dataset.mr || '';
+    document.getElementById('lbCounter').textContent = (idx+1) + ' / ' + visibleItems.length;
+    currentIdx = idx;
+  }
+
+  function openLB(el){
+    buildVisible();
+    currentIdx = visibleItems.indexOf(el);
+    renderLB(currentIdx);
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function navLB(dir){
+    var next = currentIdx + dir;
+    if(next >= 0 && next < visibleItems.length) renderLB(next);
+  }
+
+  function closeLB(){
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  /* Lightbox buttons */
+  document.getElementById('lbClose').addEventListener('click', function(e){ e.stopPropagation(); closeLB(); });
+  document.getElementById('lbPrev').addEventListener('click', function(e){ e.stopPropagation(); navLB(-1); });
+  document.getElementById('lbNext').addEventListener('click', function(e){ e.stopPropagation(); navLB(1); });
+
+  /* Close on backdrop tap/click */
+  lb.addEventListener('click', function(e){
+    if(!document.getElementById('lbInner').contains(e.target)) closeLB();
+  });
+
+  /* Keyboard */
+  document.addEventListener('keydown', function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key === 'ArrowRight') navLB(1);
+    if(e.key === 'ArrowLeft')  navLB(-1);
+    if(e.key === 'Escape')     closeLB();
+  });
+
+  /* Swipe */
+  var swipeX = 0;
+  lb.addEventListener('touchstart', function(e){ swipeX = e.touches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend',   function(e){
+    var dx = e.changedTouches[0].clientX - swipeX;
+    if(Math.abs(dx) > 48) navLB(dx < 0 ? 1 : -1);
+  }, {passive:true});
+
+  /* ── NAV HAMBURGER ── */
+  var toggle = document.getElementById('navToggle');
+  var menu   = document.getElementById('navMenu');
+  if(toggle && menu && !toggle._gBound){
+    toggle._gBound = true;
+    toggle.addEventListener('click', function(e){
+      e.stopPropagation();
+      menu.classList.toggle('open');
+      toggle.classList.toggle('active');
+    });
+    document.addEventListener('click', function(e){
+      if(!toggle.contains(e.target) && !menu.contains(e.target)){
+        menu.classList.remove('open');
+        toggle.classList.remove('active');
+      }
+    });
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        menu.classList.remove('open');
+        toggle.classList.remove('active');
+      });
+    });
+  }
+
+  /* ── SCROLL: ticker + nav ── */
+  var tickerEl = document.querySelector('.ticker-wrap');
+  var navEl    = document.getElementById('mainNav');
+  window.addEventListener('scroll', function(){
+    var s = window.scrollY > 36;
+    navEl.classList.toggle('scrolled', s);
+    if(tickerEl){ tickerEl.style.transform = s ? 'translateY(-100%)' : ''; tickerEl.style.opacity = s ? '0' : ''; }
+  }, {passive:true});
+
+  /* ── AOS ── */
+  var aobs = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('visible'); aobs.unobserve(e.target); } });
+  }, {threshold:.12});
+  document.querySelectorAll('[data-aos]').forEach(function(el){ aobs.observe(el); });
+
+  /* ── FILTER ── */
+  var filterBtns   = document.querySelectorAll('.filter-btn');
+  var galleryItems = document.querySelectorAll('.gallery-item');
+
+  function applyFilter(cat){
+    filterBtns.forEach(function(b){ b.classList.remove('active'); });
+    filterBtns.forEach(function(b){ if(b.dataset.filter === cat) b.classList.add('active'); });
+    var visible = 0;
+    galleryItems.forEach(function(item){
+      if(cat === 'all' || item.dataset.cat === cat){ item.classList.remove('hidden'); visible++; }
+      else { item.classList.add('hidden'); }
+    });
+    document.getElementById('noResults').style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  /* Default: ICU on load */
+  applyFilter('icu');
+
+  filterBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){ applyFilter(this.dataset.filter); });
+  });
+
+  /* ── GALLERY ITEM CLICK → open lightbox ── */
+  galleryItems.forEach(function(item){
+    item.addEventListener('click', function(e){
+      /* ignore clicks on child buttons (ribbon, zoom icon) */
+      if(e.target.closest('.gal-ribbon') || e.target.closest('.gal-zoom')) return;
+      openLB(item);
+    });
+  });
+
+})();
+</script>
+</body></html>
